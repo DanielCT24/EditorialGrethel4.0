@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Editorial Grethel</title>
+    <script src="JS - Principal.js"></script>
+    <script src="JS - Carrito.js"></script>
+    <link rel="stylesheet" href="CSS - Principal.css"></link>
+    <link rel="stylesheet" href="CSS - Carrito.css"></link>
+    <link rel="icon" sizes="180x180" href="ICON/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ICON/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ICON/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <script src="https://kit.fontawesome.com/21bc0e3a65.js"  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+ 
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Header - menu -->
+
+
+<header>
+    <div class="menu ">
+        <a href="Inicio.html"><img class="logo-1 " src="LOGO.png" alt=""></a>
+        <input type="checkbox" id="menu">
+        <label for="menu">
+            <img src="HEADER Y BODY/menu.png" loading="lazy" class="menu-icono">
+
+
+
+    
+            <a href="HTML - Usuario.html" class="btn__login">
+                <img src="Imagen-Login.png" alt="Login" loading="lazy" class="login-icon">
+                <h3 id="userName1">Nombre del Usuario</h3>
+            </a>
+            
+
+
+
+            <a href="HTML - Checkout.html" class="btn__carrito">
+                <img src="CARRITO.png" alt="carrito" loading="lazy" class="login-carrito">
+                <span class="cart-count">3</span> <!-- Este es el número de pedidos -->
+            </a>
+
+        </label>
+
+        <nav class="navbar fade-in">
+            <div class="menu-1 fade-in">
+                <div class="containermenu">
+                
+                    <ul>
+                        <li><a href="Inicio.html">Inicio</a></li>
+                        <li><a href="HTML - LUMBRERAS.html">Ofertas</a></li>
+                        <li><a href="CATÁLOGO EDITORIAL GRETHEL.pdf">Catálogo</a></li>
+                        <li><a href="https://maps.app.goo.gl/dawTfqAEDtirWpCu5">Envío</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+<!-------------------------------------------------- PC --------------->
+
+            <a href="Inicio.html"><img class="logo-2 " src="LOGO.png" alt=""></a>
+            
+
+
+
+            <a href="HTML - Usuario.html" class="btn__login" id="loginButton">
+                <img src="Imagen-Login.png" alt="Login" loading="lazy" class="login-icon-header">
+                <h3 id="userName2">Nombre del Usuario</h3>
+
+            </a>
+
+
+
+            <a href="HTML - Checkout.html" class="btn__carrito">
+                <img src="CARRITO.png" alt="carrito" loading="lazy" class="login-carrito-header">
+            </a>
+
+
+
+        </nav>
+
+
+    </div>
+
+    <div class="header-content container ">
+
+        <div class="swiper mySwiper-1 colorheader">
+            <div class="swiper-wrapper colorheader">
+
+
+                <div class="swiper-slide">
+                    <div class="slider">
+                        <div class="slider-txt"> 
+                            <h1>Lumbreras</h1>
+                            <p>Tenemos descuentos en todos los libros Editorial Lumbreras con fecha limitada, que esperas no pierdas esta oportunidad</p> 
+                            <div class="botones">
+                                <a href="HTML - LUMBRERAS.html" class="btn-1">Ver Catálogo</a>
+                            </div> 
+                        </div>
+                        <div class="slider-img">
+                            <img src="HEADER Y BODY/Lumbreras - Header.gif" loading="lazy" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="slider">
+                        <div class="slider-txt"> 
+                            <h1>Cuzcano</h1>
+                            <p>Tenemos descuentos en todos los libros Editorial Cuzcano con fecha limitada, que esperas no pierdas esta oportunidad</p> 
+                            <div class="botones">
+                                <a href="#" class="btn-1">Ver Catálogo</a>
+                            </div> 
+                        </div>
+                        <div class="slider-img">
+                            <img src="HEADER Y BODY/Cuzcano - Header.gif" loading="lazy" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="slider">
+                        <div class="slider-txt"> 
+                            <h1>Todos Nuestros Libros</h1>
+                            <p>Tenemos descuentos en todos los libros disponibles, solo por tiempo limitado, ¡Bienvenido a Editorial Grethel!</p> 
+                            <div class="botones">
+                                <a href="#" class="btn-1">Ver Catálogo</a>
+                            </div> 
+                        </div>
+                        <div class="slider-img">
+                            <img src="HEADER Y BODY/Diversos - Header.gif" loading="lazy" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </div>
+
+    </div>
+
+<!----------------------- VENTANA DE EMERGENTE ---------------------->
+    <div id="popup" class="popup">
+        <button id="close-popup" class="close-btn">&times;</button>
+        <img src="Promoción.png" alt="Imagen" loading="lazy" class="popup-image">
+    </div>
+
+
+
+
+</header>
+
+
+
+
+
+
+
+<main>
+ <!-- OFERTAS -->
+
+ <div class="">
+
+ <section class="ofertas" id="ofertas" > 
+
+
+  <div class="container__trust container__card-primary">
+    <div class="trust card__primary">
+        <div class="text__trust text__card-primary fade-in">
+            <p> OFERTAS LIMITADAS </p>
+            <h1> Hasta el 02 de Octubre</h1>
+        </div>
+
+
+        <div class="container__trust container__box-cardPrimary">
+            <div class="card__trust box__card-primary fade-in"  data-product-id="1">
+                <img src="AÑADIR IMAGENES/IMAGENES LIBROS/GUÍAS-SOLUCIONARIOS-EXTRA/1.png" loading="lazy" alt="">
+                <h2>Guía Científica </h2>
+                <p> Por tan solo </p>
+                <p class="precio"> S/ 20</p>
+                <button class="btn__add-cart">Añadir al Carrito</button>
+            </div>
+            <div class="card__trust box__card-primary fade-in"  data-product-id="2">
+                <img src="AÑADIR IMAGENES/IMAGENES LIBROS/GUÍAS-SOLUCIONARIOS-EXTRA/2.jpg" loading="lazy" alt="">
+                <h2>Guía Humanística</h2>
+                <p> Por tan solo </p>
+                <p class="precio"> S/ 20</p>
+                <button class="btn__add-cart">Añadir al Carrito</button>
+            </div>
+            <div class="card__trust box__card-primary fade-in"  data-product-id="3">
+                <img src="AÑADIR IMAGENES/IMAGENES LIBROS/GUÍAS-SOLUCIONARIOS-EXTRA/DECO.jpeg" loading="lazy" alt="">
+                <h2>Puro DECO UNMSM</h2>
+                <p> Por tan solo </p>
+                <p class="precio"> S/ 18</p>
+                <button class="btn__add-cart">Añadir al Carrito</button>
+            </div>
+            <div class="card__trust box__card-primary fade-in"  data-product-id="4">
+                <img src="AÑADIR IMAGENES/IMAGENES LIBROS/GUÍAS-SOLUCIONARIOS-EXTRA/CEREBRITO.jpg" loading="lazy" alt="">
+                <h2>Formulario Cerebrito</h2>
+                <p> Por tan solo </p>
+                <p class="precio"> S/ 14</p>
+                <button class="btn__add-cart">Añadir al Carrito</button>
+            </div>
+            <div class="card__trust box__card-primary fade-in"  data-product-id="5">
+                <img src="AÑADIR IMAGENES/IMAGENES LIBROS/GUÍAS-SOLUCIONARIOS-EXTRA/SAMANIEGO 1.jpg" loading="lazy" alt="">
+                <h2>Historia del Perú</h2>
+                <p> Por tan solo </p>
+                <p class="precio"> S/ 20</p>
+                <button class="btn__add-cart">Añadir al Carrito</button>
+            </div>
+            <div class="card__trust box__card-primary fade-in"  data-product-id="6">
+                <img src="AÑADIR IMAGENES/IMAGENES LIBROS/GUÍAS-SOLUCIONARIOS-EXTRA/SAMANIEGO 2.jpg" loading="lazy" alt="">
+                <h2>Historia del Mundo</h2>
+                <p> Por tan solo </p>
+                <p class="precio"> S/ 18</p>
+                <button class="btn__add-cart">Añadir al Carrito</button>
+            </div>
+           
+<!-- Barra Lateral del Carrito -->
+<aside id="sidebar" class="sidebar">
+    <button id="closeSidebar" class="close-btn">&times;</button>
+    <h2>Carrito</h2>
+    <div id="cartItems" class="cart-items">
+        <!-- Aquí se añadirá el contenido del carrito -->
+    </div>
+    <p id="totalPrice">Total: S/ 0</p>
+    <div class="cart-footer">
+      <a href="HTML - Checkout.html"> <button id="go-to-checkout">Ir a la Caja</button></a> 
+        <button id="empty-cart">Vaciar Carrito</button>
+        
+    </div>
+</aside>
+
+        </div>
+    </div>
+  </div>
+</div>
+</section>
+  <!-- SOBRE NOSOTROS -->
+  <div class="">
+  <div class="container__about div_offset">
+    <div class="about">
+        <div class="text__about fade-in">
+            <h1> Contamos con más de 10 años de experiencia</h1>
+            <p> Ayudando a miles de jóvenes con sed de ingresar a las diversersas Universidades que se propongan 😉</p>
+            <a href="#" class="btn__text-about btn__text">SABER MÁS</a>
+        </div>
+
+        <div class="image__about fade-in" >
+            <img src="HEADER Y BODY/Mockups/1.png" loading="lazy" alt="">
+            <img src="HEADER Y BODY/Mockups/2.png" loading="lazy" alt=""> 
+        </div>
+    </div>
+
+  </div>
+
+<!-- SERVICIOS, CATALOGO -->
+<div class="">
+    <div class="container__service container__card-primary div_offset" id="catalogo">
+        <div class="service card__primary">
+            <div class="text__service text__card-primary fade-in">
+                <p>NUESTRAS EDITORIALES</p>
+                <h1>Disponibles</h1>
+            </div>
+        </div>
+
+        <!-- Contenedor Único para la Sección de Editoriales -->
+        <div class="container__editoriales">
+            <div class="container__card-service container__box-cardPrimary">
+                
+                <!-- EDITORIALES DISPONIBLES -->        
+                <div class="card__service box__card-primary fade-in">
+                    <a href="HTML - LUMBRERAS.html"><img src="AÑADIR IMAGENES/EDITORIALES - PRINCIPIO/Lumbreras.jpg" loading="lazy" alt=""></a>
+                    <h2> Editorial Lumbreras</h2>
+                    <p>Mira todos nuestros libros disponibles</p>
+                    <a href="HTML - LUMBRERAS.html">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <!-- HASTA ACA PARA AGREGAR EDITORIALES -->
+                <!-- EDITORIALES DISPONIBLES -->        
+                <div class="card__service box__card-primary fade-in">
+                    <a href="HTML/Editoriales/Cuzcano.html"><img src="AÑADIR IMAGENES/EDITORIALES - PRINCIPIO/cuzcano.jpg" loading="lazy" alt=""></a>
+                    <h2> Editorial Cuzcano</h2>
+                    <p>Mira todos nuestros libros disponibles</p>
+                    <a href="HTML/Editoriales/Cuzcano.html">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <!-- HASTA ACA PARA AGREGAR EDITORIALES -->
+                <!-- EDITORIALES DISPONIBLES -->        
+                <div class="card__service box__card-primary fade-in">
+                    <a href="-----------------"><img src="AÑADIR IMAGENES/EDITORIALES - PRINCIPIO/Rodo.png" loading="lazy" alt=""></a>
+                    <h2> Editorial Rodo</h2>
+                    <p>Mira todos nuestros libros disponibles</p>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <!-- HASTA ACA PARA AGREGAR EDITORIALES -->
+                <!-- EDITORIALES DISPONIBLES -->        
+                <div class="card__service box__card-primary fade-in">
+                    <a href="-----------------"><img src="AÑADIR IMAGENES/EDITORIALES - PRINCIPIO/megabyte.jpeg" loading="lazy" alt=""></a>
+                    <h2> Editorial Megabyte</h2>
+                    <p>Mira todos nuestros libros disponibles</p>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <!-- HASTA ACA PARA AGREGAR EDITORIALES -->
+                <!-- EDITORIALES DISPONIBLES -->        
+                <div class="card__service box__card-primary fade-in">
+                    <a href="-----------------"><img src="AÑADIR IMAGENES/EDITORIALES - PRINCIPIO/rubiños.jpeg"  loading="lazy" alt=""></a>
+                    <h2> Editorial Rubiños</h2>
+                    <p>Mira todos nuestros libros disponibles</p>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <!-- HASTA ACA PARA AGREGAR EDITORIALES -->
+                <!-- EDITORIALES DISPONIBLES -->        
+                <div class="card__service box__card-primary fade-in">
+                    <a href="-----------------"><img src="AÑADIR IMAGENES/EDITORIALES - PRINCIPIO/san marcos.jpeg" loading="lazy" alt=""></a>
+                    <h2> Editorial San Marcos</h2>
+                    <p>Mira todos nuestros libros disponibles</p>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <!-- HASTA ACA PARA AGREGAR EDITORIALES -->
+                 <!-- EDITORIALES DISPONIBLES -->        
+                 <div class="card__service box__card-primary fade-in">
+                    <a href="-----------------"><img src="AÑADIR IMAGENES/EDITORIALES - PRINCIPIO/amauta.png" loading="lazy" alt=""></a>
+                    <h2> Editorial Amauta</h2>
+                    <p>Mira todos nuestros libros disponibles</p>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <!-- HASTA ACA PARA AGREGAR EDITORIALES -->
+
+                <!-- EDITORIALES DISPONIBLES -->        
+                <div class="card__service box__card-primary fade-in">
+                    <a href="-----------------"><img src="AÑADIR IMAGENES/EDITORIALES - PRINCIPIO/Lumbreras.jpg" loading="lazy" alt=""></a>
+                    <h2> Otras Editoriales</h2>
+                    <p>Mira todos nuestros libros disponibles</p>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <!-- HASTA ACA PARA AGREGAR EDITORIALES -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</main>
+
+
+<!-- Footer -->
+
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-title">Ubicación</h3>
+                <p class="footer-text">Mercado Sur 125,</p><p> Huacho 15136</p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title" id="contacto">Contacto</h3>
+                <p class="footer-text">Email: editorialgrethel@gmail.com</p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Síguenos</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61563910384955f" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.link/r2qn7g" class="social-link" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Calificación</h3>
+                <img src="AÑADIR IMAGENES/FOOTER/Estrellas.png" alt="Estrellas" loading="lazy" class="imagenes">
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Pagos</h3>
+                <div class="payment-methods">
+                    <img src="AÑADIR IMAGENES/FOOTER/visa.jpg" alt="Visa" loading="lazy" class="payment-icon">
+                    <img src="AÑADIR IMAGENES/FOOTER/paypal.jpeg" alt="Paypal" loading="lazy" class="payment-icon">
+                    <img src="BANCAMOVIL.png" alt="PagoEfectivo" loading="lazy" class="payment-icon">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <p>&copy; 2024 Editorial Grethel. Todos los derechos reservados.</p>
+
+        </div>
+    </div>
+
+</footer>
+    
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="JS - Header.js" ></script>
+<script src="JS - Usuario.js" ></script>
+<script src="VentanaEmergente.js" ></script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
+
+
+
+<!-- REUTILIZAR TAMAÑOS, POR EJEMPLO, BTN_TEXT LO PUEDO USAR EN BTN_TEXT-ABOUT, ES DECIR LO MISMO PUEDO HACER CON LAS IMAGES -->

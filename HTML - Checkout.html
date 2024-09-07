@@ -1,0 +1,707 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Editorial Grethel</title>
+    <script src="JS - Principal.js" ></script>
+    <script src="JS - Carrito.js" ></script>
+    <link rel="stylesheet" href="CSS - Carrito.css"></link>
+    <link rel="stylesheet" href="CSS - Checkout.css">
+    <link rel="icon" sizes="180x180" href="ICON/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ICON/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ICON/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <script src="https://kit.fontawesome.com/21bc0e3a65.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+ 
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Header - menu -->
+
+
+<header>
+    <div class="menu ">
+        <a href="Inicio.html"><img class="logo-1 " src="LOGO.png" loading="lazy" alt=""></a>
+        <input type="checkbox" id="menu">
+        <label for="menu">
+            <img src="HEADER Y BODY/menu.png" loading="lazy" class="menu-icono">
+
+
+
+    
+            <a href="HTML - Usuario.html" class="btn__login">
+                <img src="Imagen-Login.png" alt="Login" loading="lazy" class="login-icon">
+                <h3 id="userName1">Nombre del Usuario</h3>
+            </a>
+            
+
+
+
+ 
+
+        </label>
+
+        <nav class="navbar fade-in">
+            <div class="menu-1 fade-in">
+                <div class="containermenu">
+                
+                    <ul>
+                        <li><a href="Inicio.html">Inicio</a></li>
+                        <li><a href="HTML - LUMBRERAS.html">Ofertas</a></li>
+                        <li><a href="CATÁLOGO EDITORIAL GRETHEL.pdf">Catálogo</a></li>
+                        <li><a href="https://maps.app.goo.gl/dawTfqAEDtirWpCu5">Envío</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+<!-------------------------------------------------- PC --------------->
+
+            <a href="Inicio.html"><img class="logo-2"  src="LOGO.png"  loading="lazy" alt=""></a>
+            
+
+
+
+            <a href="HTML - Usuario.html" class="btn__login" id="loginButton">
+                <img src="Imagen-Login.png" alt="Login" loading="lazy" class="login-icon-header">
+                <h3 id="userName2">Nombre del Usuario</h3>
+
+            </a>
+
+
+
+
+
+
+        </nav>
+
+
+    </div>
+</header>
+
+
+   
+
+
+<main>
+
+
+    <div class="container">
+        <!-- Formulario de Información de Envío -->
+        <div class="shipping-info">
+            <h2>Información de Envío</h2>
+            <form id="paymentForm">
+
+
+
+
+                <div class="section">
+                    <label> DIRECCIÓN</label>
+                    <select id="district" required>
+                        <option value="" disabled selected>Distrito/Provincia</option>
+                        
+                        <optgroup label="Lima">
+                            <option value="Lima">Lima</option>
+                            <option value="Ate">Ate</option>
+                            <option value="Barranco">Barranco</option>
+                            <option value="Breña">Breña</option>
+                            <option value="Carabayllo">Carabayllo</option>
+                            <option value="Chaclacayo">Chaclacayo</option>
+                            <option value="Chorrillos">Chorrillos</option>
+                            <option value="Cieneguilla">Cieneguilla</option>
+                            <option value="Comas">Comas</option>
+                            <option value="El Agustino">El Agustino</option>
+                            <option value="Independencia">Independencia</option>
+                            <option value="Jesús María">Jesús María</option>
+                            <option value="La Molina">La Molina</option>
+                            <option value="La Victoria">La Victoria</option>
+                            <option value="Lince">Lince</option>
+                            <option value="Los Olivos">Los Olivos</option>
+                            <option value="Lurigancho">Lurigancho</option>
+                            <option value="Lurín">Lurín</option>
+                            <option value="Magdalena del Mar">Magdalena del Mar</option>
+                            <option value="Miraflores">Miraflores</option>
+                            <option value="Pachacamac">Pachacamac</option>
+                            <option value="Pucusana">Pucusana</option>
+                            <option value="Pueblo Libre">Pueblo Libre</option>
+                            <option value="Puente Piedra">Puente Piedra</option>
+                            <option value="Punta Hermosa">Punta Hermosa</option>
+                            <option value="Punta Negra">Punta Negra</option>
+                            <option value="Rímac">Rímac</option>
+                            <option value="San Bartolo">San Bartolo</option>
+                            <option value="San Borja">San Borja</option>
+                            <option value="San Isidro">San Isidro</option>
+                            <option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+                            <option value="San Juan de Miraflores">San Juan de Miraflores</option>
+                            <option value="San Luis">San Luis</option>
+                            <option value="San Martín de Porres">San Martín de Porres</option>
+                            <option value="San Miguel">San Miguel</option>
+                            <option value="Santa Anita">Santa Anita</option>
+                            <option value="Santa María del Mar">Santa María del Mar</option>
+                            <option value="Santa Rosa">Santa Rosa</option>
+                            <option value="Santiago de Surco">Santiago de Surco</option>
+                            <option value="Surquillo">Surquillo</option>
+                            <option value="Villa El Salvador">Villa El Salvador</option>
+                            <option value="Villa María del Triunfo">Villa María del Triunfo</option>
+                        </optgroup>
+                    
+                        <optgroup label="Arequipa">
+                            <option value="Arequipa">Arequipa</option>
+                            <option value="Cayma">Cayma</option>
+                            <option value="Cerro Colorado">Cerro Colorado</option>
+                            <option value="Characato">Characato</option>
+                            <option value="Chiguata">Chiguata</option>
+                            <option value="Jacobo Hunter">Jacobo Hunter</option>
+                            <option value="La Joya">La Joya</option>
+                            <option value="Mariano Melgar">Mariano Melgar</option>
+                            <option value="Miraflores">Miraflores</option>
+                            <option value="Mollebaya">Mollebaya</option>
+                            <option value="Paucarpata">Paucarpata</option>
+                            <option value="Quequeña">Quequeña</option>
+                            <option value="Sabandía">Sabandía</option>
+                            <option value="Sachaca">Sachaca</option>
+                            <option value="Socabaya">Socabaya</option>
+                            <option value="Tiabaya">Tiabaya</option>
+                            <option value="Uchumayo">Uchumayo</option>
+                            <option value="Vitor">Vitor</option>
+                            <option value="Yanahuara">Yanahuara</option>
+                            <option value="Yarabamba">Yarabamba</option>
+                            <option value="Yura">Yura</option>
+                        </optgroup>
+                    
+                        <optgroup label="Cusco">
+                            <option value="Cusco">Cusco</option>
+                            <option value="Acomayo">Acomayo</option>
+                            <option value="Acos">Acos</option>
+                            <option value="Anta">Anta</option>
+                            <option value="Calca">Calca</option>
+                            <option value="Canas">Canas</option>
+                            <option value="Canchis">Canchis</option>
+                            <option value="Chumbivilcas">Chumbivilcas</option>
+                            <option value="Espinar">Espinar</option>
+                            <option value="La Convención">La Convención</option>
+                            <option value="Paruro">Paruro</option>
+                            <option value="Paucartambo">Paucartambo</option>
+                            <option value="Quispicanchi">Quispicanchi</option>
+                            <option value="Urubamba">Urubamba</option>
+                        </optgroup>
+                    
+                        <optgroup label="Lambayeque">
+                            <option value="Chiclayo">Chiclayo</option>
+                            <option value="Chongoyape">Chongoyape</option>
+                            <option value="Eten">Eten</option>
+                            <option value="Eten Pueblo">Eten Pueblo</option>
+                            <option value="Jayanca">Jayanca</option>
+                            <option value="Lambayeque">Lambayeque</option>
+                            <option value="Mochumi">Mochumi</option>
+                            <option value="Olmos">Olmos</option>
+                            <option value="Pítipo">Pítipo</option>
+                            <option value="Reque">Reque</option>
+                            <option value="San José">San José</option>
+                            <option value="San Luis">San Luis</option>
+                            <option value="Túcume">Túcume</option>
+                        </optgroup>
+                    
+                        <optgroup label="La Libertad">
+                            <option value="Trujillo">Trujillo</option>
+                            <option value="Ascope">Ascope</option>
+                            <option value="Bolívar">Bolívar</option>
+                            <option value="Chepén">Chepén</option>
+                            <option value="Gran Chimú">Gran Chimú</option>
+                            <option value="Julcán">Julcán</option>
+                            <option value="Otuzco">Otuzco</option>
+                            <option value="Pacasmayo">Pacasmayo</option>
+                            <option value="Pataz">Pataz</option>
+                            <option value="Sánchez Carrión">Sánchez Carrión</option>
+                            <option value="Santa Catalina">Santa Catalina</option>
+                            <option value="Santa Clara">Santa Clara</option>
+                            <option value="Santa Isabel">Santa Isabel</option>
+                            <option value="Santiago de Chuco">Santiago de Chuco</option>
+                            <option value="Trujillo">Trujillo</option>
+                            <option value="Virú">Virú</option>
+                        </optgroup>
+                    
+                        <optgroup label="Piura">
+                            <option value="Piura">Piura</option>
+                            <option value="Ayabaca">Ayabaca</option>
+                            <option value="Catacaos">Catacaos</option>
+                            <option value="Chulucanas">Chulucanas</option>
+                            <option value="Huancabamba">Huancabamba</option>
+                            <option value="Loja">Loja</option>
+                            <option value="Morropón">Morropón</option>
+                            <option value="Paita">Paita</option>
+                            <option value="Piura">Piura</option>
+                            <option value="Sullana">Sullana</option>
+                            <option value="Talara">Talara</option>
+                            <option value="Tambogrande">Tambogrande</option>
+                            <option value="Veintiséis de Octubre">Veintiséis de Octubre</option>
+                        </optgroup>
+                    
+                        <optgroup label="Junín">
+                            <option value="Huancayo">Huancayo</option>
+                            <option value="Concepción">Concepción</option>
+                            <option value="Chanchamayo">Chanchamayo</option>
+                            <option value="Jauja">Jauja</option>
+                            <option value="Junín">Junín</option>
+                            <option value="Tarma">Tarma</option>
+                            <option value="Yauli">Yauli</option>
+                        </optgroup>
+                    
+                        <optgroup label="Puno">
+                            <option value="Puno">Puno</option>
+                            <option value="Azángaro">Azángaro</option>
+                            <option value="Carabaya">Carabaya</option>
+                            <option value="Chucuito">Chucuito</option>
+                            <option value="El Collao">El Collao</option>
+                            <option value="Huancané">Huancané</option>
+                            <option value="Lampa">Lampa</option>
+                            <option value="Melgar">Melgar</option>
+                            <option value="San Antonio de Putina">San Antonio de Putina</option>
+                            <option value="San Román">San Román</option>
+                            <option value="Sandia">Sandia</option>
+                            <option value="Yunguyo">Yunguyo</option>
+                        </optgroup>
+                    
+                        <optgroup label="Tacna">
+                            <option value="Tacna">Tacna</option>
+                            <option value="Candarave">Candarave</option>
+                            <option value="Jorge Basadre">Jorge Basadre</option>
+                            <option value="Kallapuma">Kallapuma</option>
+                            <option value="Tarata">Tarata</option>
+                        </optgroup>
+                    
+                        <optgroup label="Moquegua">
+                            <option value="Moquegua">Moquegua</option>
+                            <option value="General Sánchez Cerro">General Sánchez Cerro</option>
+                            <option value="Ilo">Ilo</option>
+                        </optgroup>
+                    
+                        <optgroup label="Madre de Dios">
+                            <option value="Tambopata">Tambopata</option>
+                            <option value="Iñapari">Iñapari</option>
+                            <option value="Manu">Manu</option>
+                            <option value="Madre de Dios">Madre de Dios</option>
+                        </optgroup>
+                    
+                        <optgroup label="San Martín">
+                            <option value="Moyobamba">Moyobamba</option>
+                            <option value="Bellavista">Bellavista</option>
+                            <option value="El Dorado">El Dorado</option>
+                            <option value="Mariscal Cáceres">Mariscal Cáceres</option>
+                            <option value="Picota">Picota</option>
+                            <option value="Rioja">Rioja</option>
+                            <option value="San Martín">San Martín</option>
+                            <option value="Santiago">Santiago</option>
+                            <option value="Saposoa">Saposoa</option>
+                            <option value="Juanjui">Juanjui</option>
+                        </optgroup>
+                    
+                        <optgroup label="Áncash">
+                            <option value="Huaraz">Huaraz</option>
+                            <option value="Carhuaz">Carhuaz</option>
+                            <option value="Carlos Fermín Fitzcarrald">Carlos Fermín Fitzcarrald</option>
+                            <option value="Huari">Huari</option>
+                            <option value="Huarmey">Huarmey</option>
+                            <option value="Huaylas">Huaylas</option>
+                            <option value="Mato">Mato</option>
+                            <option value="Ocros">Ocros</option>
+                            <option value="Pallasca">Pallasca</option>
+                            <option value="Pomabamba">Pomabamba</option>
+                            <option value="Recuay">Recuay</option>
+                            <option value="Santa">Santa</option>
+                            <option value="Sihuas">Sihuas</option>
+                            <option value="Yungay">Yungay</option>
+                        </optgroup>
+                    
+                        <optgroup label="Huánuco">
+                            <option value="Huánuco">Huánuco</option>
+                            <option value="Ambo">Ambo</option>
+                            <option value="Dos de Mayo">Dos de Mayo</option>
+                            <option value="Huacaybamba">Huacaybamba</option>
+                            <option value="Huamalíes">Huamalíes</option>
+                            <option value="Leoncio Prado">Leoncio Prado</option>
+                            <option value="Marañón">Marañón</option>
+                            <option value="Pachitea">Pachitea</option>
+                            <option value="Rupa-Rupa">Rupa-Rupa</option>
+                            <option value="Yarowilca">Yarowilca</option>
+                        </optgroup>
+                    
+                        <optgroup label="Pasco">
+                            <option value="Pasco">Pasco</option>
+                            <option value="Daniel Alcides Carrión">Daniel Alcides Carrión</option>
+                            <option value="Oxapampa">Oxapampa</option>
+                            <option value="Pasco">Pasco</option>
+                            <option value="Vicco">Vicco</option>
+                        </optgroup>
+                    
+                        <optgroup label="Callao">
+                            <option value="Callao">Callao</option>
+                        </optgroup>
+                    
+                        <optgroup label="Tumbes">
+                            <option value="Tumbes">Tumbes</option>
+                            <option value="Corrales">Corrales</option>
+                            <option value="Zorritos">Zorritos</option>
+                            <option value="Pampa Grande">Pampa Grande</option>
+                            <option value="San Jacinto">San Jacinto</option>
+                            <option value="San Juan de la Virgen">San Juan de la Virgen</option>
+                        </optgroup>
+                    
+                        <optgroup label="Guánuco">
+                            <option value="Huánuco">Huánuco</option>
+                            <option value="Ambo">Ambo</option>
+                            <option value="Dos de Mayo">Dos de Mayo</option>
+                            <option value="Huacaybamba">Huacaybamba</option>
+                            <option value="Huamalíes">Huamalíes</option>
+                            <option value="Leoncio Prado">Leoncio Prado</option>
+                            <option value="Marañón">Marañón</option>
+                            <option value="Pachitea">Pachitea</option>
+                            <option value="Rupa-Rupa">Rupa-Rupa</option>
+                            <option value="Yarowilca">Yarowilca</option>
+                        </optgroup>
+                    
+                        <optgroup label="Loreto">
+                            <option value="Iquitos">Iquitos</option>
+                            <option value="Alto Nanay">Alto Nanay</option>
+                            <option value="Cahuapanas">Cahuapanas</option>
+                            <option value="Camisea">Camisea</option>
+                            <option value="Contamana">Contamana</option>
+                            <option value="Datem del Marañón">Datem del Marañón</option>
+                            <option value="Maynas">Maynas</option>
+                            <option value="Napo">Napo</option>
+                            <option value="Río Marañón">Río Marañón</option>
+                            <option value="Yurimaguas">Yurimaguas</option>
+                        </optgroup>
+                    
+                        <!-- Repite el formato para más provincias y sus distritos -->
+                    </select>
+                    
+
+
+
+                    </select>
+                    <input type="text" id="street" placeholder="Calle y Número" required>
+                    <input type="text" id="apartment" placeholder="Dpto, Oficina, etc. (*Opcional)">
+                    <input type="text" id="postal-code" placeholder="Código Postal (*Opcional)">
+                    <input type="text" id="alias" placeholder="Referencia">
+                </div>
+
+                <div class="delivery-container">
+                    <label for="delivery">SELECCIONE UNA OPCIÓN DE ENVÍO DELIVERY</label>
+                    
+                    <div class="delivery-option" required>
+                        <label>
+                            <input type="radio" name="delivery" value="marvisur" required>
+                            Marvisur <span class="info-icon"> 🚚  </span>
+                        </label>
+                        <span class="delivery-date">Tu pedido llegará entre el 30-08-2024 y 02-09-2024</span>
+                    </div>
+                    
+                    <div class="delivery-option" required>
+                        <label>
+                            <input type="radio" name="delivery" value="olvacourier" required>
+                            OlvaCourier <span class="info-icon"> 🚚  </span>
+                        </label>
+                        <span class="delivery-date">Tu pedido llegará entre el 30-08-2024 y 02-09-2024</span>
+                    </div>
+                    
+                    <div class="delivery-option" required>
+                        <label>
+                            <input type="radio" name="delivery" value="shalom" required>
+                            Shalom <span class="info-icon"> 🚚 </span>
+                        </label>
+                        <span class="delivery-date">Tu pedido llegará entre el 30-08-2024 y 02-09-2024</span>
+                    </div>
+                </div>
+                
+
+
+
+
+                <!-- Información de Contacto -->
+                <div class="section">
+                    <label for="email">INFORMACIÓN DE CONTACTO</label>
+                    <input type="email" id="email" placeholder="Correo electrónico" required>
+                    <div class="name-fields">
+                        <input type="text" id="first-name" placeholder="Nombres" required>
+                        <input type="text" id="last-name" placeholder="Apellidos"   required>
+                    </div>
+                    <div class="phone-fields">
+                        <span class="flag-icon">🇵🇪</span>
+                        <input type="tel" id="phone" placeholder="+51 999 999 999" maxlength="9" required>
+                        
+                    </div>
+                    <input type="text" id="dni" placeholder="DNI" maxlength="8" required>
+                </div>
+
+
+
+
+
+                <!-- Cupón de Descuento -->
+                <div class="section">
+                    <label for="coupon">CUPÓN DE DESCUENTO</label>
+                    <input type="text" id="coupon" placeholder="Ingresa tu cupón">
+                    <button type="button" id="validateCoupon">Validar Descuento</button>
+                </div>
+
+
+                
+            
+
+
+
+
+                
+
+
+                <!-- Método de Pago -->
+                <div class="section">
+                    <label>SELECCIONA MEDIO DE PAGO</label>
+                    <div class="payment-methods" required>
+                        <label>
+                            <input type="radio" name="payment" value="yape" required>
+                            <img class="pagoyape-img" src="BANCAMOVIL.png" loading="lazy" alt="Yape">
+                        </label>
+                    </div>
+                </div>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="yape-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup('yape-popup')">&times;</span>
+        <h2 class="txt-ventana">PAGO CON BANCAS MÓVILES</h2>
+        <p>Gracias por su compra</p>
+        <div class="yape-number">Editorial Grethel</div>
+        <img src="qr.jpg" loading="lazy" alt="QR Code" class="qr-code">
+        <p>Total a pagar</p>
+        <div class="summary-total">
+            <p id="summaryTotal1">S/ 0.00</p>
+        </div>
+        <div class="form-group">
+            <label for="operacion">Digita tu nro. de operación:</label>
+            <input type="text" id="operacion" class="input-field" oninput="validateForm()">
+        </div>
+        <div class="form-group">
+            <label for="confirma-operacion">Confirma tu nro. de operación:</label>
+            <input type="text" id="confirma-operacion" class="input-field" oninput="validateForm()">
+        </div>
+        <div class="form-group">
+            <label for="fecha-hora">Fecha y hora de la operación:</label>
+            <input type="datetime-local" id="fecha-hora" class="input-field" onchange="validateForm()">
+        </div>
+        <p class="warning">- La fecha y hora son requeridas</p>
+
+        <!-- Adjuntar comprobante -->
+        <input type="file" id="comprobante" class="input-file" onchange="handleFileUpload()">
+        <label for="comprobante" class="upload-btn" id="upload-label">📎 Adjuntar comprobante</label>
+
+        <button id="finalize-btn" class="finalize-btn" disabled onclick="finalizePurchase('¡Tu compra ha sido exitosa!')">Finalizar</button>
+    </div>
+    
+
+
+<!-- Modal -->
+<div id="customModal" class="custom-modal">
+    <div class="custom-modal-content">
+        <span class="custom-close" onclick="closeModal()">&times;</span>
+        <div class="custom-modal-body">
+            <div class="checkmark-wrapper">
+                <div class="checkmark-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M20.285 6.711l-11.504 11.39-5.393-5.428-1.456 1.458 6.85 6.938 12.963-12.846-1.456-1.464z"/>
+                    </svg>
+                </div>
+            </div>
+            <p id="modalMessage">¡Felicidades por tu compra!</p>
+            <p id="modalMessage">Revisa tu Cuenta</p>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+                <!-- Términos y Condiciones -->
+                <div class="section">
+                    <label>
+                        <input type="checkbox" id="terms" required>
+                        He leído y acepto los <a href="#">términos y condiciones</a>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="privacy" required>
+                        He leído y acepto la <a href="#">política de privacidad de datos</a>
+                    </label>
+                </div>
+                <h5>- RELLENE LOS DATOS REQUERIDOS PARA CONTINUAR</h5>
+                <button class="btn-detalles" id="btn-detalles" type="button" onclick="openPopup('yape-popup')" disabled>Finalizar Compra</button>
+
+            </form>
+        </div>
+
+     <!-- Resumen de la Compra -->
+        <div class="order-summary">
+            <h3>Resumen de Tu Compra</h3>
+            <div class="containeritems">
+            <div id="summaryItems" class="summary-items">
+                <!-- Los elementos del carrito se inyectarán aquí por JavaScript -->
+                 
+            </div>
+            </div>
+            <div class="summary-total">
+                <p id="summaryTotal2">Total: S/ 0.00</p>
+            </div>
+        </div>
+
+
+        
+    </div>
+
+    <script src="JS - Checkout.js"></script>
+    <script src="JS - Checkout2.js"></script>
+    <script src="JS - Principal.js"></script>
+    <script src="JS - Usuario.js"></script>
+    <script src="JS - Usuario-Login.js"></script>
+</main>
+
+
+<!-- Footer -->
+
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-title">Ubicación</h3>
+                <p class="footer-text">Mercado Sur 125,</p><p> Huacho 15136</p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title" id="contacto">Contacto</h3>
+                <p class="footer-text">Email: editorialgrethel@gmail.com</p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Síguenos</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61563910384955f" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.link/r2qn7g" class="social-link" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Calificación</h3>
+                <img src="AÑADIR IMAGENES/FOOTER/Estrellas.png" loading="lazy" alt="Estrellas" class="imagenes">
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Pagos</h3>
+                <div class="payment-methods">
+                    <img src="AÑADIR IMAGENES/FOOTER/visa.jpg" alt="Visa" loading="lazy" class="payment-icon">
+                    <img src="AÑADIR IMAGENES/FOOTER/paypal.jpeg" alt="Paypal" loading="lazy" class="payment-icon">
+                    <img src="BANCAMOVIL.png" alt="PagoEfectivo" loading="lazy" class="payment-icon">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <p>&copy; 2024 Editorial Grethel. Todos los derechos reservados.</p>
+
+        </div>
+    </div>
+
+</footer>
+    
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="JS - Header.js" ></script>
+<script src="JS - Usuario.js" ></script>
+<script src="VentanaEmergente.js"></script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
+
+
+
+<!-- REUTILIZAR TAMAÑOS, POR EJEMPLO, BTN_TEXT LO PUEDO USAR EN BTN_TEXT-ABOUT, ES DECIR LO MISMO PUEDO HACER CON LAS IMAGES -->

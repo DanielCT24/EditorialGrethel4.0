@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editorial Grethel</title>
+    <link rel="preload" href="CSS - Header-Login.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="CSS - Login.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="icon" sizes="180x180" href="/ICON/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ICON/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/ICON/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://kit.fontawesome.com/21bc0e3a65.js" crossorigin="anonymous"></script>
+
+    <script>
+        // JavaScript para cambiar el estilo del encabezado al hacer scroll
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('header');
+            
+            if (window.scrollY > 0) {
+                header.classList.add('scroll');
+            } else {
+                header.classList.remove('scroll');
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<!-- Header - menu -->
+
+<header>
+    <div class="menu ">
+        <a href="Inicio.html"><img class="logo-1 " src="LOGO.png" alt=""></a>
+        <input type="checkbox" id="menu">
+        <label for="menu">
+            <img src="HEADER Y BODY/menu.png" class="menu-icono">
+
+
+
+
+
+
+
+
+        </label>
+
+        <nav class="navbar fade-in">
+            <div class="menu-1 fade-in">
+                <div class="containermenu">
+                
+                    <ul>
+                        <li><a href="Inicio.html">Inicio</a></li>
+                        <li><a href="HTML - LUMBRERAS.html">Ofertas</a></li>
+                        <li><a href="CATÁLOGO EDITORIAL GRETHEL.pdf">Catálogo</a></li>
+                        <li><a href="https://maps.app.goo.gl/dawTfqAEDtirWpCu5">Envío</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+<!-------------------------------------------------- PC --------------->
+
+            <a href="Inicio.html"><img class="logo-2 " src="LOGO.png" alt=""></a>
+            
+
+
+
+
+
+
+
+
+        </nav>
+
+</header>
+
+
+
+        <!--Formulario de Login y registro-->
+
+
+<main>
+    <div id="customAlert" class="custom-alert" style="display:none;">
+        <span id="alertMessage"></span>
+    </div>
+
+    <div class="contenedor__todo fade-in">
+        <div class="caja__trasera">
+            <div class="caja__trasera-login">
+                <h3>¿Ya tienes una cuenta?</h3>
+                <p>Inicia sesión para entrar en la página</p>
+                <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+            </div>
+            <div class="caja__trasera-register">
+                <h3>¿Aún no tienes una cuenta?</h3>
+                <p>Regístrate para que puedas iniciar sesión</p>
+                <button id="btn__registrarse">Registrarse</button>
+            </div>
+        </div>
+
+        <div class="contenedor__login-register">
+            <!-- Login -->
+            <form id="loginForm" class="formulario__login">
+                <h2>Iniciar Sesión</h2>
+                <input type="text" id="loginIdentifier" placeholder="Usuario, DNI o Correo Electrónico" required>
+                <input type="password" id="loginPassword" placeholder="Contraseña" required>
+                <button type="submit">Entrar</button>
+            </form>
+
+            <!-- Register -->
+            <form id="registerForm" class="formulario__register">
+                <h2>Registrarse</h2>
+                <input type="text" id="registerName" placeholder="Nombre completo" required>
+                <input type="email" id="registerEmail" placeholder="Correo Electrónico" required>
+                <input type="text" id="registerUsername" placeholder="Usuario" required>
+                <input type="text" id="registerDNI" placeholder="DNI" maxlength="8" required>
+                <input type="text" id="registerPhone" placeholder="Teléfono" maxlength="9" required>
+                <input type="password" id="registerPassword" placeholder="Contraseña (mínimo 8 caracteres)" required minlength="8">
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+
+
+<!-- Footer -->
+
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-title">Ubicación</h3>
+                <p class="footer-text">Mercado Sur 125,</p><p> Huacho 15136</p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title" id="contacto">Contacto</h3>
+                <p class="footer-text">Email: editorialgrethel@gmail.com</p>
+                <p class="footer-text">Teléfono: 938888614</p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Síguenos</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/editorialgrethel.oficial/" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.link/r2qn7g" class="social-link" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Calificación</h3>
+                <img src="AÑADIR IMAGENES/FOOTER/Estrellas.png" alt="Estrellas" class="imagenes">
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Pagos</h3>
+                <div class="payment-methods">
+                    <img src="AÑADIR IMAGENES/FOOTER/visa.jpg" alt="Visa" class="payment-icon">
+                    <img src="AÑADIR IMAGENES/FOOTER/paypal.jpeg" alt="Paypal" class="payment-icon">
+                    <img src="AÑADIR IMAGENES/FOOTER/pago efectivo.jpeg" alt="PagoEfectivo" class="payment-icon">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <p>&copy; 2024 Editorial Grethel. Todos los derechos reservados.</p>
+
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function showAlert(message, bgColor) {
+        const alertBox = document.getElementById('customAlert');
+        const alertMessage = document.getElementById('alertMessage');
+
+        alertMessage.textContent = message;
+        alertBox.style.backgroundColor = bgColor;
+        alertBox.style.display = 'block';
+
+        setTimeout(() => {
+            alertBox.style.display = 'none';
+        }, 3000); // Oculta la alerta después de 3 segundos
+    }
+
+    // Manejador de registro
+    document.getElementById('registerForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Obtener valores del formulario
+        const name = document.getElementById('registerName').value;
+        const email = document.getElementById('registerEmail').value;
+        const username = document.getElementById('registerUsername').value;
+        const dni = document.getElementById('registerDNI').value;
+        const phone = document.getElementById('registerPhone').value;
+        const password = document.getElementById('registerPassword').value;
+
+        // Validar longitud de DNI y teléfono
+        if (dni.length !== 8 || phone.length !== 9) {
+            showAlert('DNI debe tener 8 cifras y Teléfono debe tener 9 cifras', '#f44336'); // Rojo para error
+            return;
+        }
+
+        // Crear objeto usuario
+        const user = {
+            name: name,
+            email: email,
+            username: username,
+            dni: dni,
+            phone: phone,
+            password: password
+        };
+
+        // Guardar los datos en localStorage
+        localStorage.setItem('user', JSON.stringify(user));
+
+        showAlert('Registro exitoso', '#4caf50'); // Verde para éxito
+    });
+
+    // Manejador de inicio de sesión
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Obtener valores del formulario
+        const identifier = document.getElementById('loginIdentifier').value;
+        const password = document.getElementById('loginPassword').value;
+
+        // Obtener datos almacenados en localStorage
+        const storedUser = JSON.parse(localStorage.getItem('user'));
+
+        // Validar credenciales
+        if (storedUser && 
+            (identifier === storedUser.email || identifier === storedUser.username || identifier === storedUser.dni) && 
+            password === storedUser.password) {
+            showAlert('Inicio de sesión exitoso', '#4caf50'); // Verde para éxito
+            window.location.href = "Inicio.html"; // Redirige a la página de perfil
+        } else {
+            showAlert('Identificador o contraseña incorrectos', '#f44336'); // Rojo para error
+        }
+    });
+</script>
+        
+        
+
+
+<div id="customAlert" style="display: none; position: fixed; bottom: 20px; left: 20px; padding: 10px; border-radius: 5px; color: white; z-index: 1000;">
+    <p id="alertMessage"></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="JS - Login.js"></script>
+<script src="JS - Register.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

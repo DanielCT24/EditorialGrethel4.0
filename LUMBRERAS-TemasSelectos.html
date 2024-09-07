@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editorial Grethel</title>
+    <script src="GENERAL.JS"></script>
+    <script src="JS - Principal.js"></script>
+    <script src="JS - Header.js" ></script>
+    <script src="JS - Carrito.js"></script>
+    <script src="JS - Usuario.js"></script>
+    <script src="JS - Productos.JS"></script>
+    <link rel="stylesheet" href="CSS - Carrito.css"></link>
+    <link rel="stylesheet" href="CSS - EDITORIALES.css"></link>
+    <link rel="icon" sizes="180x180" href="ICON/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ICON/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ICON/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <script src="https://kit.fontawesome.com/21bc0e3a65.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.min.js"></script>
+
+
+    <script>
+        // JavaScript para cambiar el estilo del encabezado al hacer scroll
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('header');
+            
+            if (window.scrollY > 0) {
+                header.classList.add('scroll');
+            } else {
+                header.classList.remove('scroll');
+            }
+        });
+    </script>
+</head>
+
+<body>
+
+<!-- Header - menu -->
+<header>
+    <div class="menu ">
+        <a href="Inicio.html"><img class="logo-1 " src="LOGO.png" loading="lazy" alt=""></a>
+        <input type="checkbox" id="menu">
+        <label for="menu">
+            <img src="HEADER Y BODY/menu.png" loading="lazy" class="menu-icono">
+
+
+
+    
+            <a href="HTML - Usuario.html" class="btn__login">
+                <img src="Imagen-Login.png" alt="Login" loading="lazy" class="login-icon">
+                <h3 id="userName1">Nombre del Usuario</h3>
+            </a>
+            
+
+
+
+ 
+
+        </label>
+
+        <nav class="navbar fade-in">
+            <div class="menu-1 fade-in">
+                <div class="containermenu">
+                
+                    <ul>
+                        <li><a href="Inicio.html">Inicio</a></li>
+                        <li><a href="HTML - LUMBRERAS.html">Ofertas</a></li>
+                        <li><a href="CATÁLOGO EDITORIAL GRETHEL.pdf">Catálogo</a></li>
+                        <li><a href="https://maps.app.goo.gl/dawTfqAEDtirWpCu5">Envío</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+<!-------------------------------------------------- PC --------------->
+
+            <a href="Inicio.html"><img class="logo-2"  src="LOGO.png"  loading="lazy" alt=""></a>
+            
+
+
+
+            <a href="HTML - Usuario.html" class="btn__login" id="loginButton">
+                <img src="Imagen-Login.png" alt="Login" loading="lazy" class="login-icon-header">
+                <h3 id="userName2">Nombre del Usuario</h3>
+
+            </a>
+
+
+
+
+
+
+        </nav>
+
+
+    </div>
+</header>
+
+
+
+
+
+<main>
+ 
+ 
+ 
+     <!-- OFERTAS -->
+ <section class="ofertas" id="ofertas" > 
+    <div class="container__trust container__card-primary">
+      <div class="trust card__primary">
+          <div class="text__trust text__card-primary">
+              <p> CURSOS TEMAS SELECTOS </p>
+              <h1> Disponibles</h1>
+          </div>
+  
+  
+          <div class="container__trust container__box-cardPrimary" id="courses-container">
+            <div class="card__trust box__card-primary fade-in"  data-product-id="39">
+              <a href="             TEMAS SELECTOS-Álgebra.html              "> <img src="AÑADIR IMAGENES/PORTADA DE CURSOS - TEMAS SELECTOS/Álgebra.png" alt=""></a> 
+                  <h2>Álgebra </h2>
+                  <p> La mejor colección para profundizar por temas de cada curso </p>
+                  <a href="          TEMAS SELECTOS-Álgebra.html               "><button class="btn__add-cart">Ver Colección</button></a>
+              </div>
+            <div class="card__trust box__card-primary fade-in"  data-product-id="39">
+              <a href="        TEMAS SELECTOS-Aritmética.html                   "> <img src="AÑADIR IMAGENES/PORTADA DE CURSOS - TEMAS SELECTOS/Aritmética.png" alt=""></a> 
+                  <h2>Aritmética </h2>
+                  <p> La mejor colección para profundizar por temas de cada curso </p>
+                  <a href="      TEMAS SELECTOS-Aritmética.html                "><button class="btn__add-cart">Ver Colección</button></a>
+              </div>
+                       <div class="card__trust box__card-primary fade-in"  data-product-id="39">
+              <a href="       TEMAS SELECTOS-Biologia-Psicología-Historia.html                    "> <img src="         AÑADIR IMAGENES/PORTADA DE CURSOS - TEMAS SELECTOS/Biología-Psicología-Historia.png              " alt=""></a> 
+                  <h2>Biología/Psicología/Filosofía </h2>
+                  <p> La mejor colección para profundizar por temas de cada curso </p>
+                  <a href="         TEMAS SELECTOS-Biologia-Psicología-Historia.html              "><button class="btn__add-cart">Ver Colección</button></a>
+              </div>
+                          <div class="card__trust box__card-primary fade-in"  data-product-id="39">
+              <a href="            TEMAS SELECTOS-Física.html               "> <img src="AÑADIR IMAGENES/PORTADA DE CURSOS - TEMAS SELECTOS/Física.png" alt=""></a> 
+                  <h2>Física </h2>
+                  <p> La mejor colección para profundizar por temas de cada curso </p>
+                  <a href="     TEMAS SELECTOS-Física.html                 "><button class="btn__add-cart">Ver Colección</button></a>
+              </div>
+                          <div class="card__trust box__card-primary fade-in"  data-product-id="39">
+              <a href="        TEMAS SELECTOS-Geometría.html                   "> <img src="AÑADIR IMAGENES/PORTADA DE CURSOS - TEMAS SELECTOS/Geometría.png" alt=""></a> 
+                  <h2>Geometría </h2>
+                  <p> La mejor colección para profundizar por temas de cada curso </p>
+                  <a href="       TEMAS SELECTOS-Geometría.html               "><button class="btn__add-cart">Ver Colección</button></a>
+              </div>
+                          <div class="card__trust box__card-primary fade-in"  data-product-id="39">
+              <a href="      TEMAS SELECTOS-Química.html                     "> <img src="AÑADIR IMAGENES/PORTADA DE CURSOS - TEMAS SELECTOS/Química.png" alt=""></a> 
+                  <h2>Química </h2>
+                  <p> La mejor colección para profundizar por temas de cada curso </p>
+                  <a href="        TEMAS SELECTOS-Química.html              "><button class="btn__add-cart">Ver Colección</button></a>
+              </div>
+                          <div class="card__trust box__card-primary fade-in"  data-product-id="39">
+              <a href="   TEMAS SELECTOS-RM.html                        "> <img src="AÑADIR IMAGENES/PORTADA DE CURSOS - TEMAS SELECTOS/RM.png" alt=""></a> 
+                  <h2>Raz.Matemático </h2>
+                  <p> La mejor colección para profundizar por temas de cada curso </p>
+                  <a href="    TEMAS SELECTOS-RM.html                  "><button class="btn__add-cart">Ver Colección</button></a>
+              </div>
+                         <div class="card__trust box__card-primary fade-in"  data-product-id="39">
+              <a href="        TEMAS SELECTOS-Trigonometría.html                   "> <img src="AÑADIR IMAGENES/PORTADA DE CURSOS - TEMAS SELECTOS/Trigonometría.png" alt=""></a> 
+                  <h2>Trigonometría </h2>
+                  <p> La mejor colección para profundizar por temas de cada curso </p>
+                  <a href="      TEMAS SELECTOS-Trigonometría.html                "><button class="btn__add-cart">Ver Colección</button></a>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+
+
+
+<!-- Footer -->
+
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-title">Ubicación</h3>
+                <p class="footer-text">Mercado Sur 125,</p><p> Huacho 15136</p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title" id="contacto">Contacto</h3>
+                <p class="footer-text">Email: editorialgrethel@gmail.com</p>
+                <p class="footer-text">Teléfono: 938888614</p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Síguenos</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/editorialgrethel.oficial/" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="wa.link/r2qn7g" class="social-link" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Calificación</h3>
+                <img src="AÑADIR IMAGENES/FOOTER/Estrellas.png" alt="Estrellas" class="imagenes">
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Pagos</h3>
+                <div class="payment-methods">
+                    <img src="AÑADIR IMAGENES/FOOTER/visa.jpg" alt="Visa" class="payment-icon">
+                    <img src="AÑADIR IMAGENES/FOOTER/paypal.jpeg" alt="Paypal" class="payment-icon">
+                    <img src="AÑADIR IMAGENES/FOOTER/pago efectivo.jpeg" alt="PagoEfectivo" class="payment-icon">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <p>&copy; 2024 Editorial Grethel. Todos los derechos reservados.</p>
+
+        </div>
+    </div>
+
+</footer>
+    
+
+
+
+</html>
