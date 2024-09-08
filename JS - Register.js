@@ -94,7 +94,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
         localStorage.setItem('loggedIn', 'true');
         localStorage.setItem('user', JSON.stringify(storedUser));
 
-        window.location.href = "Inicio.html"; // Redirige a la página de perfil
+        window.location.href = "index.html"; // Redirige a la página de perfil
     } else {
         showAlert('Identificador o contraseña incorrectos', '#f44336'); // Rojo para error
     }
