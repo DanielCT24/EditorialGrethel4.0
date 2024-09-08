@@ -18,7 +18,7 @@ body {
 }
 
 div#summaryItems {
-    max-height: 1207px;
+    max-height: 368px;
     overflow-x: auto;
 }
 
@@ -2029,6 +2029,7 @@ img.pagoyape-img {
 
     .container {
         width: 416px;
+        /* max-height: 116px; */
         margin: 0 auto;
         background-color: #fff;
         padding: 30px;
@@ -2038,9 +2039,10 @@ img.pagoyape-img {
         display: flex;
         flex-direction: column;
         margin-top: 116px;
-        max-height: 2335px;
+        max-height: 3000px;
         margin-top: 162px;
         margin-bottom: 31px;
+        height: 2050px;
     }
 }
 
