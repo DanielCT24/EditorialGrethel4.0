@@ -237,7 +237,7 @@ body{
 /* ESTILOS GENERALES CARDS */
 
 .container__card-primary {
-    padding-top: 100px;
+    padding-top: 59px;
     background-color: #fbfbfb;
 }
 
@@ -617,7 +617,8 @@ body{
 .card__service {
     flex: 1 1 calc(33.333% - 20px); /* Ancho de cada tarjeta (3 en una fila, con espacio entre ellas) */
     box-sizing: border-box; /* Incluye el padding y border en el ancho y alto */
-    max-width: 350px
+    max-width: 350px;
+    margin-bottom: 30px;
 }
 
 .card__service img {
