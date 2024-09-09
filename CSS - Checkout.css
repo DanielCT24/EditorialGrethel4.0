@@ -19,7 +19,9 @@ body {
 
 div#summaryItems {
     max-height: 368px;
-    overflow-x: auto;
+    overflow-x: hidden;
+    margin-left: 10px;
+    margin-right: -40px;
 }
 
 .container {
