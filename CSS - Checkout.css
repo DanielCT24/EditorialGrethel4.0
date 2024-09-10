@@ -120,7 +120,7 @@ textarea {
     display: flex;
     gap: 10px;
     align-items: center;
-    width: 349px;
+    width: 570px;
 }
 
 .flag-icon {
@@ -434,7 +434,7 @@ h4 {
         align-items: center;
         justify-content: space-between;
         background-color: #f9f9f9;
-        width: 352px;
+        width: 376px;
     }
 
     .payment-methods label {
@@ -541,7 +541,7 @@ h4 {
 
 
     button{
-        width: 103%;
+        width: 111%;
     }
 
     #summaryTotal {
@@ -2534,7 +2534,7 @@ display:none
         margin-left: 12px;
     }
     input[type="text"], input[type="tel"], input[type="email"], select, textarea {
-        width: 103%;
+        width: 111%;
         padding: 12px;
         margin-bottom: 10px;
         border: 1px solid #ccc;
@@ -2545,7 +2545,7 @@ display:none
     .name-fields {
         display: flex;
         gap: 10px;
-        width: 349px;
+        width: 376px;
     }
 }    
 
