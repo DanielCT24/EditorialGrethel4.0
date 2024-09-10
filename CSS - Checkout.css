@@ -18,10 +18,12 @@ body {
 }
 
 div#summaryItems {
-    max-height: 368px;
+    max-height: 183px;
     overflow-x: hidden;
-    margin-left: 10px;
-    margin-right: -40px;
+    overflow-y: auto;
+    width: 328px;
+    margin-left: 12px;
+    /* max-width: 2013px; */
 }
 
 .container {
@@ -465,8 +467,8 @@ h4 {
     .summary-item {
         display: flex;
         align-items: center;
-        width: 334px;
-        margin-left: 1px;
+        width: 315px;
+        left: 5px;
         padding: 0;
         height: 174px;
     }
@@ -1383,6 +1385,7 @@ p#summaryTotal2 {
     font-size: 25px;
     font-weight: bold;
     text-align: center;
+    /* margin-top: 23px; */
     justify-content: center;
 }
 p#summaryTotal3 {
@@ -1403,8 +1406,9 @@ p#summaryTotal1 {
 }
 
 p#summaryTotal2{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     margin-top: 16px;
+    margin-left: 42px;
 }
 
 p#summaryTotal3 {
@@ -1758,7 +1762,7 @@ button#validateCoupon:hover {
 }
 
 a.btn__login {
-    margin-top: 46px;
+    margin-top: 68px;
     margin-left: 68px;
 }
 img.pagoyape-img {
@@ -1826,7 +1830,7 @@ img.pagoyape-img {
 .social-links {
     display: flex;
     gap: 15px;
-    margin-top: 25px;
+    margin-top: 20px;
     justify-content: center;
 }
 
@@ -1865,6 +1869,7 @@ img.pagoyape-img {
 .imagenes {
     width: auto;
     height: 40px;
+    margin-top: 10px;
     transition: opacity 0.3s;
 }
 
@@ -2021,7 +2026,7 @@ img.pagoyape-img {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 201px;
+    margin-top: 225px;
     margin-bottom: 42px;
 }
 
@@ -2031,9 +2036,8 @@ img.pagoyape-img {
 
     .container {
         width: 416px;
-        /* max-height: 116px; */
         margin: 0 auto;
-        background-color: #fff;
+        background-color: #ffffff;
         padding: 30px;
         border-radius: 10px;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -2041,10 +2045,10 @@ img.pagoyape-img {
         display: flex;
         flex-direction: column;
         margin-top: 116px;
-        max-height: 3000px;
+        height: 1867px;
+        /* max-height: 30000px; */
         margin-top: 162px;
         margin-bottom: 31px;
-        height: 2050px;
     }
 }
 
@@ -2394,10 +2398,10 @@ display:none
         float: left;
         margin-left: 32px;
         margin-right: 10px;
-        margin-top: 23px;
+        margin-top: 17px;
     }
     .menu-icono {
-      margin-top: 48px;
+      margin-top: 44px;
       margin-left: 33px;
      }
 
