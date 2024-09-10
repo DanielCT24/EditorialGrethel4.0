@@ -1935,3 +1935,7 @@ p{
         max-height: 40165px;
 }
 }
+
+p.footer-text {
+    MARGIN-TOP: 18px;
+}
