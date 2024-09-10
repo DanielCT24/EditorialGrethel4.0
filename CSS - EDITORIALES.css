@@ -125,7 +125,7 @@ body{
     vertical-align: middle;
     transition: transform 300ms;
     align-items: center;
-    margin-top: -150px;
+    margin-top: -173px;
     margin-left: 76px;
 }
 
@@ -936,7 +936,7 @@ body{
     }
 
     .logo-1 {
-        width: 147px;
+        width: 151px;
         margin-right: 0px;
         margin-top: -44px;
         margin-left: -25px;
@@ -974,7 +974,7 @@ body{
         display: initial;
         margin-left: -12px;
         width: 450px;
-        margin-top: -32px;
+        margin-top: -45px;
     }
 
     .header-content {
@@ -1031,6 +1031,9 @@ body{
     .menu-icono {
       margin-top: 23px;
       margin-left: 176px;
+      margin: 0;
+      margin-left: 176px;
+      margin-top: 29px;
      }
 
     .menu .navbar {
@@ -1118,7 +1121,7 @@ margin-left: -2px;
 
     .cart-count {
         position: absolute;
-        top: -84px;
+        top: -100px;
         right: -11px;
         background-color: #FF5722; /* Color del fondo del contador */
         color: white; /* Color del texto del contador */
@@ -1223,7 +1226,8 @@ header.scroll {
 .menu {
     display: flex;
     align-items: center;
-    margin-right: 140px;
+    margin-right: 137px;
+    margin-left: 7px;
 }
 
 .menu nav{
@@ -1264,7 +1268,7 @@ header.scroll {
 .login-icon {
     width: 42px; /* Ajusta el tamaño según sea necesario */
     height: 42px;
-    margin-top: -76px;
+    margin-top: -80px;
     margin-left: -13px;
     vertical-align: middle;
     transition: transform 300ms;
@@ -1766,7 +1770,7 @@ h3#userName1 {
     font-size: 8.5px;
     width: 80px;
     text-transform: uppercase;
-    margin-top: -23px;
+    margin-top: -27px;
     margin-left: -14px;
 }
 
