@@ -25,9 +25,6 @@ div#summaryItems {
     margin-left: 12px;
 }
 
-p.footer-text {
-    margin-top: 17px;
-}
 
 .container {
     max-width: 1200px;
@@ -2297,7 +2294,13 @@ img.pagoyape-img {
     margin-bottom: 10px;
     }
 
+p.footer-text {
+    margin-top: 17px;
+}
 
+p {
+    font-size: 13px;
+}
     
     .close-btn {
         font-size: 28px; /* Botón ligeramente más pequeño en pantallas pequeñas */
