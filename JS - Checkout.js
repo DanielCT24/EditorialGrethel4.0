@@ -476,3 +476,25 @@ function finalizePurchase(mensajePersonalizado) {
     }
     
 }
+
+
+
+
+/* DÍAS DE PEDIDOS */
+function setDeliveryDates(startId, endId) {
+    const today = new Date();
+    const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
+
+    const startDate = today.toLocaleDateString('es-ES', options).replace(/\//g, '-');
+    const futureDate = new Date(today);
+    futureDate.setDate(today.getDate() + 3);
+    const endDate = futureDate.toLocaleDateString('es-ES', options).replace(/\//g, '-');
+
+    document.getElementById(startId).textContent = startDate;
+    document.getElementById(endId).textContent = endDate;
+}
+
+// Llamar la función para cada conjunto de fechas
+setDeliveryDates('start-date-1', 'end-date-1');
+setDeliveryDates('start-date-2', 'end-date-2');
+setDeliveryDates('start-date-3', 'end-date-3');
