@@ -80,7 +80,7 @@ input[type="tel"],
 input[type="email"],
 select,
 textarea {
-    width: 100%;
+    width: 103%;
     padding: 12px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -113,6 +113,7 @@ textarea {
 .name-fields {
     display: flex;
     gap: 10px;
+    width: 349px;
 }
 
 .phone-fields {
@@ -432,7 +433,7 @@ h4 {
         align-items: center;
         justify-content: space-between;
         background-color: #f9f9f9;
-        width: 340px;
+        width: 352px;
     }
 
     .payment-methods label {
@@ -524,8 +525,8 @@ h4 {
     }
 
     label {
-        width: 300px;
-        font-size: 12px;
+        width: 350px;
+        font-size: 13.5px;
         justify-items: center;
     }
 
@@ -539,7 +540,7 @@ h4 {
 
 
     button{
-        width: 100%;
+        width: 103%;
     }
 
     #summaryTotal {
@@ -2037,6 +2038,7 @@ img.pagoyape-img {
 
     .container {
         width: auto;
+        margin: 0 auto;
         margin: 0;
         background-color: #ffffff;
         padding: 30px;
@@ -2046,10 +2048,10 @@ img.pagoyape-img {
         display: flex;
         flex-direction: column;
         margin-top: 116px;
-        height: 1867px;
+        height: 1900px;
         /* max-height: 30000px; */
         margin-top: 162px;
-        margin-bottom: 31px;
+        /* margin-bottom: 31px; */
     }
 }
 
