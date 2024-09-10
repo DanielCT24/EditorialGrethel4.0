@@ -2035,8 +2035,9 @@ img.pagoyape-img {
 
 
     .container {
-        width: 416px;
+        width: auto;
         margin: 0 auto;
+        margin: 0;
         background-color: #ffffff;
         padding: 30px;
         border-radius: 10px;
