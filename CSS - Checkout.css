@@ -80,7 +80,7 @@ input[type="tel"],
 input[type="email"],
 select,
 textarea {
-    width: 103%;
+    width: 100%;
     padding: 12px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -113,7 +113,7 @@ textarea {
 .name-fields {
     display: flex;
     gap: 10px;
-    width: 349px;
+    width: 100%;
 }
 
 .phone-fields {
@@ -2532,6 +2532,18 @@ display:none
         width: 328px;
         margin-left: 12px;
     }
-
-
+    input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+        width: 103%;
+        padding: 12px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+    .name-fields {
+        display: flex;
+        gap: 10px;
+        width: 349px;
+    }
 }    
