@@ -120,18 +120,18 @@ body{
 
 
 .login-carrito {
-    width: 35px; /* Ajusta el tamaño según sea necesario */
-    height: 35px;
+    width: 36px; /* Ajusta el tamaño según sea necesario */
+    height: 36px;
     vertical-align: middle;
     transition: transform 300ms;
     align-items: center;
-    margin-top: 10px;
-    margin-right: 30px;
+    margin-top: -150px;
+    margin-left: 76px;
 }
 
 .login-carrito-header {
     width: 58px; /* Ajusta el tamaño según sea necesario */
-    height: 50px;
+    height: 56px;
     vertical-align: middle;
     transition: transform 300ms;
     align-items: center;
@@ -643,7 +643,7 @@ body{
 
 /* Estilo para la barra de búsqueda */
 #searchBar {
-    width: 50%;
+    width: 80%;
     padding: 12px 20px;
     font-size: 16px;
     border: 2px solid #6200ea;
@@ -938,8 +938,8 @@ body{
     .logo-1 {
         width: 147px;
         margin-right: 0px;
-        margin-top: -13px;
-        margin-left: -10px;
+        margin-top: -44px;
+        margin-left: -25px;
     }
 
     .logo-2{
@@ -974,7 +974,7 @@ body{
         display: initial;
         margin-left: -12px;
         width: 450px;
-        margin-top: -6px;
+        margin-top: -32px;
     }
 
     .header-content {
@@ -1025,12 +1025,12 @@ body{
     
     .menu a {
         float: left;
-        margin-left: 20px;
+        margin-left: 37px;
         margin-top: 10px;
     }
     .menu-icono {
-      margin-top: 19px;
-      margin-left: 155px;
+      margin-top: 23px;
+      margin-left: 176px;
      }
 
     .menu .navbar {
@@ -1118,8 +1118,8 @@ margin-left: -2px;
 
     .cart-count {
         position: absolute;
-        top: 5px;
-        right: 18px;
+        top: -84px;
+        right: -11px;
         background-color: #FF5722; /* Color del fondo del contador */
         color: white; /* Color del texto del contador */
         padding: 2px 6px;
@@ -1262,10 +1262,10 @@ header.scroll {
 }
 
 .login-icon {
-    width: 45px; /* Ajusta el tamaño según sea necesario */
-    height: 45px;
-    margin-top: -83px;
-    margin-left: 18px;
+    width: 42px; /* Ajusta el tamaño según sea necesario */
+    height: 42px;
+    margin-top: -76px;
+    margin-left: -13px;
     vertical-align: middle;
     transition: transform 300ms;
 }
@@ -1476,7 +1476,7 @@ header.scroll {
 .social-links {
     display: flex;
     gap: 15px;
-    margin-top: 10px;
+    margin-top: 23px;
     justify-content: center;
 }
 
@@ -1756,7 +1756,7 @@ h3#userName1 {
     width: 80px;
     text-transform: uppercase;
     margin-top: -23px;
-    margin-left: 13px;
+    margin-left: -14px;
 }
 
 
@@ -1903,4 +1903,11 @@ img.imagenes {
 
 p{
     font-size: 12px;
+}
+
+@media(max-width: 991px){
+    .container__card-primary {
+        height: auto;
+        max-height: 40165px;
+}
 }
