@@ -683,3 +683,7 @@ p {
     /* Otros ajustes para la vista responsive si es necesario */
 }
 
+
+p.footer-text {
+    MARGIN-TOP: 18px;
+}
