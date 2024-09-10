@@ -2548,3 +2548,8 @@ display:none
         width: 349px;
     }
 }    
+
+
+p.footer-text {
+    MARGIN-TOP: 18px;
+}
