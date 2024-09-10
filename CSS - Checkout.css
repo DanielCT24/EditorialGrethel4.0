@@ -2292,6 +2292,13 @@ img.pagoyape-img {
         margin-left: 0px;
     }
 
+    .social-links {
+     margin-top: 14px;
+    margin-bottom: 10px;
+    }
+
+
+    
     .close-btn {
         font-size: 28px; /* Botón ligeramente más pequeño en pantallas pequeñas */
         top: 10px;  /* Ajustar la posición del botón */
