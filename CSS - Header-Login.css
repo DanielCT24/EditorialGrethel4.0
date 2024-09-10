@@ -1391,3 +1391,7 @@ h3#userName1 {
 .hidden {
     display: none;
 }
+
+p.footer-text {
+    MARGIN-TOP: 18px;
+}
