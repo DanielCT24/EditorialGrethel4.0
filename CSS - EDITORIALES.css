@@ -643,7 +643,7 @@ body{
 
 /* Estilo para la barra de búsqueda */
 #searchBar {
-    width: 80%;
+    width: 35%;
     padding: 12px 20px;
     font-size: 16px;
     border: 2px solid #6200ea;
@@ -1737,7 +1737,16 @@ nav ul li a:hover::after {
      margin-top: 14px;
     margin-bottom: 10px;
     }
-
+#searchBar {
+    width: 80%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #6200ea;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin-top: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 p.footer-text {
     margin-top: 17px;
 }
