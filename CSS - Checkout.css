@@ -18,12 +18,11 @@ body {
 }
 
 div#summaryItems {
-    max-height: 183px;
+    max-height: 1150px;
     overflow-x: hidden;
     overflow-y: auto;
-    width: 328px;
+    width: 480px;
     margin-left: 12px;
-    /* max-width: 2013px; */
 }
 
 .container {
@@ -2508,7 +2507,13 @@ display:none
     }
 
 
-
+    div#summaryItems {
+        max-height: 183px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 328px;
+        margin-left: 12px;
+    }
 
 
 }    
