@@ -25,6 +25,10 @@ div#summaryItems {
     margin-left: 12px;
 }
 
+p.footer-text {
+    margin-top: 17px;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
