@@ -6,11 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Editorial Grethel</title>
-    <script src="/JS - Principal.js" ></script>
-    <script src="/JS - Carrito.js" ></script>
+    <script src="JS - Principal.js" ></script>
+    <script src="JS - Carrito.js" ></script>
     <link rel="stylesheet" href="CSS - Carrito.css"></link>
     <link rel="stylesheet" href="CSS - Checkout.css">
-    <link rel="stylesheet" href="CSS - Departamentos.css">
     <link rel="icon" sizes="180x180" href="ICON/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="ICON/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="ICON/favicon-16x16.png">
@@ -40,24 +39,27 @@
 
 
 <!-- Header - menu -->
+
+
 <header>
     <div class="menu ">
-        <a href="/"><img class="logo-1 " src="/LOGO.png" alt=""></a>
+        <a href="Inicio.html"><img class="logo-1 " src="LOGO.png" loading="lazy" alt=""></a>
         <input type="checkbox" id="menu">
         <label for="menu">
-            <img src="/HEADER Y BODY/menu.png" loading="lazy" class="menu-icono">
+            <img src="HEADER Y BODY/menu.png" loading="lazy" class="menu-icono">
 
 
 
     
-            <a href="/Usuario" class="btn__login">
-                <img src="/Imagen-Login.png" alt="Login" loading="lazy" class="login-icon">
+            <a href="HTML - Usuario.html" class="btn__login">
+                <img src="Imagen-Login.png" alt="Login" loading="lazy" class="login-icon">
                 <h3 id="userName1">Nombre del Usuario</h3>
             </a>
             
 
 
 
+ 
 
         </label>
 
@@ -66,10 +68,10 @@
                 <div class="containermenu">
                 
                     <ul>
-                        <li><a href="/">Inicio</a></li>
-                        <li><a href="/#ofertas">Ofertas</a></li>
-                        <li><a href="/CATÁLOGO EDITORIAL GRETHEL.pdf">Catálogo</a></li>
-                        <li><a href="https://maps.app.goo.gl/dawTfqAEDtirWpCu5">Envío</a></li>
+                        <li><a href="Inicio.html">Inicio</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Catálogo</a></li>
+                        <li><a href="#">Envío</a></li>
                     </ul>
                 </div>
             </div>
@@ -79,18 +81,16 @@
 
 <!-------------------------------------------------- PC --------------->
 
-            <a href="/"><img class="logo-2 " src="/LOGO.png" alt=""></a>
+            <a href="Inicio.html"><img class="logo-2"  src="LOGO.png"  loading="lazy" alt=""></a>
             
 
 
 
-            <a href="/Usuario" class="btn__login" id="loginButton">
-                <img src="/Imagen-Login.png" alt="Login" loading="lazy" class="login-icon-header">
+            <a href="HTML - Usuario.html" class="btn__login" id="loginButton">
+                <img src="Imagen-Login.png" alt="Login" loading="lazy" class="login-icon-header">
                 <h3 id="userName2">Nombre del Usuario</h3>
 
             </a>
-
-
 
 
 
@@ -102,8 +102,6 @@
 
     </div>
 </header>
-
-
 
 
    
@@ -123,18 +121,289 @@
 
                 <div class="section">
                     <label> DIRECCIÓN</label>
-                    <div class="search-container" required>
-                        <div class="search-box" required>
-                            <input type="text" id="searchInput" placeholder="Buscar Departamento, Provincia o Distrito disponible..." required>
-                            <div class="search-icon">&#128269;</div>
-                        </div>
-                        <div class="dropdown-menu" id="dropdownMenu">
-                            <!-- Opciones serán agregadas dinámicamente con JavaScript -->
-                        </div>
-                    </div>
+                    <select id="district" required>
+                        <option value="" disabled selected>Distrito/Provincia</option>
+                        
+                        <optgroup label="Lima">
+                            <option value="Lima">Lima</option>
+                            <option value="Ate">Ate</option>
+                            <option value="Barranco">Barranco</option>
+                            <option value="Breña">Breña</option>
+                            <option value="Carabayllo">Carabayllo</option>
+                            <option value="Chaclacayo">Chaclacayo</option>
+                            <option value="Chorrillos">Chorrillos</option>
+                            <option value="Cieneguilla">Cieneguilla</option>
+                            <option value="Comas">Comas</option>
+                            <option value="El Agustino">El Agustino</option>
+                            <option value="Independencia">Independencia</option>
+                            <option value="Jesús María">Jesús María</option>
+                            <option value="La Molina">La Molina</option>
+                            <option value="La Victoria">La Victoria</option>
+                            <option value="Lince">Lince</option>
+                            <option value="Los Olivos">Los Olivos</option>
+                            <option value="Lurigancho">Lurigancho</option>
+                            <option value="Lurín">Lurín</option>
+                            <option value="Magdalena del Mar">Magdalena del Mar</option>
+                            <option value="Miraflores">Miraflores</option>
+                            <option value="Pachacamac">Pachacamac</option>
+                            <option value="Pucusana">Pucusana</option>
+                            <option value="Pueblo Libre">Pueblo Libre</option>
+                            <option value="Puente Piedra">Puente Piedra</option>
+                            <option value="Punta Hermosa">Punta Hermosa</option>
+                            <option value="Punta Negra">Punta Negra</option>
+                            <option value="Rímac">Rímac</option>
+                            <option value="San Bartolo">San Bartolo</option>
+                            <option value="San Borja">San Borja</option>
+                            <option value="San Isidro">San Isidro</option>
+                            <option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+                            <option value="San Juan de Miraflores">San Juan de Miraflores</option>
+                            <option value="San Luis">San Luis</option>
+                            <option value="San Martín de Porres">San Martín de Porres</option>
+                            <option value="San Miguel">San Miguel</option>
+                            <option value="Santa Anita">Santa Anita</option>
+                            <option value="Santa María del Mar">Santa María del Mar</option>
+                            <option value="Santa Rosa">Santa Rosa</option>
+                            <option value="Santiago de Surco">Santiago de Surco</option>
+                            <option value="Surquillo">Surquillo</option>
+                            <option value="Villa El Salvador">Villa El Salvador</option>
+                            <option value="Villa María del Triunfo">Villa María del Triunfo</option>
+                        </optgroup>
+                    
+                        <optgroup label="Arequipa">
+                            <option value="Arequipa">Arequipa</option>
+                            <option value="Cayma">Cayma</option>
+                            <option value="Cerro Colorado">Cerro Colorado</option>
+                            <option value="Characato">Characato</option>
+                            <option value="Chiguata">Chiguata</option>
+                            <option value="Jacobo Hunter">Jacobo Hunter</option>
+                            <option value="La Joya">La Joya</option>
+                            <option value="Mariano Melgar">Mariano Melgar</option>
+                            <option value="Miraflores">Miraflores</option>
+                            <option value="Mollebaya">Mollebaya</option>
+                            <option value="Paucarpata">Paucarpata</option>
+                            <option value="Quequeña">Quequeña</option>
+                            <option value="Sabandía">Sabandía</option>
+                            <option value="Sachaca">Sachaca</option>
+                            <option value="Socabaya">Socabaya</option>
+                            <option value="Tiabaya">Tiabaya</option>
+                            <option value="Uchumayo">Uchumayo</option>
+                            <option value="Vitor">Vitor</option>
+                            <option value="Yanahuara">Yanahuara</option>
+                            <option value="Yarabamba">Yarabamba</option>
+                            <option value="Yura">Yura</option>
+                        </optgroup>
+                    
+                        <optgroup label="Cusco">
+                            <option value="Cusco">Cusco</option>
+                            <option value="Acomayo">Acomayo</option>
+                            <option value="Acos">Acos</option>
+                            <option value="Anta">Anta</option>
+                            <option value="Calca">Calca</option>
+                            <option value="Canas">Canas</option>
+                            <option value="Canchis">Canchis</option>
+                            <option value="Chumbivilcas">Chumbivilcas</option>
+                            <option value="Espinar">Espinar</option>
+                            <option value="La Convención">La Convención</option>
+                            <option value="Paruro">Paruro</option>
+                            <option value="Paucartambo">Paucartambo</option>
+                            <option value="Quispicanchi">Quispicanchi</option>
+                            <option value="Urubamba">Urubamba</option>
+                        </optgroup>
+                    
+                        <optgroup label="Lambayeque">
+                            <option value="Chiclayo">Chiclayo</option>
+                            <option value="Chongoyape">Chongoyape</option>
+                            <option value="Eten">Eten</option>
+                            <option value="Eten Pueblo">Eten Pueblo</option>
+                            <option value="Jayanca">Jayanca</option>
+                            <option value="Lambayeque">Lambayeque</option>
+                            <option value="Mochumi">Mochumi</option>
+                            <option value="Olmos">Olmos</option>
+                            <option value="Pítipo">Pítipo</option>
+                            <option value="Reque">Reque</option>
+                            <option value="San José">San José</option>
+                            <option value="San Luis">San Luis</option>
+                            <option value="Túcume">Túcume</option>
+                        </optgroup>
+                    
+                        <optgroup label="La Libertad">
+                            <option value="Trujillo">Trujillo</option>
+                            <option value="Ascope">Ascope</option>
+                            <option value="Bolívar">Bolívar</option>
+                            <option value="Chepén">Chepén</option>
+                            <option value="Gran Chimú">Gran Chimú</option>
+                            <option value="Julcán">Julcán</option>
+                            <option value="Otuzco">Otuzco</option>
+                            <option value="Pacasmayo">Pacasmayo</option>
+                            <option value="Pataz">Pataz</option>
+                            <option value="Sánchez Carrión">Sánchez Carrión</option>
+                            <option value="Santa Catalina">Santa Catalina</option>
+                            <option value="Santa Clara">Santa Clara</option>
+                            <option value="Santa Isabel">Santa Isabel</option>
+                            <option value="Santiago de Chuco">Santiago de Chuco</option>
+                            <option value="Trujillo">Trujillo</option>
+                            <option value="Virú">Virú</option>
+                        </optgroup>
+                    
+                        <optgroup label="Piura">
+                            <option value="Piura">Piura</option>
+                            <option value="Ayabaca">Ayabaca</option>
+                            <option value="Catacaos">Catacaos</option>
+                            <option value="Chulucanas">Chulucanas</option>
+                            <option value="Huancabamba">Huancabamba</option>
+                            <option value="Loja">Loja</option>
+                            <option value="Morropón">Morropón</option>
+                            <option value="Paita">Paita</option>
+                            <option value="Piura">Piura</option>
+                            <option value="Sullana">Sullana</option>
+                            <option value="Talara">Talara</option>
+                            <option value="Tambogrande">Tambogrande</option>
+                            <option value="Veintiséis de Octubre">Veintiséis de Octubre</option>
+                        </optgroup>
+                    
+                        <optgroup label="Junín">
+                            <option value="Huancayo">Huancayo</option>
+                            <option value="Concepción">Concepción</option>
+                            <option value="Chanchamayo">Chanchamayo</option>
+                            <option value="Jauja">Jauja</option>
+                            <option value="Junín">Junín</option>
+                            <option value="Tarma">Tarma</option>
+                            <option value="Yauli">Yauli</option>
+                        </optgroup>
+                    
+                        <optgroup label="Puno">
+                            <option value="Puno">Puno</option>
+                            <option value="Azángaro">Azángaro</option>
+                            <option value="Carabaya">Carabaya</option>
+                            <option value="Chucuito">Chucuito</option>
+                            <option value="El Collao">El Collao</option>
+                            <option value="Huancané">Huancané</option>
+                            <option value="Lampa">Lampa</option>
+                            <option value="Melgar">Melgar</option>
+                            <option value="San Antonio de Putina">San Antonio de Putina</option>
+                            <option value="San Román">San Román</option>
+                            <option value="Sandia">Sandia</option>
+                            <option value="Yunguyo">Yunguyo</option>
+                        </optgroup>
+                    
+                        <optgroup label="Tacna">
+                            <option value="Tacna">Tacna</option>
+                            <option value="Candarave">Candarave</option>
+                            <option value="Jorge Basadre">Jorge Basadre</option>
+                            <option value="Kallapuma">Kallapuma</option>
+                            <option value="Tarata">Tarata</option>
+                        </optgroup>
+                    
+                        <optgroup label="Moquegua">
+                            <option value="Moquegua">Moquegua</option>
+                            <option value="General Sánchez Cerro">General Sánchez Cerro</option>
+                            <option value="Ilo">Ilo</option>
+                        </optgroup>
+                    
+                        <optgroup label="Madre de Dios">
+                            <option value="Tambopata">Tambopata</option>
+                            <option value="Iñapari">Iñapari</option>
+                            <option value="Manu">Manu</option>
+                            <option value="Madre de Dios">Madre de Dios</option>
+                        </optgroup>
+                    
+                        <optgroup label="San Martín">
+                            <option value="Moyobamba">Moyobamba</option>
+                            <option value="Bellavista">Bellavista</option>
+                            <option value="El Dorado">El Dorado</option>
+                            <option value="Mariscal Cáceres">Mariscal Cáceres</option>
+                            <option value="Picota">Picota</option>
+                            <option value="Rioja">Rioja</option>
+                            <option value="San Martín">San Martín</option>
+                            <option value="Santiago">Santiago</option>
+                            <option value="Saposoa">Saposoa</option>
+                            <option value="Juanjui">Juanjui</option>
+                        </optgroup>
+                    
+                        <optgroup label="Áncash">
+                            <option value="Huaraz">Huaraz</option>
+                            <option value="Carhuaz">Carhuaz</option>
+                            <option value="Carlos Fermín Fitzcarrald">Carlos Fermín Fitzcarrald</option>
+                            <option value="Huari">Huari</option>
+                            <option value="Huarmey">Huarmey</option>
+                            <option value="Huaylas">Huaylas</option>
+                            <option value="Mato">Mato</option>
+                            <option value="Ocros">Ocros</option>
+                            <option value="Pallasca">Pallasca</option>
+                            <option value="Pomabamba">Pomabamba</option>
+                            <option value="Recuay">Recuay</option>
+                            <option value="Santa">Santa</option>
+                            <option value="Sihuas">Sihuas</option>
+                            <option value="Yungay">Yungay</option>
+                        </optgroup>
+                    
+                        <optgroup label="Huánuco">
+                            <option value="Huánuco">Huánuco</option>
+                            <option value="Ambo">Ambo</option>
+                            <option value="Dos de Mayo">Dos de Mayo</option>
+                            <option value="Huacaybamba">Huacaybamba</option>
+                            <option value="Huamalíes">Huamalíes</option>
+                            <option value="Leoncio Prado">Leoncio Prado</option>
+                            <option value="Marañón">Marañón</option>
+                            <option value="Pachitea">Pachitea</option>
+                            <option value="Rupa-Rupa">Rupa-Rupa</option>
+                            <option value="Yarowilca">Yarowilca</option>
+                        </optgroup>
+                    
+                        <optgroup label="Pasco">
+                            <option value="Pasco">Pasco</option>
+                            <option value="Daniel Alcides Carrión">Daniel Alcides Carrión</option>
+                            <option value="Oxapampa">Oxapampa</option>
+                            <option value="Pasco">Pasco</option>
+                            <option value="Vicco">Vicco</option>
+                        </optgroup>
+                    
+                        <optgroup label="Callao">
+                            <option value="Callao">Callao</option>
+                        </optgroup>
+                    
+                        <optgroup label="Tumbes">
+                            <option value="Tumbes">Tumbes</option>
+                            <option value="Corrales">Corrales</option>
+                            <option value="Zorritos">Zorritos</option>
+                            <option value="Pampa Grande">Pampa Grande</option>
+                            <option value="San Jacinto">San Jacinto</option>
+                            <option value="San Juan de la Virgen">San Juan de la Virgen</option>
+                        </optgroup>
+                    
+                        <optgroup label="Guánuco">
+                            <option value="Huánuco">Huánuco</option>
+                            <option value="Ambo">Ambo</option>
+                            <option value="Dos de Mayo">Dos de Mayo</option>
+                            <option value="Huacaybamba">Huacaybamba</option>
+                            <option value="Huamalíes">Huamalíes</option>
+                            <option value="Leoncio Prado">Leoncio Prado</option>
+                            <option value="Marañón">Marañón</option>
+                            <option value="Pachitea">Pachitea</option>
+                            <option value="Rupa-Rupa">Rupa-Rupa</option>
+                            <option value="Yarowilca">Yarowilca</option>
+                        </optgroup>
+                    
+                        <optgroup label="Loreto">
+                            <option value="Iquitos">Iquitos</option>
+                            <option value="Alto Nanay">Alto Nanay</option>
+                            <option value="Cahuapanas">Cahuapanas</option>
+                            <option value="Camisea">Camisea</option>
+                            <option value="Contamana">Contamana</option>
+                            <option value="Datem del Marañón">Datem del Marañón</option>
+                            <option value="Maynas">Maynas</option>
+                            <option value="Napo">Napo</option>
+                            <option value="Río Marañón">Río Marañón</option>
+                            <option value="Yurimaguas">Yurimaguas</option>
+                        </optgroup>
+                    
+                        <!-- Repite el formato para más provincias y sus distritos -->
+                    </select>
+                    
 
 
 
+                    </select>
                     <input type="text" id="street" placeholder="Calle y Número" required>
                     <input type="text" id="apartment" placeholder="Dpto, Oficina, etc. (*Opcional)">
                     <input type="text" id="postal-code" placeholder="Código Postal (*Opcional)">
@@ -149,7 +418,7 @@
                             <input type="radio" name="delivery" value="marvisur" required>
                             Marvisur <span class="info-icon"> 🚚  </span>
                         </label>
-                        <span class="delivery-date">Tu pedido llegará entre el <span id="start-date-1"></span> y <span id="end-date-1"></span></span>
+                        <span class="delivery-date">Tu pedido llegará entre el 30-08-2024 y 02-09-2024</span>
                     </div>
                     
                     <div class="delivery-option" required>
@@ -157,7 +426,7 @@
                             <input type="radio" name="delivery" value="olvacourier" required>
                             OlvaCourier <span class="info-icon"> 🚚  </span>
                         </label>
-                        <span class="delivery-date">Tu pedido llegará entre el <span id="start-date-2"></span> y <span id="end-date-2"></span></span>
+                        <span class="delivery-date">Tu pedido llegará entre el 30-08-2024 y 02-09-2024</span>
                     </div>
                     
                     <div class="delivery-option" required>
@@ -165,7 +434,7 @@
                             <input type="radio" name="delivery" value="shalom" required>
                             Shalom <span class="info-icon"> 🚚 </span>
                         </label>
-                        <span class="delivery-date">Tu pedido llegará entre el <span id="start-date-3"></span> y <span id="end-date-3"></span></span>
+                        <span class="delivery-date">Tu pedido llegará entre el 30-08-2024 y 02-09-2024</span>
                     </div>
                 </div>
                 
@@ -216,7 +485,7 @@
                     <div class="payment-methods" required>
                         <label>
                             <input type="radio" name="payment" value="yape" required>
-                            <img class="pagoyape-img" src="BANCAMOVIL.avif" ㅤ alt="Yape">
+                            <img class="pagoyape-img" src="BANCAMOVIL.png" loading="lazy" alt="Yape">
                         </label>
                     </div>
                 </div>
@@ -239,7 +508,7 @@
         <h2 class="txt-ventana">PAGO CON BANCAS MÓVILES</h2>
         <p>Gracias por su compra</p>
         <div class="yape-number">Editorial Grethel</div>
-        <img src="qr.jpg" ㅤ alt="QR Code" class="qr-code">
+        <img src="qr.jpg" loading="lazy" alt="QR Code" class="qr-code">
         <p>Total a pagar</p>
         <div class="summary-total">
             <p id="summaryTotal1">S/ 0.00</p>
@@ -363,14 +632,14 @@
             </div>
             <div class="footer-column">
                 <h3 class="footer-title">Calificación</h3>
-                <img src="AÑADIR IMAGENES/FOOTER/Estrellas.png" alt="Estrellas" ㅤ class="imagenes">
+                <img src="AÑADIR IMAGENES/FOOTER/Estrellas.png" loading="lazy" alt="Estrellas" class="imagenes">
             </div>
             <div class="footer-column">
                 <h3 class="footer-title">Pagos</h3>
                 <div class="payment-methods">
-                    <img src="AÑADIR IMAGENES/FOOTER/visa.jpg" alt="Visa" ㅤ class="payment-icon">
-                    <img src="AÑADIR IMAGENES/FOOTER/paypal.jpeg" alt="Paypal" ㅤ class="payment-icon">
-                    <img src="BANCAMOVIL.avif" alt="PagoEfectivo" ㅤ class="payment-icon">
+                    <img src="AÑADIR IMAGENES/FOOTER/visa.jpg" alt="Visa" loading="lazy" class="payment-icon">
+                    <img src="AÑADIR IMAGENES/FOOTER/paypal.jpeg" alt="Paypal" loading="lazy" class="payment-icon">
+                    <img src="BANCAMOVIL.png" alt="PagoEfectivo" loading="lazy" class="payment-icon">
                 </div>
             </div>
         </div>
@@ -383,779 +652,14 @@
     </div>
 
 </footer>
-
     
 
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script src="/JS - Header.js" ></script>
-<script src="/JS - Usuario.js" ></script>
-
-
-<script>
-    const data = [
-        
-        { "departamento": "Amazonas", "provincia": "Bagua", "distrito": "Bagua" },
-        { "departamento": "Amazonas", "provincia": "Bagua", "distrito": "Bagua Grande" },
-        { "departamento": "Amazonas", "provincia": "Bagua", "distrito": "Cajaruro" },
-        { "departamento": "Amazonas", "provincia": "Bagua", "distrito": "El Parco" },
-        { "departamento": "Amazonas", "provincia": "Bagua", "distrito": "La Peca" },
-        { "departamento": "Amazonas", "provincia": "Chachapoyas", "distrito": "Chachapoyas" },
-        { "departamento": "Amazonas", "provincia": "Chachapoyas", "distrito": "Asuncion" },
-        { "departamento": "Amazonas", "provincia": "Chachapoyas", "distrito": "Balsas" },
-        { "departamento": "Amazonas", "provincia": "Chachapoyas", "distrito": "Cheto" },
-        { "departamento": "Amazonas", "provincia": "Chachapoyas", "distrito": "Chiliquin" },
-        { "departamento": "Amazonas", "provincia": "Chachapoyas", "distrito": "Cochamal" },
-        { "departamento": "Amazonas", "provincia": "Chachapoyas", "distrito": "Colasay" },
-        { "departamento": "Amazonas", "provincia": "Chachapoyas", "distrito": "Conila" },
-        { "departamento": "Amazonas", "provincia": "Chachapoyas", "distrito": "La Jalca" },
-        { "departamento": "Amazonas", "provincia": "Chachapoyas", "distrito": "Leimebamba" },
-        { "departamento": "Amazonas", "provincia": "Chachapoyas", "distrito": "Ollanta" },
-        { "departamento": "Amazonas", "provincia": "Chachapoyas", "distrito": "San Francisco" },
-        { "departamento": "Amazonas", "provincia": "Chachapoyas", "distrito": "San Isidro" },
-        { "departamento": "Amazonas", "provincia": "Chachapoyas", "distrito": "Tingo" },
-        { "departamento": "Amazonas", "provincia": "Utcubamba", "distrito": "Bagua Grande" },
-        { "departamento": "Amazonas", "provincia": "Utcubamba", "distrito": "Cajaruro" },
-        { "departamento": "Amazonas", "provincia": "Utcubamba", "distrito": "El Parco" },
-        { "departamento": "Amazonas", "provincia": "Utcubamba", "distrito": "La Peca" },
-        { "departamento": "Amazonas", "provincia": "Utcubamba", "distrito": "Yorongos" },
-        { "departamento": "Amazonas", "provincia": "Utcubamba", "distrito": "Yumbilla" },
-        { "departamento": "Áncash", "provincia": "Áncash", "distrito": "Huaraz" },
-        { "departamento": "Áncash", "provincia": "Áncash", "distrito": "Carhuaz" },
-        { "departamento": "Áncash", "provincia": "Áncash", "distrito": "Caraz" },
-        { "departamento": "Áncash", "provincia": "Áncash", "distrito": "Chacas" },
-        { "departamento": "Áncash", "provincia": "Áncash", "distrito": "Chimbote" },
-        { "departamento": "Áncash", "provincia": "Áncash", "distrito": "Huari" },
-        { "departamento": "Áncash", "provincia": "Áncash", "distrito": "Huarmey" },
-        { "departamento": "Áncash", "provincia": "Áncash", "distrito": "Huaylas" },
-        { "departamento": "Áncash", "provincia": "Áncash", "distrito": "Mancos" },
-        { "departamento": "Áncash", "provincia": "Áncash", "distrito": "Ocros" },
-        { "departamento": "Áncash", "provincia": "Áncash", "distrito": "Pallasca" },
-        { "departamento": "Áncash", "provincia": "Áncash", "distrito": "Pomabamba" },
-        { "departamento": "Áncash", "provincia": "Áncash", "distrito": "Recuay" },
-        { "departamento": "Áncash", "provincia": "Áncash", "distrito": "Santa" },
-        { "departamento": "Áncash", "provincia": "Áncash", "distrito": "Sihuas" },
-        { "departamento": "Áncash", "provincia": "Áncash", "distrito": "Yungay" },
-        { "departamento": "Arequipa", "provincia": "Arequipa", "distrito": "Arequipa" },
-        { "departamento": "Arequipa", "provincia": "Arequipa", "distrito": "Cayma" },
-        { "departamento": "Arequipa", "provincia": "Arequipa", "distrito": "Cerro Colorado" },
-        { "departamento": "Arequipa", "provincia": "Arequipa", "distrito": "Chala" },
-        { "departamento": "Arequipa", "provincia": "Arequipa", "distrito": "Chivay" },
-        { "departamento": "Arequipa", "provincia": "Arequipa", "distrito": "Jaco" },
-        { "departamento": "Arequipa", "provincia": "Arequipa", "distrito": "Miraflores" },
-        { "departamento": "Arequipa", "provincia": "Arequipa", "distrito": "San Juan de Siguas" },
-        { "departamento": "Arequipa", "provincia": "Arequipa", "distrito": "San Juan de Tarucani" },
-        { "departamento": "Arequipa", "provincia": "Arequipa", "distrito": "San Pablo" },
-        { "departamento": "Arequipa", "provincia": "Arequipa", "distrito": "San Pedro de Atacama" },
-        { "departamento": "Arequipa", "provincia": "Arequipa", "distrito": "Santa Isabel de Siguas" },
-        { "departamento": "Arequipa", "provincia": "Arequipa", "distrito": "Santa Rita de Siguas" },
-        { "departamento": "Arequipa", "provincia": "Arequipa", "distrito": "Sicaya" },
-        { "departamento": "Arequipa", "provincia": "Arequipa", "distrito": "Yanahuara" },
-        { "departamento": "Arequipa", "provincia": "Arequipa", "distrito": "Yarabamba" },
-        { "departamento": "Arequipa", "provincia": "Arequipa", "distrito": "Yura" },
-        { "departamento": "Arequipa", "provincia": "Camana", "distrito": "Camaná" },
-        { "departamento": "Arequipa", "provincia": "Camana", "distrito": "Jose Galvez" },
-        { "departamento": "Arequipa", "provincia": "Camana", "distrito": "Mariscal Castilla" },
-        { "departamento": "Arequipa", "provincia": "Camana", "distrito": "Ocona" },
-        { "departamento": "Arequipa", "provincia": "Camana", "distrito": "Punta de Bombón" },
-        { "departamento": "Arequipa", "provincia": "Caraveli", "distrito": "Caravelí" },
-        { "departamento": "Arequipa", "provincia": "Caraveli", "distrito": "Acarí" },
-        { "departamento": "Arequipa", "provincia": "Caraveli", "distrito": "Atico" },
-        { "departamento": "Arequipa", "provincia": "Caraveli", "distrito": "Cahuacho" },
-        { "departamento": "Arequipa", "provincia": "Caraveli", "distrito": "Chala" },
-        { "departamento": "Arequipa", "provincia": "Caraveli", "distrito": "Huanuhuanu" },
-        { "departamento": "Arequipa", "provincia": "Caraveli", "distrito": "Lluta" },
-        { "departamento": "Arequipa", "provincia": "Caraveli", "distrito": "Yauca" },
-        { "departamento": "Arequipa", "provincia": "Castilla", "distrito": "Castilla" },
-        { "departamento": "Arequipa", "provincia": "Castilla", "distrito": "Andagua" },
-        { "departamento": "Arequipa", "provincia": "Castilla", "distrito": "Aplao" },
-        { "departamento": "Arequipa", "provincia": "Castilla", "distrito": "Caylloma" },
-        { "departamento": "Arequipa", "provincia": "Castilla", "distrito": "Chachas" },
-        { "departamento": "Arequipa", "provincia": "Castilla", "distrito": "Hualca" },
-        { "departamento": "Arequipa", "provincia": "Castilla", "distrito": "Majes" },
-        { "departamento": "Arequipa", "provincia": "Castilla", "distrito": "Sicaya" },
-        { "departamento": "Arequipa", "provincia": "Castilla", "distrito": "Yanaquihua" },
-        { "departamento": "Arequipa", "provincia": "Castilla", "distrito": "Yura" },
-        { "departamento": "Ayacucho", "provincia": "Huamanga", "distrito": "Ayacucho" },
-        { "departamento": "Ayacucho", "provincia": "Huamanga", "distrito": "Ayna" },
-        { "departamento": "Ayacucho", "provincia": "Huamanga", "distrito": "Chilcas" },
-        { "departamento": "Ayacucho", "provincia": "Huamanga", "distrito": "Huamanga" },
-        { "departamento": "Ayacucho", "provincia": "Huamanga", "distrito": "San Juan Bautista" },
-        { "departamento": "Ayacucho", "provincia": "Huamanga", "distrito": "San Pedro" },
-        { "departamento": "Ayacucho", "provincia": "Huamanga", "distrito": "Santiago de Lucanamarca" },
-        { "departamento": "Ayacucho", "provincia": "Huamanga", "distrito": "Vinchos" },
-        { "departamento": "Ayacucho", "provincia": "Huanta", "distrito": "Huanta" },
-        { "departamento": "Ayacucho", "provincia": "Huanta", "distrito": "Chaca" },
-        { "departamento": "Ayacucho", "provincia": "Huanta", "distrito": "Iguaín" },
-        { "departamento": "Ayacucho", "provincia": "Huanta", "distrito": "Llochegua" },
-        { "departamento": "Ayacucho", "provincia": "Huanta", "distrito": "Rondos" },
-        { "departamento": "Ayacucho", "provincia": "Huanta", "distrito": "San Miguel" },
-        { "departamento": "Ayacucho", "provincia": "Huanta", "distrito": "Sivia" },
-        { "departamento": "Ayacucho", "provincia": "La Mar", "distrito": "San Miguel" },
-        { "departamento": "Ayacucho", "provincia": "La Mar", "distrito": "San Francisco" },
-        { "departamento": "Ayacucho", "provincia": "La Mar", "distrito": "Santa Ana" },
-        { "departamento": "Ayacucho", "provincia": "La Mar", "distrito": "Santa Rosa" },
-        { "departamento": "Ayacucho", "provincia": "La Mar", "distrito": "Tambo" },
-        { "departamento": "Ayacucho", "provincia": "La Mar", "distrito": "Tinco" },
-        { "departamento": "Ayacucho", "provincia": "La Mar", "distrito": "Zapata" },
-        { "departamento": "Ayacucho", "provincia": "Lucanas", "distrito": "Lucanas" },
-        { "departamento": "Ayacucho", "provincia": "Lucanas", "distrito": "Aucara" },
-        { "departamento": "Ayacucho", "provincia": "Lucanas", "distrito": "Chaviña" },
-        { "departamento": "Ayacucho", "provincia": "Lucanas", "distrito": "Ellin" },
-        { "departamento": "Ayacucho", "provincia": "Lucanas", "distrito": "Lluta" },
-        { "departamento": "Ayacucho", "provincia": "Lucanas", "distrito": "Oropesa" },
-        { "departamento": "Ayacucho", "provincia": "Lucanas", "distrito": "Puquio" },
-        { "departamento": "Ayacucho", "provincia": "Lucanas", "distrito": "Sancos" },
-        { "departamento": "Ayacucho", "provincia": "Lucanas", "distrito": "San Cristóbal" },
-        { "departamento": "Ayacucho", "provincia": "Lucanas", "distrito": "San José" },
-        { "departamento": "Ayacucho", "provincia": "Lucanas", "distrito": "San Pedro" },
-        { "departamento": "Ayacucho", "provincia": "Lucanas", "distrito": "Santa Ana" },
-        { "departamento": "Ayacucho", "provincia": "Parinacochas", "distrito": "Parinacochas" },
-        { "departamento": "Ayacucho", "provincia": "Parinacochas", "distrito": "Acarí" },
-        { "departamento": "Ayacucho", "provincia": "Parinacochas", "distrito": "Chocorvos" },
-        { "departamento": "Ayacucho", "provincia": "Parinacochas", "distrito": "Ccarhuayo" },
-        { "departamento": "Ayacucho", "provincia": "Parinacochas", "distrito": "Ccarhuayo" },
-        { "departamento": "Ayacucho", "provincia": "Parinacochas", "distrito": "Parinacochas" },
-        { "departamento": "Ayacucho", "provincia": "Parinacochas", "distrito": "Querobamba" },
-        { "departamento": "Ayacucho", "provincia": "Parinacochas", "distrito": "San Francisco" },
-        { "departamento": "Ayacucho", "provincia": "Parinacochas", "distrito": "San José" },
-        { "departamento": "Ayacucho", "provincia": "Parinacochas", "distrito": "Santa Ana" },
-        { "departamento": "Ayacucho", "provincia": "Parinacochas", "distrito": "Santa Rosa" },
-        { "departamento": "Ayacucho", "provincia": "Parinacochas", "distrito": "Viru" },
-        { "departamento": "Ayacucho", "provincia": "Victor Fajardo", "distrito": "Victor Fajardo" },
-        { "departamento": "Ayacucho", "provincia": "Victor Fajardo", "distrito": "Apongo" },
-        { "departamento": "Ayacucho", "provincia": "Victor Fajardo", "distrito": "Cayo" },
-        { "departamento": "Ayacucho", "provincia": "Victor Fajardo", "distrito": "Huacaña" },
-        { "departamento": "Ayacucho", "provincia": "Victor Fajardo", "distrito": "Marcas" },
-        { "departamento": "Ayacucho", "provincia": "Victor Fajardo", "distrito": "María" },
-        { "departamento": "Ayacucho", "provincia": "Victor Fajardo", "distrito": "San Miguel" },
-        { "departamento": "Ayacucho", "provincia": "Victor Fajardo", "distrito": "Santiago de Lucanamarca" },
-        { "departamento": "Ayacucho", "provincia": "Victor Fajardo", "distrito": "Sivia" },
-        { "departamento": "Ayacucho", "provincia": "Victor Fajardo", "distrito": "Suyhu" },
-        { "departamento": "Ayacucho", "provincia": "Victor Fajardo", "distrito": "Suyhu" },
-        { "departamento": "Ayacucho", "provincia": "Victor Fajardo", "distrito": "San José" },
-        { "departamento": "Ayacucho", "provincia": "Victor Fajardo", "distrito": "Santa Ana" },
-        { "departamento": "Ayacucho", "provincia": "Victor Fajardo", "distrito": "Santa Rosa" },
-        { "departamento": "Cajamarca", "provincia": "Cajamarca", "distrito": "Cajamarca" },
-        { "departamento": "Cajamarca", "provincia": "Cajamarca", "distrito": "Asunción" },
-        { "departamento": "Cajamarca", "provincia": "Cajamarca", "distrito": "Chugur" },
-        { "departamento": "Cajamarca", "provincia": "Cajamarca", "distrito": "La Encañada" },
-        { "departamento": "Cajamarca", "provincia": "Cajamarca", "distrito": "Jesús" },
-        { "departamento": "Cajamarca", "provincia": "Cajamarca", "distrito": "Los Baños del Inca" },
-        { "departamento": "Cajamarca", "provincia": "Cajamarca", "distrito": "San Juan" },
-        { "departamento": "Cajamarca", "provincia": "Cajamarca", "distrito": "San Sebastián" },
-        { "departamento": "Cajamarca", "provincia": "Cajamarca", "distrito": "Tumbadén" },
-        { "departamento": "Cajamarca", "provincia": "Celendín", "distrito": "Celendín" },
-        { "departamento": "Cajamarca", "provincia": "Celendín", "distrito": "Andahuaylas" },
-        { "departamento": "Cajamarca", "provincia": "Celendín", "distrito": "Chumuch" },
-        { "departamento": "Cajamarca", "provincia": "Celendín", "distrito": "Granada" },
-        { "departamento": "Cajamarca", "provincia": "Celendín", "distrito": "Huabal" },
-        { "departamento": "Cajamarca", "provincia": "Celendín", "distrito": "San Juan de Celendín" },
-        { "departamento": "Cajamarca", "provincia": "Celendín", "distrito": "Santa Rosa" },
-        { "departamento": "Cajamarca", "provincia": "Chota", "distrito": "Chota" },
-        { "departamento": "Cajamarca", "provincia": "Chota", "distrito": "Angaraes" },
-        { "departamento": "Cajamarca", "provincia": "Chota", "distrito": "Condebamba" },
-        { "departamento": "Cajamarca", "provincia": "Chota", "distrito": "Hualgayoc" },
-        { "departamento": "Cajamarca", "provincia": "Chota", "distrito": "Llama" },
-        { "departamento": "Cajamarca", "provincia": "Chota", "distrito": "Miracosta" },
-        { "departamento": "Cajamarca", "provincia": "Chota", "distrito": "Querocoto" },
-        { "departamento": "Cajamarca", "provincia": "Chota", "distrito": "San Juan" },
-        { "departamento": "Cajamarca", "provincia": "Chota", "distrito": "San Pedro" },
-        { "departamento": "Cajamarca", "provincia": "Chota", "distrito": "Santa Rosa" },
-        { "departamento": "Cajamarca", "provincia": "Contumazá", "distrito": "Contumazá" },
-        { "departamento": "Cajamarca", "provincia": "Contumazá", "distrito": "Chamaya" },
-        { "departamento": "Cajamarca", "provincia": "Contumazá", "distrito": "Nanchoc" },
-        { "departamento": "Cajamarca", "provincia": "Contumazá", "distrito": "San Benito" },
-        { "departamento": "Cajamarca", "provincia": "Contumazá", "distrito": "San Juan" },
-        { "departamento": "Cajamarca", "provincia": "Contumazá", "distrito": "San Sebastián" },
-        { "departamento": "Cajamarca", "provincia": "Contumazá", "distrito": "San Vicente de la Quebrada" },
-        { "departamento": "Cajamarca", "provincia": "Hualgayoc", "distrito": "Hualgayoc" },
-        { "departamento": "Cajamarca", "provincia": "Hualgayoc", "distrito": "Bambamarca" },
-        { "departamento": "Cajamarca", "provincia": "Hualgayoc", "distrito": "Chugur" },
-        { "departamento": "Cajamarca", "provincia": "Hualgayoc", "distrito": "La Encañada" },
-        { "departamento": "Cajamarca", "provincia": "Hualgayoc", "distrito": "San Juan" },
-        { "departamento": "Cajamarca", "provincia": "Hualgayoc", "distrito": "San Pedro" },
-        { "departamento": "Cajamarca", "provincia": "Jaén", "distrito": "Jaén" },
-        { "departamento": "Cajamarca", "provincia": "Jaén", "distrito": "Bellavista" },
-        { "departamento": "Cajamarca", "provincia": "Jaén", "distrito": "Chirinos" },
-        { "departamento": "Cajamarca", "provincia": "Jaén", "distrito": "Colasay" },
-        { "departamento": "Cajamarca", "provincia": "Jaén", "distrito": "Huarango" },
-        { "departamento": "Cajamarca", "provincia": "Jaén", "distrito": "San Ignacio" },
-        { "departamento": "Cajamarca", "provincia": "Jaén", "distrito": "San José de Lourdes" },
-        { "departamento": "Cajamarca", "provincia": "Jaén", "distrito": "San Luis" },
-        { "departamento": "Cajamarca", "provincia": "Jaén", "distrito": "Santa Rosa" },
-        { "departamento": "Cajamarca", "provincia": "Jaén", "distrito": "Santo Tomás" },
-        { "departamento": "Cajamarca", "provincia": "San Miguel", "distrito": "San Miguel" },
-        { "departamento": "Cajamarca", "provincia": "San Miguel", "distrito": "Apongo" },
-        { "departamento": "Cajamarca", "provincia": "San Miguel", "distrito": "Bambamarca" },
-        { "departamento": "Cajamarca", "provincia": "San Miguel", "distrito": "Chancay" },
-        { "departamento": "Cajamarca", "provincia": "San Miguel", "distrito": "Chirimoto" },
-        { "departamento": "Cajamarca", "provincia": "San Miguel", "distrito": "Mollepata" },
-        { "departamento": "Cajamarca", "provincia": "San Miguel", "distrito": "San Juan de Cutervo" },
-        { "departamento": "Cajamarca", "provincia": "San Miguel", "distrito": "San Pedro" },
-        { "departamento": "Cajamarca", "provincia": "San Miguel", "distrito": "Santa Rosa" },
-        { "departamento": "Cajamarca", "provincia": "San Miguel", "distrito": "Yanayacu" },
-        { "departamento": "Cajamarca", "provincia": "San Pablo", "distrito": "San Pablo" },
-        { "departamento": "Cajamarca", "provincia": "San Pablo", "distrito": "Callacali" },
-        { "departamento": "Cajamarca", "provincia": "San Pablo", "distrito": "Celendín" },
-        { "departamento": "Cajamarca", "provincia": "San Pablo", "distrito": "Chancay" },
-        { "departamento": "Cajamarca", "provincia": "San Pablo", "distrito": "Chota" },
-        { "departamento": "Cajamarca", "provincia": "San Pablo", "distrito": "Hualgayoc" },
-        { "departamento": "Cajamarca", "provincia": "San Pablo", "distrito": "San Miguel" },
-        { "departamento": "Cajamarca", "provincia": "San Pablo", "distrito": "San Pedro" },
-        { "departamento": "Cajamarca", "provincia": "San Pablo", "distrito": "Santa Rosa" },
-        { "departamento": "Cajamarca", "provincia": "San Pablo", "distrito": "Santo Tomás" },
-        { "departamento": "Cajamarca", "provincia": "San Pablo", "distrito": "Yanayacu" },
-        { "departamento": "Callao", "provincia": "Callao", "distrito": "Callao" },
-        { "departamento": "Callao", "provincia": "Callao", "distrito": "Bellavista" },
-        { "departamento": "Callao", "provincia": "Callao", "distrito": "Carmen de la Legua-Reynoso" },
-        { "departamento": "Callao", "provincia": "Callao", "distrito": "La Perla" },
-        { "departamento": "Callao", "provincia": "Callao", "distrito": "La Punta" },
-        { "departamento": "Callao", "provincia": "Callao", "distrito": "Ventanilla" },  
-        { "departamento": "Cusco", "provincia": "Cusco", "distrito": "Cusco" },
-        { "departamento": "Cusco", "provincia": "Cusco", "distrito": "Aguas Calientes" },
-        { "departamento": "Cusco", "provincia": "Cusco", "distrito": "Ccorca" },
-        { "departamento": "Cusco", "provincia": "Cusco", "distrito": "Coya" },
-        { "departamento": "Cusco", "provincia": "Cusco", "distrito": "Poroy" },
-        { "departamento": "Cusco", "provincia": "Cusco", "distrito": "San Jerónimo" },
-        { "departamento": "Cusco", "provincia": "Cusco", "distrito": "San Sebastián" },
-        { "departamento": "Cusco", "provincia": "Cusco", "distrito": "San Simón" },
-        { "departamento": "Cusco", "provincia": "Cusco", "distrito": "Santiago" },
-        { "departamento": "Cusco", "provincia": "Cusco", "distrito": "Sayhuite" },
-        { "departamento": "Cusco", "provincia": "Cusco", "distrito": "Tambomachay" },
-        { "departamento": "Cusco", "provincia": "Cusco", "distrito": "Tipón" },
-        { "departamento": "Cusco", "provincia": "Cusco", "distrito": "Ttio" },
-        { "departamento": "Cusco", "provincia": "Anta", "distrito": "Anta" },
-        { "departamento": "Cusco", "provincia": "Anta", "distrito": "Cachimayo" },
-        { "departamento": "Cusco", "provincia": "Anta", "distrito": "Huarocondo" },
-        { "departamento": "Cusco", "provincia": "Anta", "distrito": "Izcuchaca" },
-        { "departamento": "Cusco", "provincia": "Anta", "distrito": "Mollepata" },
-        { "departamento": "Cusco", "provincia": "Anta", "distrito": "Pucyura" },
-        { "departamento": "Cusco", "provincia": "Anta", "distrito": "Zurite" },
-        { "departamento": "Cusco", "provincia": "Calca", "distrito": "Calca" },
-        { "departamento": "Cusco", "provincia": "Calca", "distrito": "Coya" },
-        { "departamento": "Cusco", "provincia": "Calca", "distrito": "Lamay" },
-        { "departamento": "Cusco", "provincia": "Calca", "distrito": "Lares" },
-        { "departamento": "Cusco", "provincia": "Calca", "distrito": "Paccaritambo" },
-        { "departamento": "Cusco", "provincia": "Calca", "distrito": "Pisaq" },
-        { "departamento": "Cusco", "provincia": "Calca", "distrito": "Yanatile" },
-        { "departamento": "Cusco", "provincia": "Canchis", "distrito": "Canchis" },
-        { "departamento": "Cusco", "provincia": "Canchis", "distrito": "Checacupe" },
-        { "departamento": "Cusco", "provincia": "Canchis", "distrito": "Pitumarca" },
-        { "departamento": "Cusco", "provincia": "Canchis", "distrito": "San Pablo" },
-        { "departamento": "Cusco", "provincia": "Canchis", "distrito": "San Pedro" },
-        { "departamento": "Cusco", "provincia": "Canas", "distrito": "Canas" },
-        { "departamento": "Cusco", "provincia": "Canas", "distrito": "Checacupe" },
-        { "departamento": "Cusco", "provincia": "Canas", "distrito": "Kunturkanki" },
-        { "departamento": "Cusco", "provincia": "Canas", "distrito": "Mara" },
-        { "departamento": "Cusco", "provincia": "Canas", "distrito": "Pampamarca" },
-        { "departamento": "Cusco", "provincia": "Canas", "distrito": "Tinta" },
-        { "departamento": "Cusco", "provincia": "Chumbivilcas", "distrito": "Chumbivilcas" },
-        { "departamento": "Cusco", "provincia": "Chumbivilcas", "distrito": "Capacmarca" },
-        { "departamento": "Cusco", "provincia": "Chumbivilcas", "distrito": "Colquemarca" },
-        { "departamento": "Cusco", "provincia": "Chumbivilcas", "distrito": "Colquemarca" },
-        { "departamento": "Cusco", "provincia": "Chumbivilcas", "distrito": "Llusco" },
-        { "departamento": "Cusco", "provincia": "Chumbivilcas", "distrito": "Quehue" },
-        { "departamento": "Cusco", "provincia": "Chumbivilcas", "distrito": "Santo Tomás" },
-        { "departamento": "Cusco", "provincia": "Paruro", "distrito": "Paruro" },
-        { "departamento": "Cusco", "provincia": "Paruro", "distrito": "Ccapi" },
-        { "departamento": "Cusco", "provincia": "Paruro", "distrito": "Cusipata" },
-        { "departamento": "Cusco", "provincia": "Paruro", "distrito": "Layo" },
-        { "departamento": "Cusco", "provincia": "Paruro", "distrito": "Paccarectambo" },
-        { "departamento": "Cusco", "provincia": "Paruro", "distrito": "Yaurisque" },
-        { "departamento": "Cusco", "provincia": "Paucartambo", "distrito": "Paucartambo" },
-        { "departamento": "Cusco", "provincia": "Paucartambo", "distrito": "Caicay" },
-        { "departamento": "Cusco", "provincia": "Paucartambo", "distrito": "Colque" },
-        { "departamento": "Cusco", "provincia": "Paucartambo", "distrito": "Chacchapata" },
-        { "departamento": "Cusco", "provincia": "Paucartambo", "distrito": "Patabamba" },
-        { "departamento": "Cusco", "provincia": "Paucartambo", "distrito": "Sicuani" },
-        { "departamento": "Cusco", "provincia": "Paucartambo", "distrito": "Yanatile" },
-        { "departamento": "Cusco", "provincia": "Quispicanchi", "distrito": "San Salvador" },
-        { "departamento": "Cusco", "provincia": "Quispicanchi", "distrito": "San Pedro" },
-        { "departamento": "Cusco", "provincia": "Quispicanchi", "distrito": "San Pablo" },
-        { "departamento": "Cusco", "provincia": "Quispicanchi", "distrito": "San Juan" },
-        { "departamento": "Cusco", "provincia": "Quispicanchi", "distrito": "San Andrés" },
-        { "departamento": "Cusco", "provincia": "Quispicanchi", "distrito": "San Juan" },
-        { "departamento": "Cusco", "provincia": "Quispicanchi", "distrito": "San Sebastián" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "Huancavelica" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "Acoria" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "Anta" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "Ahuaycha" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "Cochas" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "Colcabamba" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "Conayca" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "Huachocolpa" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "Huaytará" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "Izcuchaca" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "Laria" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "Manta" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "Marcas" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "Pampas" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "Pichos" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "San Antonio de Ginzo" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "San Francisco de Sangayaico" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "San Miguel" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "Santa Ana" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "Santa María del Valle" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "Santo Tomás" },
-        { "departamento": "Huancavelica", "provincia": "Huancavelica", "distrito": "Tierra Blanca" },
-        { "departamento": "Huánuco", "provincia": "Huánuco", "distrito": "Huánuco" },
-        { "departamento": "Huánuco", "provincia": "Huánuco", "distrito": "Chinchao" },
-        { "departamento": "Huánuco", "provincia": "Huánuco", "distrito": "Cuenca" },
-        { "departamento": "Huánuco", "provincia": "Huánuco", "distrito": "Joaquín González" },
-        { "departamento": "Huánuco", "provincia": "Huánuco", "distrito": "José Crespo y Castillo" },
-        { "departamento": "Huánuco", "provincia": "Huánuco", "distrito": "José María Arguedas" },
-        { "departamento": "Huánuco", "provincia": "Huánuco", "distrito": "La Unión" },
-        { "departamento": "Huánuco", "provincia": "Huánuco", "distrito": "Pillco Marca" },
-        { "departamento": "Huánuco", "provincia": "Huánuco", "distrito": "Yarowilca" },
-        { "departamento": "Huánuco", "provincia": "Huánuco", "distrito": "Yarumayo" },
-        { "departamento": "Huánuco", "provincia": "Ambo", "distrito": "Ambo" },
-        { "departamento": "Huánuco", "provincia": "Ambo", "distrito": "Cochabamba" },
-        { "departamento": "Huánuco", "provincia": "Ambo", "distrito": "Cunico" },
-        { "departamento": "Huánuco", "provincia": "Ambo", "distrito": "San Rafael" },
-        { "departamento": "Huánuco", "provincia": "Ambo", "distrito": "Tomas" },
-        { "departamento": "Huánuco", "provincia": "Dos de Mayo", "distrito": "Rondos" },
-        { "departamento": "Huánuco", "provincia": "Dos de Mayo", "distrito": "San Rafael" },
-        { "departamento": "Huánuco", "provincia": "Dos de Mayo", "distrito": "Santa Rosa" },
-        { "departamento": "Huánuco", "provincia": "Dos de Mayo", "distrito": "Tomas" },
-        { "departamento": "Huánuco", "provincia": "Huacaybamba", "distrito": "Huacaybamba" },
-        { "departamento": "Huánuco", "provincia": "Huacaybamba", "distrito": "Acobamba" },
-        { "departamento": "Huánuco", "provincia": "Huacaybamba", "distrito": "Cocha" },
-        { "departamento": "Huánuco", "provincia": "Huacaybamba", "distrito": "Huacrachuco" },
-        { "departamento": "Huánuco", "provincia": "Huacaybamba", "distrito": "Santo Domingo" },
-        { "departamento": "Huánuco", "provincia": "Huacaybamba", "distrito": "San Juan" },
-        { "departamento": "Huánuco", "provincia": "Huacaybamba", "distrito": "Santo Domingo" },
-        { "departamento": "Ica", "provincia": "Ica", "distrito": "Ica" },
-        { "departamento": "Ica", "provincia": "Ica", "distrito": "La Tinguiña" },
-        { "departamento": "Ica", "provincia": "Ica", "distrito": "Parcona" },
-        { "departamento": "Ica", "provincia": "Ica", "distrito": "Pueblo Nuevo" },
-        { "departamento": "Ica", "provincia": "Ica", "distrito": "Salas Guadalupe" },
-        { "departamento": "Ica", "provincia": "Ica", "distrito": "San José de los Molinos" },
-        { "departamento": "Ica", "provincia": "Ica", "distrito": "San Juan Bautista" },
-        { "departamento": "Ica", "provincia": "Ica", "distrito": "San Pedro de Huacarpana" },
-        { "departamento": "Ica", "provincia": "Ica", "distrito": "Tinguiña" },
-        { "departamento": "Ica", "provincia": "Chincha", "distrito": "Chincha Alta" },
-        { "departamento": "Ica", "provincia": "Chincha", "distrito": "Chincha Baja" },
-        { "departamento": "Ica", "provincia": "Chincha", "distrito": "El Carmen" },
-        { "departamento": "Ica", "provincia": "Chincha", "distrito": "Grocio Prado" },
-        { "departamento": "Ica", "provincia": "Chincha", "distrito": "Pueblo Nuevo" },
-        { "departamento": "Ica", "provincia": "Chincha", "distrito": "San Juan de Yanac" },
-        { "departamento": "Ica", "provincia": "Chincha", "distrito": "San Pedro de Huacarpana" },
-        { "departamento": "Ica", "provincia": "Chincha", "distrito": "San Sebastián" },
-        { "departamento": "Ica", "provincia": "Nazca", "distrito": "Nazca" },
-        { "departamento": "Ica", "provincia": "Nazca", "distrito": "Vista Alegre" },
-        { "departamento": "Ica", "provincia": "Nazca", "distrito": "El Ingenio" },
-        { "departamento": "Ica", "provincia": "Nazca", "distrito": "San Juan de Marcona" },
-        { "departamento": "Ica", "provincia": "Palpa", "distrito": "Palpa" },
-        { "departamento": "Ica", "provincia": "Palpa", "distrito": "Nicaragua" },
-        { "departamento": "Ica", "provincia": "Palpa", "distrito": "Llipata" },
-        { "departamento": "Ica", "provincia": "Palpa", "distrito": "Oroya" },
-        { "departamento": "Junín", "provincia": "Huancayo", "distrito": "Huancayo" },
-        { "departamento": "Junín", "provincia": "Huancayo", "distrito": "El Tambo" },
-        { "departamento": "Junín", "provincia": "Huancayo", "distrito": "Chupaca" },
-        { "departamento": "Junín", "provincia": "Huancayo", "distrito": "Hualhuas" },
-        { "departamento": "Junín", "provincia": "Huancayo", "distrito": "Huancán" },
-        { "departamento": "Junín", "provincia": "Huancayo", "distrito": "San Agustín" },
-        { "departamento": "Junín", "provincia": "Huancayo", "distrito": "San Jerónimo" },
-        { "departamento": "Junín", "provincia": "Huancayo", "distrito": "San Sebastián" },
-        { "departamento": "Junín", "provincia": "Huancayo", "distrito": "Santo Domingo" },
-        { "departamento": "Junín", "provincia": "Huancayo", "distrito": "Yauyos" },
-        { "departamento": "Junín", "provincia": "Jauja", "distrito": "Jauja" },
-        { "departamento": "Junín", "provincia": "Jauja", "distrito": "Apata" },
-        { "departamento": "Junín", "provincia": "Jauja", "distrito": "Canchayllo" },
-        { "departamento": "Junín", "provincia": "Jauja", "distrito": "Cochas" },
-        { "departamento": "Junín", "provincia": "Jauja", "distrito": "Huaripampa" },
-        { "departamento": "Junín", "provincia": "Jauja", "distrito": "Jatos" },
-        { "departamento": "Junín", "provincia": "Jauja", "distrito": "Llocllapampa" },
-        { "departamento": "Junín", "provincia": "Jauja", "distrito": "Perene" },
-        { "departamento": "Junín", "provincia": "Jauja", "distrito": "San Lorenzo" },
-        { "departamento": "Junín", "provincia": "Jauja", "distrito": "San Pedro" },
-        { "departamento": "Junín", "provincia": "Jauja", "distrito": "San Rafael" },
-        { "departamento": "Junín", "provincia": "Jauja", "distrito": "Santo Domingo" },
-        { "departamento": "Junín", "provincia": "Jauja", "distrito": "Yanacancha" },
-        { "departamento": "Junín", "provincia": "Junín", "distrito": "Junín" },
-        { "departamento": "Junín", "provincia": "Junín", "distrito": "Carhuamayo" },
-        { "departamento": "Junín", "provincia": "Junín", "distrito": "Cochas" },
-        { "departamento": "Junín", "provincia": "Junín", "distrito": "Chacapuente" },
-        { "departamento": "Junín", "provincia": "Junín", "distrito": "Carhuacallanga" },
-        { "departamento": "Junín", "provincia": "Junín", "distrito": "Vitis" },
-        { "departamento": "La Libertad", "provincia": "Trujillo", "distrito": "Trujillo" },
-        { "departamento": "La Libertad", "provincia": "Trujillo", "distrito": "El Porvenir" },
-        { "departamento": "La Libertad", "provincia": "Trujillo", "distrito": "La Esperanza" },
-        { "departamento": "La Libertad", "provincia": "Trujillo", "distrito": "Victor Larco" },
-        { "departamento": "La Libertad", "provincia": "Trujillo", "distrito": "Salaverry" },
-        { "departamento": "La Libertad", "provincia": "Trujillo", "distrito": "Huanchaco" },
-        { "departamento": "La Libertad", "provincia": "Trujillo", "distrito": "Moche" },
-        { "departamento": "La Libertad", "provincia": "Trujillo", "distrito": "Laredo" },
-        { "departamento": "La Libertad", "provincia": "Trujillo", "distrito": "Simbal" },
-        { "departamento": "La Libertad", "provincia": "Trujillo", "distrito": "Poroto" },
-        { "departamento": "La Libertad", "provincia": "Ascope", "distrito": "Ascope" },
-        { "departamento": "La Libertad", "provincia": "Ascope", "distrito": "Chicama" },
-        { "departamento": "La Libertad", "provincia": "Ascope", "distrito": "Casa Grande" },
-        { "departamento": "La Libertad", "provincia": "Ascope", "distrito": "Longotea" },
-        { "departamento": "La Libertad", "provincia": "Ascope", "distrito": "Rázuri" },
-        { "departamento": "La Libertad", "provincia": "Ascope", "distrito": "Santiago de Cao" },
-        { "departamento": "La Libertad", "provincia": "Bolívar", "distrito": "Bolívar" },
-        { "departamento": "La Libertad", "provincia": "Bolívar", "distrito": "Buldibuyo" },
-        { "departamento": "La Libertad", "provincia": "Bolívar", "distrito": "San Agustín" },
-        { "departamento": "La Libertad", "provincia": "Bolívar", "distrito": "San Juan" },
-        { "departamento": "La Libertad", "provincia": "Bolívar", "distrito": "Uchumarca" },
-        { "departamento": "La Libertad", "provincia": "Bolívar", "distrito": "Valera" },
-        { "departamento": "La Libertad", "provincia": "Bolívar", "distrito": "Llama" },
-        { "departamento": "La Libertad", "provincia": "Bolívar", "distrito": "San Pedro" },
-        { "departamento": "La Libertad", "provincia": "Bolívar", "distrito": "Valera" },
-            { "departamento": "Lima", "provincia": "Barranca", "distrito": "Barranca" },
-            { "departamento": "Lima", "provincia": "Barranca", "distrito": "Paramonga" },
-            { "departamento": "Lima", "provincia": "Barranca", "distrito": "Pativilca" },
-            { "departamento": "Lima", "provincia": "Barranca", "distrito": "Puerto Supe" },
-            { "departamento": "Lima", "provincia": "Barranca", "distrito": "Supe" },
-            { "departamento": "Lima", "provincia": "Cajatambo", "distrito": "Cajatambo" },
-            { "departamento": "Lima", "provincia": "Cajatambo", "distrito": "Huaranchal" },
-            { "departamento": "Lima", "provincia": "Cajatambo", "distrito": "San Miguel de Cajatambo" },
-            { "departamento": "Lima", "provincia": "Canta", "distrito": "Canta" },
-            { "departamento": "Lima", "provincia": "Canta", "distrito": "Cerro de Pasco" },
-            { "departamento": "Lima", "provincia": "Canta", "distrito": "Huarochirí" },
-            { "departamento": "Lima", "provincia": "Canta", "distrito": "San Bartolomé" },
-            { "departamento": "Lima", "provincia": "Canta", "distrito": "San Damián" },
-            { "departamento": "Lima", "provincia": "Canta", "distrito": "San Juan de Rontoy" },
-            { "departamento": "Lima", "provincia": "Canta", "distrito": "San Pedro de Casta" },
-            { "departamento": "Lima", "provincia": "Canta", "distrito": "Santa María" },
-            { "departamento": "Lima", "provincia": "Canta", "distrito": "Santa Rosa" },
-            { "departamento": "Lima", "provincia": "Cañete", "distrito": "Asia" },
-            { "departamento": "Lima", "provincia": "Cañete", "distrito": "Calango" },
-            { "departamento": "Lima", "provincia": "Cañete", "distrito": "Cañete" },
-            { "departamento": "Lima", "provincia": "Cañete", "distrito": "Chilca" },
-            { "departamento": "Lima", "provincia": "Cañete", "distrito": "Coayllo" },
-            { "departamento": "Lima", "provincia": "Cañete", "distrito": "Imperial" },
-            { "departamento": "Lima", "provincia": "Cañete", "distrito": "Lunahuaná" },
-            { "departamento": "Lima", "provincia": "Cañete", "distrito": "Mala" },
-            { "departamento": "Lima", "provincia": "Cañete", "distrito": "San Antonio" },
-            { "departamento": "Lima", "provincia": "Cañete", "distrito": "San Luis" },
-            { "departamento": "Lima", "provincia": "Cañete", "distrito": "San Vicente de Cañete" },
-            { "departamento": "Lima", "provincia": "Huaral", "distrito": "Aucallama" },
-            { "departamento": "Lima", "provincia": "Huaral", "distrito": "Chancay" },
-            { "departamento": "Lima", "provincia": "Huaral", "distrito": "Huaral" },
-            { "departamento": "Lima", "provincia": "Huaral", "distrito": "Ihuari" },
-            { "departamento": "Lima", "provincia": "Huaral", "distrito": "La Clara" },
-            { "departamento": "Lima", "provincia": "Huaral", "distrito": "Pacaraos" },
-            { "departamento": "Lima", "provincia": "Huaral", "distrito": "San Miguel de Acos" },
-            { "departamento": "Lima", "provincia": "Huaral", "distrito": "Sumbilca" },
-            { "departamento": "Lima", "provincia": "Huarochirí", "distrito": "Huarochirí" },
-            { "departamento": "Lima", "provincia": "Huarochirí", "distrito": "Lahuaytambo" },
-            { "departamento": "Lima", "provincia": "Huarochirí", "distrito": "San Andrés de Tupicocha" },
-            { "departamento": "Lima", "provincia": "Huarochirí", "distrito": "San Antonio" },
-            { "departamento": "Lima", "provincia": "Huarochirí", "distrito": "San Bartolomé" },
-            { "departamento": "Lima", "provincia": "Huarochirí", "distrito": "San Juan de Iris" },
-            { "departamento": "Lima", "provincia": "Huarochirí", "distrito": "San Juan de Rontoy" },
-            { "departamento": "Lima", "provincia": "Huarochirí", "distrito": "Santa Eulalia" },
-            { "departamento": "Lima", "provincia": "Huarochirí", "distrito": "Santa María" },
-            { "departamento": "Lima", "provincia": "Huarochirí", "distrito": "Santa Rosa" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Ate" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Breña" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Carabayllo" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Chaclacayo" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Chorrillos" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Cieneguilla" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Comas" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "El Agustino" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Independencia" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Jesús María" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "La Molina" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "La Victoria" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Lince" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Magdalena del Mar" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Miraflores" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Pueblo Libre" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Rímac" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "San Borja" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "San Isidro" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "San Juan de Lurigancho" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "San Juan de Miraflores" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "San Luis" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "San Martín de Porres" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "San Miguel" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Santa Anita" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Santa María del Mar" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Santa Rosa" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Santiago de Surco" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Surquillo" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Ventanilla" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Villa El Salvador" },
-            { "departamento": "Lima", "provincia": "Lima", "distrito": "Villa María del Triunfo" },
-            { "departamento": "Lima", "provincia": "Callao", "distrito": "Callao" },
-            { "departamento": "Lima", "provincia": "Callao", "distrito": "Bellavista" },
-            { "departamento": "Lima", "provincia": "Callao", "distrito": "Carmen de la Legua-Reynoso" },
-            { "departamento": "Lima", "provincia": "Callao", "distrito": "La Perla" },
-            { "departamento": "Lima", "provincia": "Callao", "distrito": "La Punta" },
-            { "departamento": "Lima", "provincia": "Callao", "distrito": "San Miguel" },
-        { "departamento": "Loreto", "provincia": "Alto Amazonas", "distrito": "Alto Amazonas" },
-        { "departamento": "Loreto", "provincia": "Alto Amazonas", "distrito": "Bagua Grande" },
-        { "departamento": "Loreto", "provincia": "Alto Amazonas", "distrito": "Balsapuerto" },
-        { "departamento": "Loreto", "provincia": "Alto Amazonas", "distrito": "Cacatachi" },
-        { "departamento": "Loreto", "provincia": "Alto Amazonas", "distrito": "Francisco Bolognesi" },
-        { "departamento": "Loreto", "provincia": "Alto Amazonas", "distrito": "Jalca Grande" },
-        { "departamento": "Loreto", "provincia": "Alto Amazonas", "distrito": "Jalca Pequena" },
-        { "departamento": "Loreto", "provincia": "Alto Amazonas", "distrito": "Jeberos" },
-        { "departamento": "Loreto", "provincia": "Alto Amazonas", "distrito": "Lagunas" },
-        { "departamento": "Loreto", "provincia": "Alto Amazonas", "distrito": "Morona" },
-        { "departamento": "Loreto", "provincia": "Alto Amazonas", "distrito": "Río Santiago" },
-        { "departamento": "Loreto", "provincia": "Alto Amazonas", "distrito": "San Carlos" },
-        { "departamento": "Loreto", "provincia": "Alto Amazonas", "distrito": "San Fernando" },
-        { "departamento": "Loreto", "provincia": "Alto Amazonas", "distrito": "San Isidro" },
-        { "departamento": "Loreto", "provincia": "Alto Amazonas", "distrito": "San Juan" },
-        { "departamento": "Loreto", "provincia": "Alto Amazonas", "distrito": "Santa María" },
-        { "departamento": "Loreto", "provincia": "Alto Amazonas", "distrito": "Santa Rosa" },
-        { "departamento": "Loreto", "provincia": "Alto Amazonas", "distrito": "Santo Tomás" },
-        { "departamento": "Loreto", "provincia": "Alto Amazonas", "distrito": "Teniente César López Rojas" },
-        { "departamento": "Loreto", "provincia": "Datem del Marañón", "distrito": "Barranca" },
-        { "departamento": "Loreto", "provincia": "Datem del Marañón", "distrito": "Cacatachi" },
-        { "departamento": "Loreto", "provincia": "Datem del Marañón", "distrito": "El Cenepa" },
-        { "departamento": "Loreto", "provincia": "Datem del Marañón", "distrito": "El Tigre" },
-        { "departamento": "Loreto", "provincia": "Datem del Marañón", "distrito": "Manseriche" },
-        { "departamento": "Loreto", "provincia": "Datem del Marañón", "distrito": "Nauta" },
-        { "departamento": "Loreto", "provincia": "Datem del Marañón", "distrito": "Pevas" },
-        { "departamento": "Loreto", "provincia": "Datem del Marañón", "distrito": "Río Marañón" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "Iquitos" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "Belén" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "Punchana" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Juan Bautista" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "Nauta" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "Mazán" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "Tapiche" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "Yurimaguas" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "José Olaya" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "Maynas" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "Loreto" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Pablo" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Miguel" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "Santo Tomas" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "Santos" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Juan" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Antonio" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Alejandro" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Luis" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "Santa Rosa" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "Santa Isabel" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Pedro" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Francisco" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Fernando" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Juan Bautista" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "Santa María" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Rafael" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "Santa Rosa" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Fernando" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Francisco" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "Santa Rosa" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Juan" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Miguel" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Juan Bautista" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Antonio" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Pedro" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Rafael" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Pablo" },
-        { "departamento": "Loreto", "provincia": "Loreto", "distrito": "San Luis" },
-        { "departamento": "Madre de Dios", "provincia": "Manu", "distrito": "Manu" },
-        { "departamento": "Madre de Dios", "provincia": "Manu", "distrito": "Fitzcarrald" },
-        { "departamento": "Madre de Dios", "provincia": "Manu", "distrito": "Madre de Dios" },
-        { "departamento": "Madre de Dios", "provincia": "Manu", "distrito": "Poni" },
-        { "departamento": "Madre de Dios", "provincia": "Manu", "distrito": "Shintuya" },
-        { "departamento": "Madre de Dios", "provincia": "Madre de Dios", "distrito": "Puerto Maldonado" },
-        { "departamento": "Madre de Dios", "provincia": "Madre de Dios", "distrito": "Laberinto" },
-        { "departamento": "Madre de Dios", "provincia": "Madre de Dios", "distrito": "Las Piedras" },
-        { "departamento": "Madre de Dios", "provincia": "Madre de Dios", "distrito": "Huepetuhe" },
-        { "departamento": "Madre de Dios", "provincia": "Madre de Dios", "distrito": "Kotsimba" },
-        { "departamento": "Madre de Dios", "provincia": "Madre de Dios", "distrito": "San José de Karene" },
-        { "departamento": "Madre de Dios", "provincia": "Madre de Dios", "distrito": "Inambari" },
-        { "departamento": "Madre de Dios", "provincia": "Madre de Dios", "distrito": "Iñapari" },
-        { "departamento": "Madre de Dios", "provincia": "Madre de Dios", "distrito": "Sandia" },
-        { "departamento": "Madre de Dios", "provincia": "Tahuamanu", "distrito": "Tahuamanu" },
-        { "departamento": "Madre de Dios", "provincia": "Tahuamanu", "distrito": "Iñapari" },
-        { "departamento": "Madre de Dios", "provincia": "Tahuamanu", "distrito": "Madre de Dios" },
-        { "departamento": "Madre de Dios", "provincia": "Tahuamanu", "distrito": "Shamboyacu" },
-        { "departamento": "Madre de Dios", "provincia": "Tahuamanu", "distrito": "Santa Rosa" },
-        { "departamento": "Madre de Dios", "provincia": "Tahuamanu", "distrito": "El Progreso" },
-        { "departamento": "Moquegua", "provincia": "Moquegua", "distrito": "Moquegua" },
-        { "departamento": "Moquegua", "provincia": "Moquegua", "distrito": "Carumas" },
-        { "departamento": "Moquegua", "provincia": "Moquegua", "distrito": "San Cristóbal" },
-        { "departamento": "Moquegua", "provincia": "Moquegua", "distrito": "San Antonio" },
-        { "departamento": "Moquegua", "provincia": "Moquegua", "distrito": "San Sebastián" },
-        { "departamento": "Moquegua", "provincia": "Moquegua", "distrito": "San Juan" },
-        { "departamento": "Moquegua", "provincia": "Mariscal Nieto", "distrito": "Moquegua" },
-        { "departamento": "Moquegua", "provincia": "Mariscal Nieto", "distrito": "Carumas" },
-        { "departamento": "Moquegua", "provincia": "Mariscal Nieto", "distrito": "San Cristóbal" },
-        { "departamento": "Moquegua", "provincia": "Mariscal Nieto", "distrito": "San Antonio" },
-        { "departamento": "Moquegua", "provincia": "Mariscal Nieto", "distrito": "San Sebastián" },
-        { "departamento": "Moquegua", "provincia": "Mariscal Nieto", "distrito": "San Juan" },
-        { "departamento": "Puno", "provincia": "Azángaro", "distrito": "Azángaro" },
-        { "departamento": "Puno", "provincia": "Azángaro", "distrito": "Achaya" },
-        { "departamento": "Puno", "provincia": "Azángaro", "distrito": "Arapa" },
-        { "departamento": "Puno", "provincia": "Azángaro", "distrito": "Asillo" },
-        { "departamento": "Puno", "provincia": "Azángaro", "distrito": "Caminaca" },
-        { "departamento": "Puno", "provincia": "Azángaro", "distrito": "Chupa" },
-        { "departamento": "Puno", "provincia": "Azángaro", "distrito": "José Domingo Choquehuanca" },
-        { "departamento": "Puno", "provincia": "Azángaro", "distrito": "Lampa" },
-        { "departamento": "Puno", "provincia": "Azángaro", "distrito": "Muñani" },
-        { "departamento": "Puno", "provincia": "Azángaro", "distrito": "San Antón" },
-        { "departamento": "Puno", "provincia": "Azángaro", "distrito": "San José" },
-        { "departamento": "Puno", "provincia": "Azángaro", "distrito": "San Pedro" },
-        { "departamento": "Puno", "provincia": "Azángaro", "distrito": "San Pablo" },
-        { "departamento": "Puno", "provincia": "Azángaro", "distrito": "San Salvador" },
-        { "departamento": "Puno", "provincia": "Chucuito", "distrito": "Chucuito" },
-        { "departamento": "Puno", "provincia": "Chucuito", "distrito": "Desaguadero" },
-        { "departamento": "Puno", "provincia": "Chucuito", "distrito": "Huanuyo" },
-        { "departamento": "Puno", "provincia": "Chucuito", "distrito": "Juli" },
-        { "departamento": "Puno", "provincia": "Chucuito", "distrito": "Pomata" },
-        { "departamento": "Puno", "provincia": "Chucuito", "distrito": "Plateria" },
-        { "departamento": "Puno", "provincia": "Chucuito", "distrito": "Tiquillaca" },
-        { "departamento": "Puno", "provincia": "Chucuito", "distrito": "Yunguyo" },
-        { "departamento": "Puno", "provincia": "El Collao", "distrito": "Ilave" },
-        { "departamento": "Puno", "provincia": "El Collao", "distrito": "Collao" },
-        { "departamento": "Puno", "provincia": "El Collao", "distrito": "San Juan de Salinas" },
-        { "departamento": "Puno", "provincia": "El Collao", "distrito": "San Pedro de Putina Punco" },
-        { "departamento": "Puno", "provincia": "Huancané", "distrito": "Huancané" },
-        { "departamento": "Puno", "provincia": "Huancané", "distrito": "Cacachi" },
-        { "departamento": "Puno", "provincia": "Huancané", "distrito": "Chacalaya" },
-        { "departamento": "Puno", "provincia": "Huancané", "distrito": "Taraco" },
-        { "departamento": "Puno", "provincia": "Huancané", "distrito": "Juliaca" },
-        { "departamento": "Puno", "provincia": "Huancané", "distrito": "Pucarani" },
-        { "departamento": "Puno", "provincia": "Lampa", "distrito": "Lampa" },
-        { "departamento": "Puno", "provincia": "Lampa", "distrito": "Arapa" },
-        { "departamento": "Puno", "provincia": "Lampa", "distrito": "Caminaca" },
-        { "departamento": "Puno", "provincia": "Lampa", "distrito": "Chupa" },
-        { "departamento": "Puno", "provincia": "Lampa", "distrito": "José Domingo Choquehuanca" },
-        { "departamento": "Puno", "provincia": "Lampa", "distrito": "Muñani" },
-        { "departamento": "Puno", "provincia": "Lampa", "distrito": "San Antón" },
-        { "departamento": "Puno", "provincia": "Lampa", "distrito": "San José" },
-        { "departamento": "Puno", "provincia": "Lampa", "distrito": "San Pedro" },
-        { "departamento": "Puno", "provincia": "Lampa", "distrito": "San Pablo" },
-        { "departamento": "Puno", "provincia": "Lampa", "distrito": "San Salvador" },
-        { "departamento": "Puno", "provincia": "Melgar", "distrito": "Ayaviri" },
-        { "departamento": "Puno", "provincia": "Melgar", "distrito": "Ballivián" },
-        { "departamento": "Puno", "provincia": "Melgar", "distrito": "Cuyo Cuyo" },
-        { "departamento": "Puno", "provincia": "Melgar", "distrito": "Llalli" },
-        { "departamento": "Puno", "provincia": "Melgar", "distrito": "Macusani" },
-        { "departamento": "Puno", "provincia": "Melgar", "distrito": "Mañazo" },
-        { "departamento": "Puno", "provincia": "Melgar", "distrito": "Nicasio" },
-        { "departamento": "Puno", "provincia": "Melgar", "distrito": "San Antonio" },
-        { "departamento": "Puno", "provincia": "Melgar", "distrito": "San Gabriel" },
-        { "departamento": "Puno", "provincia": "Melgar", "distrito": "San Juan de Salinas" },
-        { "departamento": "Puno", "provincia": "Melgar", "distrito": "San Pedro" },
-        { "departamento": "Puno", "provincia": "Melgar", "distrito": "Suni" },
-        { "departamento": "Puno", "provincia": "Moho", "distrito": "Moho" },
-        { "departamento": "Puno", "provincia": "Moho", "distrito": "Chifa" },
-        { "departamento": "Puno", "provincia": "Moho", "distrito": "Huatta" },
-        { "departamento": "Puno", "provincia": "Moho", "distrito": "San Antonio" },
-        { "departamento": "Puno", "provincia": "San Román", "distrito": "Juliaca" },
-        { "departamento": "Puno", "provincia": "San Román", "distrito": "Cabana" },
-        { "departamento": "Puno", "provincia": "San Román", "distrito": "San Miguel" },
-        { "departamento": "Puno", "provincia": "San Román", "distrito": "San Pedro" },
-        { "departamento": "Puno", "provincia": "San Román", "distrito": "San Pablo" },
-        { "departamento": "Puno", "provincia": "San Román", "distrito": "San Salvador" },
-        { "departamento": "Puno", "provincia": "San Román", "distrito": "San Andrés" },
-        { "departamento": "Puno", "provincia": "San Román", "distrito": "San Gabriel" },
-        { "departamento": "Puno", "provincia": "San Román", "distrito": "San Antonio" },
-        { "departamento": "Puno", "provincia": "San Román", "distrito": "San Juan" },
-        { "departamento": "Puno", "provincia": "San Román", "distrito": "San Juan de Salinas" },
-        { "departamento": "Puno", "provincia": "San Román", "distrito": "Santa Rosa" },
-        { "departamento": "Puno", "provincia": "San Román", "distrito": "Santa María" },
-        { "departamento": "Puno", "provincia": "San Román", "distrito": "Santa Isabel" },
-        { "departamento": "Puno", "provincia": "San Román", "distrito": "San Pedro de Putina Punco" },
-        { "departamento": "Puno", "provincia": "San Román", "distrito": "San Luis" },
-        { "departamento": "Puno", "provincia": "San Román", "distrito": "San Francisco" },
-        { "departamento": "Puno", "provincia": "Yunguyo", "distrito": "Yunguyo" },
-        { "departamento": "Puno", "provincia": "Yunguyo", "distrito": "Copani" },
-        { "departamento": "Puno", "provincia": "Yunguyo", "distrito": "Ollaraya" },
-        { "departamento": "Puno", "provincia": "Yunguyo", "distrito": "Tinicachi" },
-        { "departamento": "San Martín", "provincia": "San Martín", "distrito": "Tarapoto" },
-        { "departamento": "San Martín", "provincia": "San Martín", "distrito": "Juan Guerra" },
-        { "departamento": "San Martín", "provincia": "San Martín", "distrito": "La Banda de Shilcayo" },
-        { "departamento": "San Martín", "provincia": "San Martín", "distrito": "Morales" },
-        { "departamento": "San Martín", "provincia": "San Martín", "distrito": "Cacatachi" },
-        { "departamento": "San Martín", "provincia": "San Martín", "distrito": "Pucacaca" },
-        { "departamento": "San Martín", "provincia": "San Martín", "distrito": "Sauce" },
-        { "departamento": "San Martín", "provincia": "San Martín", "distrito": "Shanao" },
-        { "departamento": "San Martín", "provincia": "San Martín", "distrito": "San Antonio" },
-        { "departamento": "San Martín", "provincia": "San Martín", "distrito": "Shapaja" },
-        { "departamento": "San Martín", "provincia": "San Martín", "distrito": "San José de Sisa" },
-        { "departamento": "San Martín", "provincia": "San Martín", "distrito": "San Martín" },
-        { "departamento": "San Martín", "provincia": "San Martín", "distrito": "San Hilarión" },
-        { "departamento": "Tumbes", "provincia": "Tumbes", "distrito": "Tumbes" },
-        { "departamento": "Tumbes", "provincia": "Tumbes", "distrito": "Corrales" },
-        { "departamento": "Tumbes", "provincia": "Tumbes", "distrito": "Zorritos" },
-        { "departamento": "Tumbes", "provincia": "Tumbes", "distrito": "Pampas de Hospital" },
-        { "departamento": "Tumbes", "provincia": "Zarumilla", "distrito": "Zarumilla" },
-        { "departamento": "Tumbes", "provincia": "Zarumilla", "distrito": "Aguas Verdes" },
-        { "departamento": "Tumbes", "provincia": "Zarumilla", "distrito": "Alto Perú" },
-        { "departamento": "Tumbes", "provincia": "Zarumilla", "distrito": "Canoas de Punta Sal" },
-        { "departamento": "Tumbes", "provincia": "Zarumilla", "distrito": "La Cruz" },
-        { "departamento": "Tumbes", "provincia": "Contralmirante Villar", "distrito": "Zorritos" },
-        { "departamento": "Tumbes", "provincia": "Contralmirante Villar", "distrito": "Canoas de Punta Sal" },
-        { "departamento": "Tumbes", "provincia": "Contralmirante Villar", "distrito": "El Ñuro" },
-        { "departamento": "Tumbes", "provincia": "Contralmirante Villar", "distrito": "Tumbes" },
-        { "departamento": "Tumbes", "provincia": "Contralmirante Villar", "distrito": "Pampas de Hospital" },
-        { "departamento": "Ucayali", "provincia": "Coronel Portillo", "distrito": "Pucallpa" },
-        { "departamento": "Ucayali", "provincia": "Coronel Portillo", "distrito": "Callería" },
-        { "departamento": "Ucayali", "provincia": "Coronel Portillo", "distrito": "Yarinacocha" },
-        { "departamento": "Ucayali", "provincia": "Coronel Portillo", "distrito": "Campo Verde" },
-        { "departamento": "Ucayali", "provincia": "Coronel Portillo", "distrito": "Masisea" },
-        { "departamento": "Ucayali", "provincia": "Coronel Portillo", "distrito": "Iparia" },
-        { "departamento": "Ucayali", "provincia": "Padre Abad", "distrito": "Aguaytía" },
-        { "departamento": "Ucayali", "provincia": "Padre Abad", "distrito": "Padre Abad" },
-        { "departamento": "Ucayali", "provincia": "Padre Abad", "distrito": "Irazola" },
-        { "departamento": "Ucayali", "provincia": "Padre Abad", "distrito": "Pucallpa" },
-        { "departamento": "Ucayali", "provincia": "Purús", "distrito": "Purús" }, 
-    
-    
-    
-    ];
-    
-    const searchInput = document.getElementById('searchInput');
-    const dropdownMenu = document.getElementById('dropdownMenu');
-    
-    searchInput.addEventListener('input', function() {
-        const query = searchInput.value.toLowerCase();
-        dropdownMenu.innerHTML = ''; // Limpiar las opciones previas
-    
-        if (query.length < 3) {
-            dropdownMenu.classList.remove('show');
-            return;
-        }
-    
-        const filteredData = data.filter(item => 
-            item.departamento.toLowerCase().includes(query) ||
-            item.provincia.toLowerCase().includes(query) ||
-            item.distrito.toLowerCase().includes(query)
-        );
-    
-        if (filteredData.length > 0) {
-            filteredData.forEach(item => {
-                const div = document.createElement('div');
-                div.classList.add('dropdown-item');
-                div.textContent = `${item.departamento} - ${item.provincia} - ${item.distrito}`;
-                div.addEventListener('click', function() {
-                    searchInput.value = div.textContent;
-                    dropdownMenu.classList.remove('show');
-                });
-                dropdownMenu.appendChild(div);
-            });
-            dropdownMenu.classList.add('show');
-        } else {
-            dropdownMenu.classList.remove('show');
-        }
-    });
-    
-    document.addEventListener('click', function(e) {
-        if (!searchInput.contains(e.target) && !dropdownMenu.contains(e.target)) {
-            dropdownMenu.classList.remove('show');
-        }
-    });
-</script>
-
-
-
-
-
+<script src="JS - Header.js" ></script>
+<script src="JS - Usuario.js" ></script>
+<script src="VentanaEmergente.js"></script>
 
 <!-- Code injected by live-server -->
 <script>
@@ -1195,41 +699,6 @@
 	}
 	// ]]>
 </script>
-
-<script>
-    // Función para manejar el evento del botón "Finalizar"
-    function finalizePurchase(successMessage) {
-        const stock = JSON.parse(localStorage.getItem('productStock'));
-        const cart = JSON.parse(localStorage.getItem('cart')) || {};
-
-        for (const productId in cart) {
-            if (cart.hasOwnProperty(productId)) {
-                stock[productId] = Math.max(0, stock[productId] - cart[productId].quantity);
-            }
-        }
-
-        localStorage.setItem('productStock', JSON.stringify(stock));
-        localStorage.removeItem('cart');
-        localStorage.setItem('purchaseFinalized', new Date().toISOString());
-
-        // Notificar a todas las pestañas
-        window.localStorage.setItem('updateStock', Date.now());
-
-        alert(successMessage);
-    }
-
-    // Escuchar los cambios en localStorage
-    window.addEventListener('storage', (event) => {
-        if (event.key === 'updateStock') {
-            window.location.reload();
-        }
-    });
-</script>
-
-
-
-
-
 </body>
 </html>
 
