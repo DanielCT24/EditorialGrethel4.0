@@ -1290,12 +1290,11 @@ header.scroll {
 .container__card-primary {
     padding-top: 99px;
     height: auto;
-    max-height: 4365px;
-    /* margin-bottom: 14px; */
+    max-height: 1900099999px;
 }
 
 .card__primary{
-    max-width: 1400px;
+    max-width: 1405px;
     margin: auto;
     text-align: center;
     padding: 0px 20px;
@@ -1899,7 +1898,7 @@ display: none;
 
     .container__card-primary {
         padding-top: 99px;
-        height: 4803px;
+        height: auto;
     }
     .box__card-primary h2{
         font-size: 21px;
