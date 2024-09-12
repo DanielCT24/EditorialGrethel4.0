@@ -2649,7 +2649,14 @@ p.footer-text {
         padding: 8px; /* Reduce el padding del ícono */
     }
 
-    .dropdown-menu {
+    .search-box {
+
+        width: 378px;
+    }
+
+    .search-icon {
+        width: 50px;
+down-menu {
         max-height: 180px; /* Reduce la altura máxima en pantallas pequeñas */
     }
 }
