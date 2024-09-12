@@ -1312,6 +1312,7 @@ header.scroll {
     letter-spacing: 4px;
     font-size: var(--text_paragraph);
     font-weight: 500;
+    text-transform: uppercase;
     margin-top:150px;
     
 }
