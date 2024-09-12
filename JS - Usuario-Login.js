@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const loggedIn = localStorage.getItem('loggedIn') === 'true';
     if (!loggedIn) {
         // Redirigir a la página de login si no está logueado
-        window.location.href = 'Login.html';
+        window.location.href = '/Login';
         return; // Detener la ejecución del código si no está logueado
     }
 
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.getElementById('logoutButton').addEventListener('click', function() {
     localStorage.removeItem('loggedIn');
     localStorage.removeItem('user');
-    window.location.href = 'Login.html'; // Redirige a la página de inicio de sesión
+    window.location.href = '/Login'; // Redirige a la página de inicio de sesión
 });
 
 
@@ -150,9 +150,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const loggedIn = localStorage.getItem('loggedIn') === 'true';
 
         if (loggedIn) {
-            window.location.href = 'Usuario.html'; // Redirige a la página de usuario si está logueado
+            window.location.href = '/Usuario'; // Redirige a la página de usuario si está logueado
         } else {
-            window.location.href = 'Login.html'; // Redirige a la página de login si no está logueado
+            window.location.href = '/Login'; // Redirige a la página de login si no está logueado
         }
     });
 });
