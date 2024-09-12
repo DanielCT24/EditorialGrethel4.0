@@ -2669,5 +2669,8 @@ down-menu {
     .search-icon {
         font-size: 14px; /* Ajusta el tamaño del ícono */
         padding: 6px; /* Reduce el padding del ícono */
+        align-items: center;
+        align-content: center;
+        text-align: center;
     }
 }
