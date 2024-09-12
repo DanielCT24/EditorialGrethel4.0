@@ -323,7 +323,7 @@ document.getElementById('go-to-checkout').addEventListener('click', function() {
     localStorage.setItem('cartForCheckout', JSON.stringify(cart));
 
     // Redirige a la página de checkout
-    window.location.href = 'checkout.html';
+    window.location.href = 'Checkout.html';
 });
 
 
