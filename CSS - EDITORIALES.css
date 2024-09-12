@@ -1219,7 +1219,7 @@ header.scroll {
 .menu {
     display: flex;
     align-items: center;
-    /* margin-right: 137px; */
+    margin-right: 137px;
     /* margin-left: 7px; */
 }
 
@@ -1754,7 +1754,9 @@ p {
         position: relative;
         /* margin-top: -10px; */
     }
-    
+    .menu {
+    margin-right: 0;
+    }
 }
 
 
