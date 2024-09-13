@@ -472,11 +472,12 @@ h4 {
         width: 315px;
         left: 5px;
         padding: 0;
-        height: 174px;
+        height: auto;
+        max-height: 300px;
     }
 
     .item-name {
-        font-size: 15px;
+        font-size: 14px;
         width: 160px;
         text-align: center;
         justify-content: center;
