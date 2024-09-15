@@ -424,6 +424,8 @@ body{
 .text__card-primary h1{
     font-size: var(--text_size_title);
     font-weight: 600;
+    margin-top: 29px;
+    margin-bottom: -14px;
     color: var(--color_text-secundary);
 }
 
@@ -1631,3 +1633,39 @@ p.derechos {
         width: 80%; /* Ajusta el ancho para pantallas más pequeñas si es necesario */
     }
 }
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .time-box {
+    background-color: #8c84f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 118px;
+  }
+  
+  .time-box span {
+    font-size: 3rem;
+    display: block;
+    color: #f7f7f7;
+  }
+  
+  .countdown p {
+    font-size: 1rem;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+  }
+
+  .separator {
+    margin: 0px 17px;
+    margin-top: -54px;
+  }
