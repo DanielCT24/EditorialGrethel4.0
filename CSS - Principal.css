@@ -162,12 +162,14 @@ body{
         /* width: 100%; */ /* Usar el 100% del contenedor padre */
         max-width: 350px; /* No sobrepasar 350px de ancho */
         margin: 0 auto; /* Centrará el carrusel horizontalmente */
+        position: relative;
         overflow: hidden;
       }
       
       .carousel-control.next {
         right: -143px;
         top: -457px;
+        position: relative;
       }
 
 
