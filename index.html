@@ -579,6 +579,10 @@
 
 
 <script>
+
+/* ----------------CONTADOR------------------ */
+
+
 // Verifica si ya existe una fecha de finalización guardada en localStorage
 let countdownDate = localStorage.getItem('countdownDate');
 
@@ -586,6 +590,8 @@ let countdownDate = localStorage.getItem('countdownDate');
 if (!countdownDate) {
   countdownDate = new Date().getTime() + (7 * 24 * 60 * 60 * 1000); // 7 días
   localStorage.setItem('countdownDate', countdownDate);
+} else {
+  countdownDate = parseInt(countdownDate); // Convierte la fecha guardada en un número
 }
 
 function updateCountdown() {
@@ -614,6 +620,9 @@ function updateCountdown() {
 
 // Actualiza el contador cada segundo
 const countdownInterval = setInterval(updateCountdown, 1000);
+
+
+
 
 </script>
 
