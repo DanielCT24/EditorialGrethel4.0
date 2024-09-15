@@ -195,8 +195,49 @@
       <div class="trust card__primary">
         <div class="text__trust text__card-primary fade-in">
           <p>OFERTAS LIMITADAS</p>
-          <h1>Hasta el 02 de Octubre</h1>
+
+
+          <h1 class="countdown">
+            <div class="time-container">
+              <div class="time-box"> 
+                <span id="days">00</span>
+              </div> 
+              <p>Días</p>
+            </div>
+        
+            <div class="separator">:</div>
+            
+            <div class="time-container">
+              <div class="time-box">
+                <span id="hours">00</span>
+              </div>
+              <p>Horas</p>
+            </div>
+            
+            <div class="separator">:</div>
+            
+            <div class="time-container">
+              <div class="time-box">
+                <span id="minutes">00</span>
+              </div>
+              <p>Minutos</p>
+            </div>
+            
+            <div class="separator">:</div>
+            
+            <div class="time-container">
+              <div class="time-box">
+                <span id="seconds">00</span>
+              </div>
+              <p>Segundos</p>
+            </div>
+          </h1>
+
         </div>
+
+
+
+
         <button class="carousel-control prev" id="prevBtn">&#10094;</button>
 
         <div class="carousel">
@@ -537,7 +578,37 @@
 
 
 
+<script>
+// Establece la fecha final 3 días a partir de ahora
+const countdownDate = new Date().getTime() + (3 * 24 * 60 * 60 * 1000);
 
+function updateCountdown() {
+  const now = new Date().getTime();
+  const distance = countdownDate - now;
+
+  // Cálculos de días, horas, minutos y segundos
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Muestra los resultados
+  document.getElementById('days').innerText = String(days).padStart(2, '0');
+  document.getElementById('hours').innerText = String(hours).padStart(2, '0');
+  document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
+  document.getElementById('seconds').innerText = String(seconds).padStart(2, '0');
+
+  // Si la cuenta atrás ha terminado
+  if (distance < 0) {
+    clearInterval(countdownInterval);
+    document.querySelector('.countdown').innerHTML = "EXPIRED";
+  }
+}
+
+// Actualiza el contador cada segundo
+const countdownInterval = setInterval(updateCountdown, 1000);
+
+</script>
 
 
 
