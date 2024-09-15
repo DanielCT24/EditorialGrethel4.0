@@ -1584,3 +1584,70 @@ p.footer-text {
 p.derechos {
     font-size: 17px;
 }
+
+
+
+
+@media (max-width: 992px) {
+.carousel {
+    position: relative;
+    width: 100%; /* Usar el 100% del contenedor padre */
+    max-width: 350px; /* No sobrepasar 350px de ancho */
+    margin: 0 auto; /* Centrará el carrusel horizontalmente */
+    overflow: hidden;
+}
+.card__trust.box__card-primary.fade-in.show {
+    WIDTH: 318PX;
+}
+      .carousel-track {
+    width: 100px;  
+    }
+    
+    .card__trust {
+        width: 100px; /* Reduce el ancho de las tarjetas */
+        margin-right: 10px; /* Reduce el espacio entre las tarjetas */
+    }
+
+    .carousel-control {
+        font-size: 16px; /* Reduce el tamaño del texto en botones */
+        padding: 8px 16px; /* Reduce el tamaño del padding en botones */
+    }
+
+    .carousel-control.prev {
+        right: 149px;
+        top: 261px;
+        position: relative;
+        /* width: 100%; */ /* Usar el 100% del contenedor padre */
+        max-width: 350px; /* No sobrepasar 350px de ancho */
+        margin: 0 auto; /* Centrará el carrusel horizontalmente */
+        overflow: hidden;
+      }
+      
+      .carousel-control.next {
+        right: -143px;
+        top: -457px;
+      .carousel {
+        position: relative;
+        width: 100%; /* Usar el 100% del contenedor padre */
+        max-width: 350px; /* No sobrepasar 350px de ancho */
+        margin: 0 auto; /* Centrará el carrusel horizontalmente */
+        overflow: hidden;
+};
+      .carousel {
+        position: relative;
+        width: 100%; /* Usar el 100% del contenedor padre */
+        max-width: 350px; /* No sobrepasar 350px de ancho */
+        margin: 0 auto; /* Centrará el carrusel horizontalmente */
+        overflow: hidden;
+};
+        position: relative;
+        /* width: 100%; */ /* Usar el 100% del contenedor padre */
+        max-width: 350px; /* No sobrepasar 350px de ancho */
+        margin: 0 auto; /* Centrará el carrusel horizontalmente */
+        overflow: hidden;
+      }
+
+
+}
+
+
