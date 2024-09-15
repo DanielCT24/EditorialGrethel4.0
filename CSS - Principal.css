@@ -423,7 +423,7 @@ body{
 
 .text__card-primary h1{
     font-size: var(--text_size_title);
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 29px;
     margin-bottom: -14px;
     color: var(--color_text-secundary);
@@ -1644,7 +1644,7 @@ p.derechos {
   }
   
   .time-box {
-    background-color: #8c84f0;
+    background-color: #d9a8fb;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -1668,4 +1668,51 @@ p.derechos {
   .separator {
     margin: 0px 17px;
     margin-top: -54px;
+  }
+
+
+  @media (max-width: 991px) {
+    
+    .countdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 2rem;
+        color: white;
+      }
+      
+      .time-box {
+        background-color: #8c84f0;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 66px;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+      }
+      
+      .time-box span {
+        font-size: 1.5rem;
+        display: block;
+        color: #f7f7f7;
+      }
+      
+      .countdown p {
+        font-size: 11px;
+        margin-top: 23px;
+        margin-right: -4px;
+        margin-left: -5px;
+        color: black;
+      }
+    
+      .separator {
+        margin: 0px -2px;
+        margin-top: -54px;
+      }
+
+      .time-container{align-items: center;align-content: center;text-align: center;justify-content: center;justify-items: center;width: 69px;}
   }
