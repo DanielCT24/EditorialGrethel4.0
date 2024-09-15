@@ -1615,3 +1615,19 @@ p.derechos {
     }
     
 }
+
+
+.product-title {
+    white-space: nowrap; /* Evita que el texto se envuelva en varias líneas */
+    overflow: hidden; /* Oculta el texto que excede el ancho del contenedor */
+    text-overflow: ellipsis; /* Añade los puntos suspensivos al final del texto cortado */
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el ancho total */
+}
+
+/* Puedes añadir una regla específica para tamaños de pantalla más pequeños si es necesario */
+@media (max-width: 600px) { /* Ajusta el tamaño del breakpoint según tu diseño */
+    .product-title {
+        width: 80%; /* Ajusta el ancho para pantallas más pequeñas si es necesario */
+    }
+}
