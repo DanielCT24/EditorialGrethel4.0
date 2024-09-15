@@ -76,25 +76,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-document.getElementById('validateCoupon').addEventListener('click', function() {
-    var coupon = document.getElementById('coupon').value;
-    if (coupon === "") {
-        alert('Cupón no ingresado. Continuar sin descuento.');
-    } else {
-        alert('Cupón inválido. Intente con otro.');
-    }
-});
-
-document.getElementById('paymentForm').addEventListener('submit', function(event) {
-    var terms = document.getElementById('terms').checked;
-    var privacy = document.getElementById('privacy').checked;
-
-    if (!terms || !privacy) {
-        event.preventDefault();
-        alert('Debe aceptar los términos y condiciones y la política de privacidad.');
-    }
-});
-
 
 
 
