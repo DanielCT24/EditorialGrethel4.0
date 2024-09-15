@@ -141,7 +141,7 @@
                             <input type="radio" name="delivery" value="marvisur" required>
                             Marvisur <span class="info-icon"> 🚚  </span>
                         </label>
-                        <span class="delivery-date">Tu pedido llegará entre el 30-08-2024 y 02-09-2024</span>
+                        <span class="delivery-date">Tu pedido llegará entre el <span id="start-date1"></span> y <span id="end-date1"></span></span>
                     </div>
                     
                     <div class="delivery-option" required>
@@ -149,7 +149,7 @@
                             <input type="radio" name="delivery" value="olvacourier" required>
                             OlvaCourier <span class="info-icon"> 🚚  </span>
                         </label>
-                        <span class="delivery-date">Tu pedido llegará entre el 30-08-2024 y 02-09-2024</span>
+                        <span class="delivery-date">Tu pedido llegará entre el <span id="start-date2"></span> y <span id="end-date2"></span></span>
                     </div>
                     
                     <div class="delivery-option" required>
@@ -157,7 +157,7 @@
                             <input type="radio" name="delivery" value="shalom" required>
                             Shalom <span class="info-icon"> 🚚 </span>
                         </label>
-                        <span class="delivery-date">Tu pedido llegará entre el 30-08-2024 y 02-09-2024</span>
+                        <span class="delivery-date">Tu pedido llegará entre el <span id="start-date3"></span> y <span id="end-date3"></span></span>
                     </div>
                 </div>
                 
@@ -255,6 +255,7 @@
         <label for="comprobante" class="upload-btn" id="upload-label">📎 Adjuntar comprobante</label>
 
         <button id="finalize-btn" class="finalize-btn" disabled onclick="finalizePurchase('¡Tu compra ha sido exitosa!')">Finalizar</button>
+
     </div>
     
 
@@ -422,6 +423,51 @@
 	}
 	// ]]>
 </script>
+
+
+<script>
+    function formatDate(date) {
+        const day = String(date.getDate()).padStart(2, '0');
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const year = date.getFullYear();
+        return `${day}-${month}-${year}`;
+    }
+
+    function updateDeliveryDates1() {
+        const currentDate1 = new Date();
+        const endDate1 = new Date(currentDate1);
+        endDate1.setDate(currentDate1.getDate() + 3);
+
+        document.getElementById('start-date1').textContent = formatDate(currentDate1);
+        document.getElementById('end-date1').textContent = formatDate(endDate1);
+    }
+
+    function updateDeliveryDates2() {
+        const currentDate2 = new Date();
+        const endDate2 = new Date(currentDate2);
+        endDate2.setDate(currentDate2.getDate() + 3);
+
+        document.getElementById('start-date2').textContent = formatDate(currentDate2);
+        document.getElementById('end-date2').textContent = formatDate(endDate2);
+    }
+
+    function updateDeliveryDates3() {
+        const currentDate3 = new Date();
+        const endDate3 = new Date(currentDate3);
+        endDate3.setDate(currentDate3.getDate() + 3);
+
+        document.getElementById('start-date3').textContent = formatDate(currentDate3);
+        document.getElementById('end-date3').textContent = formatDate(endDate3);
+    }
+
+    // Llamando a las funciones para actualizar las 3 fechas
+    updateDeliveryDates1();
+    updateDeliveryDates2();
+    updateDeliveryDates3();
+</script>
+
+
+
 </body>
 </html>
 
