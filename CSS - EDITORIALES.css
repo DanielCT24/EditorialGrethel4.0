@@ -132,6 +132,7 @@ body{
     /* margin-top: -44px; */
     /* float: initial; */
     margin-right: 32px;
+    margin-left: -12px;
 }
 
 .login-carrito-header {
@@ -941,7 +942,7 @@ body{
     .logo-1 {
         width: 151px;
         margin-right: 0px;
-        /* margin-top: -83px; */
+        margin-top: -2px;
         /* margin-left: -25px; */
     }
 
