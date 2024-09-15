@@ -85,28 +85,27 @@ body{
   
   .carousel-control.prev {
     right: 813px;
-    top: 416px;
+    top: 350px;
   }
   
   .carousel-control.next {
     right: -813px;
-    top: -407px;
+    top: -350px;
   }
   
 
 
 @media (max-width: 992px) {
-    .carousel {
-        position: relative;
-        width: auto; /* Ancho del contenedor del carrusel */
-        overflow: hidden; /* Oculta el contenido fuera de la vista */
-        margin-left: -15px;
-        width: 100%; /* Usar el 100% del contenedor padre */
-        max-width: 350px; /* No sobrepasar 350px de ancho */
-        margin: 0 auto; /* Centrará el carrusel horizontalmente */
-        overflow: hidden;
-      }
-
+.carousel {
+    position: relative;
+    width: 100%; /* Usar el 100% del contenedor padre */
+    max-width: 350px; /* No sobrepasar 350px de ancho */
+    margin: 0 auto; /* Centrará el carrusel horizontalmente */
+    overflow: hidden;
+}
+.card__trust.box__card-primary.fade-in.show {
+    WIDTH: 318PX;
+}
       .carousel-track {
     width: 100px;  
     }
@@ -123,7 +122,7 @@ body{
 
     .carousel-control.prev {
         right: 149px;
-        top: 301px;
+        top: 261px;
         position: relative;
         /* width: 100%; */ /* Usar el 100% del contenedor padre */
         max-width: 350px; /* No sobrepasar 350px de ancho */
@@ -134,6 +133,25 @@ body{
       .carousel-control.next {
         right: -143px;
         top: -457px;
+      .carousel {
+        position: relative;
+        width: 100%; /* Usar el 100% del contenedor padre */
+        max-width: 350px; /* No sobrepasar 350px de ancho */
+        margin: 0 auto; /* Centrará el carrusel horizontalmente */
+        overflow: hidden;
+};
+      .carousel {
+        position: relative;
+        width: 100%; /* Usar el 100% del contenedor padre */
+        max-width: 350px; /* No sobrepasar 350px de ancho */
+        margin: 0 auto; /* Centrará el carrusel horizontalmente */
+        overflow: hidden;
+};
+        position: relative;
+        /* width: 100%; */ /* Usar el 100% del contenedor padre */
+        max-width: 350px; /* No sobrepasar 350px de ancho */
+        margin: 0 auto; /* Centrará el carrusel horizontalmente */
+        overflow: hidden;
       }
 
 
@@ -368,8 +386,10 @@ body{
 
 .card__primary{
     max-width: 1200px;
-    margin: auto;
+    margin: 0;
     text-align: center;
+    margin-left: 620px;
+    justify-content: center;
     padding: 0px 20px;
 }
 
@@ -1112,7 +1132,8 @@ body{
     }
 
     .slider-txt h1{
-        font-size: 43px;
+        font-size: 37px;
+        margin-top: 18px;
     }
 
     .slider-txt p {
@@ -1544,6 +1565,15 @@ h3#userName1 {
     h3#userName2 {
 display: none;
     }
+    .card__primary{
+    max-width: 1200px;
+    margin: 0;
+    text-align: center;
+    margin-left: 0px;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
     
 }
 
@@ -1563,19 +1593,4 @@ p.footer-text {
 
 p.derechos {
     font-size: 17px;
-}
-
-
-.card__trust.box__card-primary.fade-in.show {
-    height: auto;
-}
-
-
-
-@media(max-width: 991px){
-    .card__trust.box__card-primary.fade-in.show {
-        width: 315px;
-        
-    }
-    
 }
