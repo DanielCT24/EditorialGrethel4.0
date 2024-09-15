@@ -156,8 +156,8 @@ body{
     }
 
     .carousel-control.prev {
-        right: 149px;
-        top: 301px;
+        right: 158px;
+        top: 298px;
         position: relative;
         /* width: 100%; */ /* Usar el 100% del contenedor padre */
         max-width: 350px; /* No sobrepasar 350px de ancho */
@@ -167,8 +167,8 @@ body{
       }
       
       .carousel-control.next {
-        right: -143px;
-        top: -457px;
+        right: -165px;
+        top: -455px;
         position: relative;
       }
 
@@ -1610,8 +1610,7 @@ p.derechos {
 
 @media(max-width: 991px){
     .card__trust.box__card-primary.fade-in.show {
-        width: 315px;
-        
+        width: 326px;
     }
     
 }
