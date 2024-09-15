@@ -31,27 +31,31 @@ body{
     background-color: #f3b6f9;
 }
 
-.card__trust {
-    position: relative; /* Para que el sticker se posicione dentro del contenedor */
-  }
+
   
- 
-  .sticker {
+
+
+.sticker {
     position: absolute;
-    top: -8px; /* Ligeramente fuera del contenedor */
-    right: -20px; /* Ubicado en la esquina derecha */
-    background-color: #ff4c4c; /* Rojo más intenso y vibrante */
+    top: 24px; /* Colocado ligeramente fuera del contenedor */
+    right: 9px; /* En la esquina derecha */
+    background-color: #ff4d4d; /* Rojo intenso y atractivo */
     color: white;
-    font-size: 20px; /* Texto grande para impacto */
-    font-weight: 900; /* Negrita fuerte */
-    padding: 15px 30px; /* Espaciado generoso */
+    font-size: 22px; /* Tamaño del texto adecuado */
+    font-weight: bold; /* Texto en negrita */
+    padding: 20px 30px; /* Espaciado adecuado y mayor tamaño */
     z-index: 10;
     text-transform: uppercase;
     letter-spacing: 1px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Sombra suave */
-    clip-path: ellipse(75% 50% at 50% 50%); /* Forma ovalada suave */
-    animation: pulse 2.5s infinite;
+    border-radius: 50%; /* Forma circular */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    clip-path: path("M50,5 Q80,10 95,25 Q110,45 95,70 Q80,90 50,85 Q20,80 10,60 Q0,40 10,20 Q20,5 50,5 Z"); /* Mancha circular con bordes suaves y más grandes */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 1.5s infinite; /* Efecto de pulsación */
   }
+  
   @keyframes pulse {
     0% {
       transform: scale(1);
@@ -156,20 +160,18 @@ body{
     }
 
     .carousel-control.prev {
-        right: 158px;
-        top: 298px;
+        right: 149px;
+        top: 301px;
         position: relative;
         /* width: 100%; */ /* Usar el 100% del contenedor padre */
         max-width: 350px; /* No sobrepasar 350px de ancho */
         margin: 0 auto; /* Centrará el carrusel horizontalmente */
-        position: relative;
         overflow: hidden;
       }
       
       .carousel-control.next {
-        right: -165px;
-        top: -455px;
-        position: relative;
+        right: -143px;
+        top: -457px;
       }
 
 
@@ -1610,7 +1612,8 @@ p.derechos {
 
 @media(max-width: 991px){
     .card__trust.box__card-primary.fade-in.show {
-        width: 326px;
+        width: 315px;
+        
     }
     
 }
