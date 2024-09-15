@@ -976,8 +976,8 @@ body{
     #menu:checked ~ .navbar {
         display: initial;
         margin-left: -12px;
-        width: 104%;
-        margin: 7px -16px;
+        width: 100vh;
+        margin: -5px -57px;
         /* margin-top: -45px; */
     }
 
@@ -1896,7 +1896,9 @@ display: none;
         height: 147px;
         z-index: 1000;
     }
-
+.cart-count-header {
+display:none; 
+}
     .container__card-primary {
         padding-top: 99px;
         height: auto;
