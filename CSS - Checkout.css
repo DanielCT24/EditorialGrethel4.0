@@ -2102,8 +2102,8 @@ img.pagoyape-img {
 }
 
 .menu-1{
-    margin-right: 48px;
-    margin-left: 285px;
+    margin-right: 30px;
+    margin-left: 299px;
     width: 1000px;
     margin-top: 12px;
 }
@@ -2423,7 +2423,7 @@ display:none
     }
     .menu-icono {
       margin-top: 43px;
-      margin-left: 12px;
+      margin-left: 30px;
      }
 
 
@@ -2612,7 +2612,7 @@ p.footer-text {
 .dropdown-menu {
     position: absolute;
     width: 100%;
-    max-height: 300px;
+    /* max-height: 300px; */
     overflow-y: auto;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -2657,7 +2657,7 @@ p.footer-text {
 
     .search-icon {
         width: 50px;
-down-menu {
+.down-menu {
         max-height: 180px; /* Reduce la altura máxima en pantallas pequeñas */
     }
 }
@@ -2674,4 +2674,45 @@ down-menu {
         align-content: center;
         text-align: center;
     }
+}
+}
+
+
+/* Estilo del botón cuando está deshabilitado */
+button#validateCoupon:disabled {
+    background-color: #b93aa8; /* Color de fondo gris claro */
+    color: #b7abab; /* Color del texto gris */
+    border: 1px solid #c0c0c0; /* Borde gris claro */
+    cursor: not-allowed; /* Cursor de no permitido */
+    opacity: 0.6; /* Opacidad para un efecto deshabilitado */
+    pointer-events: none; /* Desactiva los eventos del puntero */
+}
+
+
+
+
+
+.dropdown-menu {
+
+    width: 520px;
+    max-height: 670px;
+}
+
+@media (max-width: 991px) {
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ddd;
+    width: 342px;
+}
+.dropdown-menu div {
+    padding: 8px;
+    cursor: pointer;
+}
+.dropdown-menu div:hover {
+    background-color: #f0f0f0;
+}
+
 }
