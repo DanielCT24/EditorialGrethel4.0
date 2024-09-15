@@ -184,14 +184,12 @@
 
 
 
-
-                <!-- Cupón de Descuento -->
-                <div class="section">
-                    <label for="coupon">CUPÓN DE DESCUENTO</label>
-                    <input type="text" id="coupon" placeholder="Ingresa tu cupón">
-                    <button type="button" id="validateCoupon">Validar Descuento</button>
-                </div>
-
+<!-- Cupón de Descuento -->
+<div class="section">
+    <label for="coupon">CUPÓN DE DESCUENTO</label>
+    <input type="text" id="coupon" placeholder="Ingresa tu cupón">
+    <button type="button" id="validateCoupon">Validar Descuento</button>
+</div>
 
                 
             
@@ -328,6 +326,7 @@
 
     <script src="JS - Checkout.js"></script>
     <script src="JS - Checkout2.js"></script>
+    <script src="JS - Departamentos.js"></script>
     <script src="JS - Principal.js"></script>
     <script src="JS - Usuario.js"></script>
     <script src="JS - Usuario-Login.js"></script>
@@ -384,6 +383,170 @@
 <script src="JS - Header.js" ></script>
 <script src="JS - Usuario.js" ></script>
 <script src="VentanaEmergente.js"></script>
+
+
+<!-- DESCUENTO -->
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Función para validar el cupón
+    document.getElementById('validateCoupon').addEventListener('click', function() {
+        const couponInput = document.getElementById('coupon').value.trim(); // No convertir a mayúsculas, comparación estricta
+        const discountRates = {
+            "FACEBOOK": 0.10, // 10% de descuento
+            "OFERTA": 0.15,  // 15% de descuento
+            "EDITORIALGRETHEL": 0.20    // 20% de descuento
+            // Agrega más códigos y descuentos aquí
+        };
+        
+        // Obtener los elementos del total
+        const summaryTotalElem1 = document.getElementById('summaryTotal1');
+        const summaryTotalElem2 = document.getElementById('summaryTotal2');
+        const validateCouponButton = document.getElementById('validateCoupon');
+        
+        // Comprobar si los elementos del total y el botón existen
+        if (!summaryTotalElem1 || !summaryTotalElem2 || !validateCouponButton) {
+            console.error('Uno o más elementos necesarios no se encontraron.');
+            return;
+        }
+        
+        // Obtener el valor actual del total en summaryTotal1 y extraer el número
+        const totalText1 = summaryTotalElem1.textContent;
+        const totalMatch1 = totalText1.match(/S\/ (\d+(\.\d{2})?)/);
+        let total1 = 0;
+        
+        if (totalMatch1) {
+            total1 = parseFloat(totalMatch1[1]);
+        } else {
+            console.error('El formato del total en summaryTotal1 no es válido.');
+            return;
+        }
+        
+        // Obtener el valor actual del total en summaryTotal2 y extraer el número
+        const totalText2 = summaryTotalElem2.textContent;
+        const totalMatch2 = totalText2.match(/S\/ (\d+(\.\d{2})?)/);
+        let total2 = 0;
+        
+        if (totalMatch2) {
+            total2 = parseFloat(totalMatch2[1]);
+        } else {
+            console.error('El formato del total en summaryTotal2 no es válido.');
+            return;
+        }
+        
+        // Verificar si el cupón ingresado está en la lista de códigos válidos
+        if (discountRates.hasOwnProperty(couponInput)) {
+            const discountRate = discountRates[couponInput]; // Obtener el porcentaje de descuento correspondiente
+            
+            // Aplicar el descuento
+            const newTotal1 = total1 * (1 - discountRate);
+            const newTotal2 = total2 * (1 - discountRate);
+            
+            // Actualizar los valores en la página
+            summaryTotalElem1.textContent = `S/ ${newTotal1.toFixed(2)}`; // Mostrar con 2 decimales
+            summaryTotalElem2.textContent = `Total: S/ ${newTotal2.toFixed(2)}`; // Mostrar con 2 decimales
+            
+            // Deshabilitar el botón después de canjear el código
+            validateCouponButton.disabled = true;
+            
+            alert(`Cupón aplicado correctamente. Se ha aplicado un ${discountRate * 100}% de descuento.`);
+        } else {
+            // Mostrar solo la alerta de cupón inválido
+            alert('Cupón inválido. Inténtalo de nuevo.');
+        }
+    });
+});
+
+
+</script>
+
+<script>
+  
+  document.addEventListener('DOMContentLoaded', function() {
+            fetch('data.json')
+                .then(response => response.json())
+                .then(data => {
+                    const searchInput = document.getElementById('searchInput');
+                    const dropdownMenu = document.getElementById('dropdownMenu');
+                    let selectedDepartment = null;
+
+                    function updateDropdown(results) {
+                        dropdownMenu.innerHTML = results.map(result => {
+                            return `<div class="dropdown-item" data-type="${result.type}" data-value="${result.value}">${result.value}</div>`;
+                        }).join('');
+                        dropdownMenu.style.display = results.length > 0 ? 'block' : 'none'; // Mostrar el menú solo si hay resultados
+                    }
+
+                    searchInput.addEventListener('input', function() {
+                        const query = searchInput.value.trim().toLowerCase();
+                        dropdownMenu.innerHTML = ''; // Limpiar el menú
+
+                        if (query.length >= 3) {
+                            const results = [];
+
+                            // Filtrar departamentos
+                            for (const department in data.departamentos) {
+                                if (department.toLowerCase().includes(query)) {
+                                    results.push({ type: 'department', value: department });
+                                }
+                            }
+
+                            // Filtrar provincias y distritos basados en el departamento seleccionado
+                            if (selectedDepartment) {
+                                const deptData = data.departamentos[selectedDepartment];
+                                Object.keys(deptData.distritos).forEach(province => {
+                                    if (province.toLowerCase().includes(query)) {
+                                        results.push({ type: 'province', value: province });
+                                    }
+                                    deptData.distritos[province].forEach(district => {
+                                        if (district.toLowerCase().includes(query)) {
+                                            results.push({ type: 'district', value: district });
+                                        }
+                                    });
+                                });
+                            }
+
+                            // Mostrar resultados
+                            if (results.length > 0) {
+                                updateDropdown(results);
+                            }
+                        } else {
+                            dropdownMenu.style.display = 'none'; // Ocultar el menú si el texto es menor a 3 caracteres
+                        }
+                    });
+
+                    dropdownMenu.addEventListener('click', function(e) {
+                        if (e.target.classList.contains('dropdown-item')) {
+                            const type = e.target.getAttribute('data-type');
+                            const value = e.target.getAttribute('data-value');
+
+                            if (type === 'department') {
+                                selectedDepartment = value;
+                                searchInput.value = value;
+                                // Actualizar menú para mostrar provincias y distritos
+                                const deptData = data.departamentos[selectedDepartment];
+                                const provinces = Object.keys(deptData.distritos).map(province => ({ type: 'province', value: province }));
+                                const districts = [];
+                                Object.values(deptData.distritos).forEach(districtArray => {
+                                    districtArray.forEach(district => {
+                                        districts.push({ type: 'district', value: district });
+                                    });
+                                });
+                                updateDropdown([...provinces, ...districts]);
+                            } else {
+                                searchInput.value = value;
+                                dropdownMenu.style.display = 'none'; // Ocultar menú después de selección
+                            }
+                        }
+                    });
+                })
+                .catch(error => console.error('Error al cargar el archivo JSON:', error));
+        });
+</script>
+
+
 
 <!-- Code injected by live-server -->
 <script>
@@ -468,9 +631,13 @@
 
 
 
+
+
+
+
+
+
+
 </body>
 </html>
 
-
-
-<!-- REUTILIZAR TAMAÑOS, POR EJEMPLO, BTN_TEXT LO PUEDO USAR EN BTN_TEXT-ABOUT, ES DECIR LO MISMO PUEDO HACER CON LAS IMAGES -->
