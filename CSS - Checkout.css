@@ -1141,8 +1141,8 @@ h3#userName1 {
     font-size: 8.5px;
     width: 80px;
     text-transform: uppercase;
-    margin-left: 13px;
-    margin-top: 6px;
+    margin-left: 43px;
+    margin-top: 7px;
 }
 
 
@@ -2346,8 +2346,9 @@ display:none
     }
 
     .login-icon{
-        margin-top: 4px;
-        margin-left: 14px;
+        margin-top: 19px;
+        position: relative;
+        margin-left: 48px;
     }
 
 
@@ -2429,7 +2430,7 @@ display:none
     }
     .menu-icono {
       margin-top: 43px;
-      margin-left: 30px;
+      margin-left: 3px;
      }
 
 
