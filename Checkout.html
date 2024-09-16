@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Editorial Grethel | CHECKOUT</title>
+    <title> Editorial Grethel</title>
     <script src="JS - Principal.js" ></script>
     <script src="JS - Carrito.js" ></script>
     <link rel="stylesheet" href="CSS - Carrito.css"></link>
@@ -118,7 +118,7 @@
                     <label> DIRECCIÓN</label>
                         <div class="search-container" >
                             <div class="search-box" >
-                                <input type="text" id="searchInput" placeholder="Digite Su Departamento-Provincia-Distrito..." >
+                                <input type="text" id="searchInput" placeholder="Digite Su Departamento-Provincia-Distrito..." required>
                                 <div class="search-icon">&#128269;</div>
                             </div>
                             <div class="dropdown-menu" id="dropdownMenu">
@@ -242,6 +242,8 @@
             <label for="confirma-operacion">Confirma tu nro. de operación:</label>
             <input type="text" id="confirma-operacion" class="input-field" oninput="validateForm()">
         </div>
+        <p id="error-message" class="error-message"></p>
+
         <div class="form-group">
             <label for="fecha-hora">Fecha y hora de la operación:</label>
             <input type="datetime-local" id="fecha-hora" class="input-field" onchange="validateForm()">
@@ -633,8 +635,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+<script>
+
+function validateForm() {
+    const operacion = document.getElementById('operacion').value;
+    const confirmaOperacion = document.getElementById('confirma-operacion').value;
+    const errorMessage = document.getElementById('error-message');
+    
+    if (operacion !== confirmaOperacion) {
+        errorMessage.textContent = "Número de Operación diferente, revise de nuevo.";
+    } else {
+        errorMessage.textContent = "";
+    }
+}
 
 
+
+</script>
 
 
 
