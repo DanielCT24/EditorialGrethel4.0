@@ -582,17 +582,8 @@
 
 /* ----------------CONTADOR------------------ */
 
-
-// Verifica si ya existe una fecha de finalización guardada en localStorage
-let countdownDate = localStorage.getItem('countdownDate');
-
-// Si no existe, establece una fecha final 7 días a partir de ahora y guárdala en localStorage
-if (!countdownDate) {
-  countdownDate = new Date().getTime() + (7 * 24 * 60 * 60 * 1000); // 7 días
-  localStorage.setItem('countdownDate', countdownDate);
-} else {
-  countdownDate = parseInt(countdownDate); // Convierte la fecha guardada en un número
-}
+// Define una fecha límite común para todos los usuarios (por ejemplo, 7 días desde una fecha específica)
+const countdownDate = new Date('2024-09-26T00:00:00').getTime(); // Cambia esta fecha a tu fecha límite
 
 function updateCountdown() {
   const now = new Date().getTime();
@@ -613,8 +604,7 @@ function updateCountdown() {
   // Si la cuenta atrás ha terminado
   if (distance < 0) {
     clearInterval(countdownInterval);
-    document.querySelector('.countdown').innerHTML = "EXPIRED";
-    localStorage.removeItem('countdownDate'); // Elimina la fecha almacenada si ha expirado
+    document.querySelector('.countdown').innerHTML = "OFERTAS CADUCACAS";
   }
 }
 
