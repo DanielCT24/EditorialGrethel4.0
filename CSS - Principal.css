@@ -1285,7 +1285,7 @@ body{
         font-size: var(--text_title_card);
         margin-top: 30px;
         font-weight: 500;
-        font-size: 19px;
+        font-size: 20px;
     }
 
 
@@ -1598,7 +1598,7 @@ p.footer-text {
 
 
 p.derechos {
-    font-size: 17px;
+    font-size: 13px;
 }
 
 
