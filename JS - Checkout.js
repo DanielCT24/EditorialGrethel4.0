@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Calcular el costo de envío
-        const costoEnvio = grandTotal >= 50 ? 0 : 5;
+        const costoEnvio = grandTotal >= 50 ? 0 : 8;
         let textoEnvio = grandTotal >= 50 ? "Gratis" : `S/ ${costoEnvio.toFixed(2)}`;
 
         // Calcular el 18% del total sin costo de envío
