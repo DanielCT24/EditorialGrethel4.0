@@ -2075,7 +2075,7 @@ img.pagoyape-img {
         display: flex;
         flex-direction: column;
         margin-top: 116px;
-        height: 2005px;
+        height: 2043px;
         /* max-height: 30000px; */
         margin-top: 168px;
         /* margin-bottom: 31px; */
@@ -2757,7 +2757,8 @@ button#validateCoupon:disabled {
     background-color: #f0f0f0;
 }
 .totales {
-    margin-left:10px
+    margin-left:10px;
+    MARGIN-TOP: 11PX;
 }
 }
 
