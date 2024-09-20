@@ -1365,7 +1365,7 @@ header.scroll {
 
  .box__card-primary img {
     width: 100%; /* Se asegura de que la imagen ocupe todo el ancho del contenedor */
-    height: 300px; /* Fija la altura de la imagen */
+    height: 222px; /* Fija la altura de la imagen */
     object-fit: contain; /* Ajusta la imagen para que se vea completa, sin recortarse */
     border-radius: 10px; /* Opcional: agrega esquinas redondeadas a las imágenes */
 }
