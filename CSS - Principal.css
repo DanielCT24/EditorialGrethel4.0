@@ -765,6 +765,7 @@ body{
     flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias líneas */
     justify-content: center; /* Centra las tarjetas horizontalmente */
     gap: 10px; /* Espacio entre las tarjetas */
+    padding-bottom: 82px;
 }
 
 .container__card-service {
