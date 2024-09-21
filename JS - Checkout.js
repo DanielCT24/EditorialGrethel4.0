@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
+/* TODA LA CONFIGURACION DEL CHECKOUT */
 
 
 
@@ -123,11 +123,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Calcular el costo de envío
-        const costoEnvio = grandTotal >= 50 ? 0 : 8;
-        let textoEnvio = grandTotal >= 50 ? "Gratis" : `S/ ${costoEnvio.toFixed(2)}`;
+        const costoEnvio = grandTotal >= 40 ? 0 : 8;
+        let textoEnvio = grandTotal >= 40 ? "Envío Gratuito" : `S/ ${costoEnvio.toFixed(2)}`;
 
-        // Calcular el 18% del total sin costo de envío
-        const impuesto = grandTotal * 0.18;
+        // Calcular el 5% del total sin costo de envío
+        const impuesto = grandTotal * 0.05;
 
         // Calcular el total general
         const summaryTotalGeneral = grandTotal + costoEnvio + impuesto;
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
         costoEnvioElem.textContent = `Costo de envío: ${textoEnvio}`;
 
         // Actualizar el impuesto en la página
-        costoImpuestoElem.textContent = `IGV (18%): S/ ${impuesto.toFixed(2)}`;
+        costoImpuestoElem.textContent = `IGV (5%): S/ ${impuesto.toFixed(2)}`;
 
         // Actualizar el primer total general en la página
         summaryTotalGeneralElem.textContent = `Total: S/ ${summaryTotalGeneralRounded.toFixed(2)}`;
@@ -177,19 +177,22 @@ document.addEventListener('DOMContentLoaded', function() {
         // Actualizar el segundo total general en la página (copia exacta del primer total general)
         summaryTotalGeneral2Elem.textContent = `S/ ${summaryTotalGeneralRounded.toFixed(2)}`;
 
-        // Actualizar la barra de progreso
-        const maxTotal = 50;
-        const progressPercentage = Math.min((grandTotal / maxTotal) * 100, 100);
-        progressBar.style.width = `${progressPercentage}%`;
-        progressBar.textContent = `S/ ${grandTotal.toFixed(2)} (${progressPercentage.toFixed(0)}%)`;
+       // Actualizar la barra de progreso
+const maxTotal = 40;
+const remainingAmount = maxTotal - grandTotal;
+const progressPercentage = Math.min((grandTotal / maxTotal) * 100, 100);
 
-        // Mostrar mensaje de envío gratis cuando se alcance el 100%
-        if (progressPercentage === 100) {
-            freeShippingMessage.style.display = 'block';
-        } else {
-            freeShippingMessage.style.display = 'none';
-        }
+progressBar.style.width = `${progressPercentage}%`;
 
+// Mostrar el mensaje de cuánto falta para el envío gratis
+if (remainingAmount > 0) {
+    progressBar.textContent = `Te faltan S/ ${remainingAmount.toFixed(2)} para el envío gratis`;
+} else {
+    progressBar.textContent = `¡Envío gratis!`;
+}
+
+// Mostrar también el total gastado
+progressBar.textContent += ``;
         // Guardar el total en localStorage
         localStorage.setItem('grandTotal', grandTotal.toFixed(2));
     }
