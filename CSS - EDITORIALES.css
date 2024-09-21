@@ -32,6 +32,59 @@ body{
 }
 
 
+
+
+/* Estilos de paginación */
+#pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#pagination-container button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #d5beda; /* Rosa suave */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#pagination-container button:hover {
+    background-color: #ad2fc3; /* Un rosa más intenso al hacer hover */
+    transform: translateY(-3px); /* Pequeño desplazamiento al hacer hover */
+}
+
+#pagination-container button.active {
+    background-color: #e058f8; /* Rosa más intenso para el botón activo */
+}
+
+#pagination-container button:disabled {
+    background-color: #ffd6e0; /* Rosa muy suave para botones deshabilitados */
+    cursor: not-allowed;
+    color: #999;
+}
+
+/* Animación al cambiar entre estados */
+#pagination-container button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#pagination-container button:active {
+    transform: scale(0.98); /* Pequeña reducción al hacer clic */
+}
+
+
+
+
+
+
+
+
 .login-menu {
     display: none;
     position: absolute;
@@ -919,8 +972,8 @@ body{
 
 @media (max-width: 991px) {
     .popup {
-        width: 95%;  /* Más ancho para pantallas pequeñas */
-        max-width: 350px; /* Limitar el tamaño máximo en pantallas pequeñas */
+        width: 95%;  
+        max-width: 350px; 
     }
 
     .close-btn {
@@ -950,9 +1003,6 @@ body{
         width: 0;
     }
 
-    .login-icon{
-        /* margin-top: 6px; */
-    }
 
 
     .menu label {
@@ -1290,6 +1340,7 @@ header.scroll {
 
 .container__card-primary {
     padding-top: 99px;
+    padding-bottom: 70px;
     height: auto;
     max-height: 190000px;
     /* margin-bottom: 14px; */
