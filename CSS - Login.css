@@ -720,15 +720,3 @@ span#toggleLoginPassword {
     top: 58%;
 }
 
-
-form#loginForm {
-    margin-top: 34px;
-}
-
-form#registerForm {
-    margin-top: 52px;
-}
-
-.contenedor__todo.fade-in.show {
-    height: 100vh;
-}
