@@ -719,3 +719,12 @@ span#toggleLoginPassword {
     left:86%;
     top: 58%;
 }
+
+
+form#loginForm {
+    margin-top: 34px;
+}
+
+form#registerForm {
+    margin-top: 52px;
+}
