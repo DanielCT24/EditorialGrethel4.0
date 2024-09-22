@@ -728,3 +728,7 @@ form#loginForm {
 form#registerForm {
     margin-top: 52px;
 }
+
+.contenedor__todo.fade-in.show {
+    height: 100vh;
+}
